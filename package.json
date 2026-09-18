@@ -1,0 +1,13 @@
+{
+  "name": "becky-s-cv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Curriculum vitae for Rebecca M. Gustafson, CFP, principal of Eternal Wealth Partners.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
