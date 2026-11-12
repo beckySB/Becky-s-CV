@@ -8,7 +8,7 @@
     "not_found_handling": "404-page"
   },
   "routes": [
-    { "pattern": "willmartnez.win", "custom_domain": true },
-    { "pattern": "www.willmartnez.win", "custom_domain": true }
+    { "pattern": "willmartinez.win", "custom_domain": true },
+    { "pattern": "www.willmartinez.win", "custom_domain": true }
   ]
 }

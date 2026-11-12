@@ -1,6 +1,6 @@
 # William Martinez | CV
 
-Static CV site for willmartnez.win, deployed with Cloudflare Workers (static assets).
+Static CV site for willmartinez.win, deployed with Cloudflare Workers (static assets).
 
 - Site files live in `public/` (edit `public/index.html` for content, `public/styles.css` for design).
 - `wrangler.jsonc` tells Cloudflare to serve `public/` and attach the custom domain.
