@@ -1,0 +1,1499 @@
+{
+  "version": 1,
+  "asOf": "2026-11-12",
+  "intro": "The newsroom turns economic, tax, legal and local business news into content an owner can use, fast, without giving up accuracy. Researched briefings are ready to review, and the live wire brings in what primary sources published today. Every piece names its sources, states the status of anything not yet law, and goes through the firm's review process.",
+  "disclosure": "General information only, not tax, legal or investment advice. Rules and figures change, and how they apply depends on your situation, so talk to your own tax and legal advisors before acting. Figures as of November 12, 2026.",
+  "sourcePolicy": {
+    "heading": "Where the facts come from",
+    "summary": "Credible and unbiased is a sourcing discipline, not a feeling. The newsroom ranks every source by how close it sits to the thing itself, and the content says which kind it is.",
+    "principles": [
+      "Primary first. The agency, the statute, the final rule, the company's own announcement, the program's own site. Coverage of a thing is a lead to the thing, not a substitute for it.",
+      "Two sources for any number that does not come from the primary. If they disagree, say so and use the primary.",
+      "Status is a fact. Proposed, introduced, passed one chamber, signed, final rule and effective date are different claims. Most bad financial content comes from blurring them.",
+      "Describe effects, not merits. Say what a law does to an owner's plan. Leave whether it is good policy to the owner.",
+      "When something is contested, show the official account and the main criticism, both sourced, or leave it out.",
+      "Vendor and marketing summaries are pointers only. They are often right and never the citation."
+    ],
+    "tiers": [
+      {
+        "id": "primary",
+        "name": "Primary",
+        "use": "Cite directly. The agency, the law, the rule, the company or program itself.",
+        "examples": "IRS, Treasury, Federal Reserve, Federal Register, Congress.gov, Louisiana Legislature, Louisiana Department of Revenue, a company's own newsroom, a state program's own site"
+      },
+      {
+        "id": "statistical",
+        "name": "Statistical agency",
+        "use": "Cite directly for data. Nonpartisan by charter.",
+        "examples": "Bureau of Labor Statistics, Bureau of Economic Analysis, Census Bureau, Congressional Budget Office"
+      },
+      {
+        "id": "research",
+        "name": "Research",
+        "use": "Cite for findings, with the setting and the year. Note whether it is peer reviewed or a working paper.",
+        "examples": "NBER working papers, peer-reviewed journals, university research centers"
+      },
+      {
+        "id": "newsroom",
+        "name": "Public-interest newsroom",
+        "use": "Cite for reporting on state and local events. Check the primary when it exists.",
+        "examples": "Louisiana Illuminator, public radio newsrooms"
+      },
+      {
+        "id": "wire",
+        "name": "Wire and business press",
+        "use": "Cite for event facts and dates. Cross check numbers.",
+        "examples": "AP, Reuters, Bloomberg, CNBC"
+      },
+      {
+        "id": "professional",
+        "name": "Professional summary",
+        "use": "Use to understand a law. Cite the law itself where you can.",
+        "examples": "Law firm and CPA firm client alerts, trade associations"
+      },
+      {
+        "id": "vendor",
+        "name": "Vendor summary",
+        "use": "A pointer only. Never the citation.",
+        "examples": "Payroll and plan provider guides"
+      }
+    ]
+  },
+  "guardrails": [
+    {
+      "rule": "Every number carries its source and the date it was true. If you cannot source it, cut it.",
+      "why": "A wrong number in financial content costs more trust than a missing one."
+    },
+    {
+      "rule": "State the legal status of anything that is not settled law: proposed, introduced, passed one chamber, signed, final rule, or effective on a date.",
+      "why": "Treating a bill as law is the most common and most damaging error in this kind of content."
+    },
+    {
+      "rule": "No forecasts of interest rates, markets, prices or whether legislation will pass.",
+      "why": "Nobody knows, regulators treat predictions as promissory, and the owners worth having distrust them."
+    },
+    {
+      "rule": "No recommendation of any specific investment, product or insurance policy in public content.",
+      "why": "Public content explains what changed and what to ask. Recommendations happen one to one, after the facts of the person are known."
+    },
+    {
+      "rule": "Separate the facts from the firm's view, and label the view as a view.",
+      "why": "Readers can tell when opinion is dressed as news, and so can reviewers."
+    },
+    {
+      "rule": "Describe what a policy does to an owner's plan, not whether it is good policy. Where a measure is contested, give the official account and the main criticism, both sourced, or leave it out.",
+      "why": "Unbiased is a practice. The firm serves owners of every politics."
+    },
+    {
+      "rule": "Never imply that a company, agency or program named in a piece endorses the firm.",
+      "why": "Naming Meta or the IRS for a fact is reporting. Implying a relationship is a problem."
+    },
+    {
+      "rule": "Use no client names or client situations, even disguised, without written consent and review.",
+      "why": "A recognizable story is a disclosure."
+    },
+    {
+      "rule": "Every piece goes through the firm's review process before it is published. Timeliness comes from pre-cleared frames, not from skipping review.",
+      "why": "The frame is approved once. Only the sourced facts in it change, which is what makes same-week publishing possible."
+    },
+    {
+      "rule": "Close with the general-information disclosure, adapted only through the firm's review process.",
+      "why": "Consistency is what makes a disclosure work."
+    }
+  ],
+  "feeds": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve press releases",
+      "kind": "rss",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "rates"
+      ],
+      "why": "Rate decisions, statements and bank regulation, from the source."
+    },
+    {
+      "id": "fr-irs",
+      "name": "Federal Register: IRS",
+      "kind": "federalregister",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&fields[]=title&fields[]=abstract&fields[]=html_url&fields[]=publication_date&fields[]=type&fields[]=agencies&conditions[agencies][]=internal-revenue-service",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "tax"
+      ],
+      "why": "Every proposed and final tax regulation and notice, with its status stated."
+    },
+    {
+      "id": "fr-ebsa",
+      "name": "Federal Register: Employee Benefits Security Administration",
+      "kind": "federalregister",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&fields[]=title&fields[]=abstract&fields[]=html_url&fields[]=publication_date&fields[]=type&fields[]=agencies&conditions[agencies][]=employee-benefits-security-administration",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "retirement"
+      ],
+      "why": "Retirement plan and ERISA rules from the Labor Department."
+    },
+    {
+      "id": "fr-treasury",
+      "name": "Federal Register: Treasury",
+      "kind": "federalregister",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&fields[]=title&fields[]=abstract&fields[]=html_url&fields[]=publication_date&fields[]=type&fields[]=agencies&conditions[agencies][]=treasury-department",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "tax"
+      ],
+      "why": "Treasury rules and notices beyond the IRS."
+    },
+    {
+      "id": "fr-sba",
+      "name": "Federal Register: Small Business Administration",
+      "kind": "federalregister",
+      "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=20&order=newest&fields[]=title&fields[]=abstract&fields[]=html_url&fields[]=publication_date&fields[]=type&fields[]=agencies&conditions[agencies][]=small-business-administration",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "business"
+      ],
+      "why": "Size standards, lending and contracting rules that decide who can bid on what."
+    },
+    {
+      "id": "bls",
+      "name": "Bureau of Labor Statistics",
+      "kind": "rss",
+      "url": "https://www.bls.gov/feed/bls_latest.rss",
+      "tier": "statistical",
+      "geo": "US",
+      "topics": [
+        "economy"
+      ],
+      "why": "Jobs, wages and inflation releases."
+    },
+    {
+      "id": "bea",
+      "name": "Bureau of Economic Analysis",
+      "kind": "rss",
+      "url": "https://apps.bea.gov/rss/rss.xml",
+      "tier": "statistical",
+      "geo": "US",
+      "topics": [
+        "economy"
+      ],
+      "why": "GDP, personal income and state economic data."
+    },
+    {
+      "id": "cbo",
+      "name": "Congressional Budget Office",
+      "kind": "rss",
+      "url": "https://www.cbo.gov/publications/all/rss.xml",
+      "tier": "statistical",
+      "geo": "US",
+      "topics": [
+        "tax",
+        "economy"
+      ],
+      "why": "Nonpartisan cost estimates of bills, which tell you what a bill actually does."
+    },
+    {
+      "id": "dol",
+      "name": "U.S. Department of Labor news",
+      "kind": "rss",
+      "url": "https://www.dol.gov/rss/releases.xml",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "retirement",
+        "business"
+      ],
+      "why": "Retirement plan guidance and employer rules."
+    },
+    {
+      "id": "sec",
+      "name": "SEC press releases",
+      "kind": "rss",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "tier": "primary",
+      "geo": "US",
+      "topics": [
+        "regulation"
+      ],
+      "why": "Securities rules that touch raising capital and selling a company."
+    },
+    {
+      "id": "la-illuminator",
+      "name": "Louisiana Illuminator",
+      "kind": "rss",
+      "url": "https://lailluminator.com/feed/",
+      "tier": "newsroom",
+      "geo": "LA",
+      "topics": [
+        "business",
+        "tax",
+        "economy"
+      ],
+      "why": "Nonprofit statehouse newsroom: incentives, tax changes and the Legislature, with the records behind them."
+    }
+  ],
+  "watch": [
+    {
+      "name": "Louisiana Legislature",
+      "url": "https://www.legis.la.gov/",
+      "geo": "LA",
+      "why": "Bill text and status. The primary source for any Louisiana law."
+    },
+    {
+      "name": "Louisiana Department of Revenue",
+      "url": "https://revenue.louisiana.gov/",
+      "geo": "LA",
+      "why": "How the state applies its tax law, rates and filing changes."
+    },
+    {
+      "name": "Louisiana Economic Development",
+      "url": "https://www.opportunitylouisiana.gov/",
+      "geo": "LA",
+      "why": "Project announcements, incentives, and the Hudson and Veteran small business certifications. Confirm the address, LED has moved its site before."
+    },
+    {
+      "name": "Louisiana procurement (LaPAC)",
+      "url": "https://wwwcfprd.doa.louisiana.gov/osp/lapac/pubmain.cfm",
+      "geo": "LA",
+      "why": "State bid opportunities. Registration is required for any state award."
+    },
+    {
+      "name": "Congress.gov",
+      "url": "https://www.congress.gov/",
+      "geo": "US",
+      "why": "Federal bill text and status. Check here before calling anything law."
+    },
+    {
+      "name": "IRS newsroom",
+      "url": "https://www.irs.gov/newsroom",
+      "geo": "US",
+      "why": "Inflation adjustments, contribution limits and guidance as the IRS states them."
+    },
+    {
+      "name": "State retirement program sites",
+      "url": "",
+      "geo": "US",
+      "why": "CalSavers, Illinois Secure Choice, OregonSaves, MarylandSaves and the rest publish their own deadlines and penalties. Use the program's site, never a vendor summary, for any figure you quote."
+    }
+  ],
+  "draftDomains": [
+    "irs.gov",
+    "treasury.gov",
+    "federalreserve.gov",
+    "federalregister.gov",
+    "congress.gov",
+    "govinfo.gov",
+    "bls.gov",
+    "bea.gov",
+    "census.gov",
+    "cbo.gov",
+    "gao.gov",
+    "jct.gov",
+    "dol.gov",
+    "sec.gov",
+    "sba.gov",
+    "ssa.gov",
+    "fdic.gov",
+    "finra.org",
+    "legis.la.gov",
+    "revenue.louisiana.gov",
+    "la.gov",
+    "louisiana.gov",
+    "opportunitylouisiana.gov",
+    "lailluminator.com",
+    "apnews.com",
+    "reuters.com",
+    "bloomberg.com",
+    "cnbc.com",
+    "pew.org",
+    "pewtrusts.org",
+    "taxfoundation.org",
+    "taxpolicycenter.org",
+    "calsavers.com",
+    "oregonsaves.com",
+    "marylandsaves.org",
+    "ilsecurechoice.com",
+    "datacenters.atmeta.com",
+    "about.fb.com",
+    "spacex.com",
+    "psca.org",
+    "groom.com"
+  ],
+  "topics": [
+    {
+      "id": "tax",
+      "name": "Tax",
+      "keywords": [
+        "tax",
+        "irs",
+        "deduction",
+        "credit",
+        "depreciation",
+        "exemption",
+        "treasury",
+        "revenue",
+        "withholding",
+        "1099",
+        "199a",
+        "section 179"
+      ],
+      "lens": "What it changes in this year's return, next year's estimates, entity choice and the timing of income and purchases."
+    },
+    {
+      "id": "retirement",
+      "name": "Retirement plans",
+      "keywords": [
+        "401(k)",
+        "401k",
+        "ira",
+        "retirement",
+        "pension",
+        "secure 2.0",
+        "erisa",
+        "ebsa",
+        "annuit",
+        "required minimum",
+        "catch-up",
+        "auto-ira"
+      ],
+      "lens": "Plan design for the company, what the owner can put away, what employees expect, and state mandates."
+    },
+    {
+      "id": "estate",
+      "name": "Estate and succession",
+      "keywords": [
+        "estate",
+        "gift tax",
+        "trust",
+        "inheritance",
+        "probate",
+        "generation-skipping",
+        "succession",
+        "buy-sell",
+        "qsbs"
+      ],
+      "lens": "Who owns the company next, at what value, and whether the family can reach cash if the owner cannot."
+    },
+    {
+      "id": "business",
+      "name": "Business and contracts",
+      "keywords": [
+        "contract",
+        "procurement",
+        "small business",
+        "sba",
+        "incentive",
+        "investment",
+        "jobs",
+        "facility",
+        "data center",
+        "plant",
+        "expansion",
+        "bid",
+        "supplier",
+        "spaceport",
+        "construction"
+      ],
+      "lens": "Whether the company can bid, win and carry the work: bonding, statements, cash, insurance, people and key person risk."
+    },
+    {
+      "id": "rates",
+      "name": "Rates and credit",
+      "keywords": [
+        "interest rate",
+        "fomc",
+        "federal funds",
+        "monetary policy",
+        "federal reserve",
+        "yield",
+        "lending",
+        "credit conditions"
+      ],
+      "lens": "The cost of the credit line, what idle cash earns, refinancing, and the discount rate inside a valuation."
+    },
+    {
+      "id": "economy",
+      "name": "Economy and labor",
+      "keywords": [
+        "inflation",
+        "consumer price",
+        "cpi",
+        "pce",
+        "employment",
+        "unemployment",
+        "payroll",
+        "gdp",
+        "wages",
+        "labor"
+      ],
+      "lens": "Wage pressure, pricing, hiring and how much cash the company needs on hand."
+    },
+    {
+      "id": "regulation",
+      "name": "Regulation",
+      "keywords": [
+        "sec",
+        "final rule",
+        "proposed rule",
+        "regulation",
+        "compliance",
+        "disclosure"
+      ],
+      "lens": "What an owner has to do differently, by when, and what it costs."
+    }
+  ],
+  "regions": [
+    {
+      "id": "US",
+      "name": "Federal and national",
+      "match": []
+    },
+    {
+      "id": "Alabama",
+      "name": "Alabama",
+      "match": [
+        "Alabama"
+      ]
+    },
+    {
+      "id": "Alaska",
+      "name": "Alaska",
+      "match": [
+        "Alaska"
+      ]
+    },
+    {
+      "id": "Arizona",
+      "name": "Arizona",
+      "match": [
+        "Arizona"
+      ]
+    },
+    {
+      "id": "Arkansas",
+      "name": "Arkansas",
+      "match": [
+        "Arkansas"
+      ]
+    },
+    {
+      "id": "California",
+      "name": "California",
+      "match": [
+        "California"
+      ]
+    },
+    {
+      "id": "Colorado",
+      "name": "Colorado",
+      "match": [
+        "Colorado"
+      ]
+    },
+    {
+      "id": "Connecticut",
+      "name": "Connecticut",
+      "match": [
+        "Connecticut"
+      ]
+    },
+    {
+      "id": "Delaware",
+      "name": "Delaware",
+      "match": [
+        "Delaware"
+      ]
+    },
+    {
+      "id": "Florida",
+      "name": "Florida",
+      "match": [
+        "Florida"
+      ]
+    },
+    {
+      "id": "Georgia",
+      "name": "Georgia",
+      "match": [
+        "Georgia"
+      ]
+    },
+    {
+      "id": "Hawaii",
+      "name": "Hawaii",
+      "match": [
+        "Hawaii"
+      ]
+    },
+    {
+      "id": "Idaho",
+      "name": "Idaho",
+      "match": [
+        "Idaho"
+      ]
+    },
+    {
+      "id": "Illinois",
+      "name": "Illinois",
+      "match": [
+        "Illinois"
+      ]
+    },
+    {
+      "id": "Indiana",
+      "name": "Indiana",
+      "match": [
+        "Indiana"
+      ]
+    },
+    {
+      "id": "Iowa",
+      "name": "Iowa",
+      "match": [
+        "Iowa"
+      ]
+    },
+    {
+      "id": "Kansas",
+      "name": "Kansas",
+      "match": [
+        "Kansas"
+      ]
+    },
+    {
+      "id": "Kentucky",
+      "name": "Kentucky",
+      "match": [
+        "Kentucky"
+      ]
+    },
+    {
+      "id": "Louisiana",
+      "name": "Louisiana",
+      "match": [
+        "Louisiana",
+        "New Orleans",
+        "Metairie",
+        "Baton Rouge",
+        "Shreveport",
+        "Lafayette",
+        "Lake Charles",
+        "Monroe",
+        "Alexandria",
+        "Houma",
+        "Hammond",
+        "Slidell",
+        "Abbeville",
+        "Bossier",
+        "Kenner",
+        "Parish",
+        "Landry",
+        "Entergy Louisiana",
+        "Port Fourchon"
+      ]
+    },
+    {
+      "id": "Maine",
+      "name": "Maine",
+      "match": [
+        "Maine"
+      ]
+    },
+    {
+      "id": "Maryland",
+      "name": "Maryland",
+      "match": [
+        "Maryland"
+      ]
+    },
+    {
+      "id": "Massachusetts",
+      "name": "Massachusetts",
+      "match": [
+        "Massachusetts"
+      ]
+    },
+    {
+      "id": "Michigan",
+      "name": "Michigan",
+      "match": [
+        "Michigan"
+      ]
+    },
+    {
+      "id": "Minnesota",
+      "name": "Minnesota",
+      "match": [
+        "Minnesota"
+      ]
+    },
+    {
+      "id": "Mississippi",
+      "name": "Mississippi",
+      "match": [
+        "Mississippi"
+      ]
+    },
+    {
+      "id": "Missouri",
+      "name": "Missouri",
+      "match": [
+        "Missouri"
+      ]
+    },
+    {
+      "id": "Montana",
+      "name": "Montana",
+      "match": [
+        "Montana"
+      ]
+    },
+    {
+      "id": "Nebraska",
+      "name": "Nebraska",
+      "match": [
+        "Nebraska"
+      ]
+    },
+    {
+      "id": "Nevada",
+      "name": "Nevada",
+      "match": [
+        "Nevada"
+      ]
+    },
+    {
+      "id": "New Hampshire",
+      "name": "New Hampshire",
+      "match": [
+        "New Hampshire"
+      ]
+    },
+    {
+      "id": "New Jersey",
+      "name": "New Jersey",
+      "match": [
+        "New Jersey"
+      ]
+    },
+    {
+      "id": "New Mexico",
+      "name": "New Mexico",
+      "match": [
+        "New Mexico"
+      ]
+    },
+    {
+      "id": "New York",
+      "name": "New York",
+      "match": [
+        "New York"
+      ]
+    },
+    {
+      "id": "North Carolina",
+      "name": "North Carolina",
+      "match": [
+        "North Carolina"
+      ]
+    },
+    {
+      "id": "North Dakota",
+      "name": "North Dakota",
+      "match": [
+        "North Dakota"
+      ]
+    },
+    {
+      "id": "Ohio",
+      "name": "Ohio",
+      "match": [
+        "Ohio"
+      ]
+    },
+    {
+      "id": "Oklahoma",
+      "name": "Oklahoma",
+      "match": [
+        "Oklahoma"
+      ]
+    },
+    {
+      "id": "Oregon",
+      "name": "Oregon",
+      "match": [
+        "Oregon"
+      ]
+    },
+    {
+      "id": "Pennsylvania",
+      "name": "Pennsylvania",
+      "match": [
+        "Pennsylvania"
+      ]
+    },
+    {
+      "id": "Rhode Island",
+      "name": "Rhode Island",
+      "match": [
+        "Rhode Island"
+      ]
+    },
+    {
+      "id": "South Carolina",
+      "name": "South Carolina",
+      "match": [
+        "South Carolina"
+      ]
+    },
+    {
+      "id": "South Dakota",
+      "name": "South Dakota",
+      "match": [
+        "South Dakota"
+      ]
+    },
+    {
+      "id": "Tennessee",
+      "name": "Tennessee",
+      "match": [
+        "Tennessee"
+      ]
+    },
+    {
+      "id": "Texas",
+      "name": "Texas",
+      "match": [
+        "Texas"
+      ]
+    },
+    {
+      "id": "Utah",
+      "name": "Utah",
+      "match": [
+        "Utah"
+      ]
+    },
+    {
+      "id": "Vermont",
+      "name": "Vermont",
+      "match": [
+        "Vermont"
+      ]
+    },
+    {
+      "id": "Virginia",
+      "name": "Virginia",
+      "match": [
+        "Virginia"
+      ]
+    },
+    {
+      "id": "Washington",
+      "name": "Washington",
+      "match": [
+        "Washington"
+      ]
+    },
+    {
+      "id": "West Virginia",
+      "name": "West Virginia",
+      "match": [
+        "West Virginia"
+      ]
+    },
+    {
+      "id": "Wisconsin",
+      "name": "Wisconsin",
+      "match": [
+        "Wisconsin"
+      ]
+    },
+    {
+      "id": "Wyoming",
+      "name": "Wyoming",
+      "match": [
+        "Wyoming"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve decision",
+      "trigger": "An FOMC statement or a change in the federal funds target.",
+      "topics": [
+        "rates"
+      ],
+      "hook": "Open on the owner's credit line or cash, not on the Fed.",
+      "beats": [
+        "What the Fed did and the date, quoted from its statement.",
+        "What that does to the rate on a typical business line of credit and to what idle cash earns, in plain terms.",
+        "Where it shows up in a plan: refinancing, the cash reserve, the discount rate inside a buy-sell valuation."
+      ],
+      "never": [
+        "Predict the next decision or the direction of markets.",
+        "Tell anyone to buy or sell anything."
+      ],
+      "nextMove": "Look up the rate and the reset date on your line of credit this week."
+    },
+    {
+      "id": "data",
+      "name": "Jobs or inflation release",
+      "trigger": "A BLS or BEA release that moves the conversation.",
+      "topics": [
+        "economy"
+      ],
+      "hook": "Open on payroll or pricing inside the owner's company.",
+      "beats": [
+        "The number, the period it covers and the agency, exactly as released.",
+        "What it means for wages, hiring or pricing at a company like theirs.",
+        "One thing to check in their own numbers."
+      ],
+      "never": [
+        "Call a trend from one release.",
+        "Say what the Fed will do about it."
+      ],
+      "nextMove": "Compare your last two quarters of payroll and pricing against the release."
+    },
+    {
+      "id": "limits",
+      "name": "IRS inflation adjustments",
+      "trigger": "The IRS announces next year's contribution limits, brackets or exemptions.",
+      "topics": [
+        "tax",
+        "retirement"
+      ],
+      "hook": "Open on what the owner can put away next year.",
+      "beats": [
+        "The new figures and the year they apply to, from the IRS release.",
+        "What changes for the owner personally and for the company plan.",
+        "The one deadline that follows from it."
+      ],
+      "never": [
+        "Round a figure, or state one before the IRS has published it."
+      ],
+      "nextMove": "Update payroll deferrals before the first paycheck of the new year."
+    },
+    {
+      "id": "law",
+      "name": "New law or final rule",
+      "trigger": "A bill is signed, or a final rule is published in the Federal Register.",
+      "topics": [
+        "tax",
+        "retirement",
+        "estate",
+        "regulation"
+      ],
+      "hook": "Open on the decision the owner now has to make.",
+      "beats": [
+        "What changed, its status and its effective date, from the law or the rule.",
+        "Who it affects and who it does not.",
+        "What to do now, what can wait, and what is still unknown."
+      ],
+      "never": [
+        "Call a bill law before it is signed.",
+        "Describe the law as good or bad policy."
+      ],
+      "nextMove": "Bring this to your next meeting with your CPA, with the question written down."
+    },
+    {
+      "id": "megaproject",
+      "name": "Major investment or incentive in the region",
+      "trigger": "A large project, incentive package or contract award is announced in the region.",
+      "topics": [
+        "business"
+      ],
+      "hook": "Open on the owner whose company could do the work.",
+      "beats": [
+        "What was announced, by whom, where and when, from the announcement itself.",
+        "What winning that kind of work takes: bonding, statements, cash, insurance, people.",
+        "The risk that grows with the contract: concentration and key person exposure."
+      ],
+      "never": [
+        "Imply a relationship with the company named.",
+        "Promise anyone will win work."
+      ],
+      "nextMove": "Ask your CPA and surety agent what it would take to double your bonding line."
+    },
+    {
+      "id": "mandate",
+      "name": "State mandate or deadline",
+      "trigger": "A state program sets or changes a requirement for employers.",
+      "topics": [
+        "retirement",
+        "regulation"
+      ],
+      "hook": "Open on the owner with employees in that state, wherever the company is based.",
+      "beats": [
+        "The requirement, who it applies to and the deadline, from the program's own site.",
+        "The cost of ignoring it, as the program states it.",
+        "The alternative the owner may prefer, and why."
+      ],
+      "never": [
+        "Quote a penalty from a vendor summary.",
+        "Use the deadline as a countdown."
+      ],
+      "nextMove": "Pull last year's headcount by state."
+    },
+    {
+      "id": "markets",
+      "name": "A sharp market move",
+      "trigger": "A large market drop or spike that clients are talking about.",
+      "topics": [
+        "economy",
+        "regulation"
+      ],
+      "hook": "Open on what the plan was built to absorb.",
+      "beats": [
+        "What happened, in one sourced sentence.",
+        "Why the plan has a cash reserve and a rebalancing rule, and that both exist for weeks like this.",
+        "What not to decide this week."
+      ],
+      "never": [
+        "Predict a recovery or a further fall.",
+        "Recommend any action on any security.",
+        "Publish without review, however fast it feels like it needs to go out."
+      ],
+      "nextMove": "Call me before you change anything, not after."
+    }
+  ],
+  "states": {
+    "heading": "Retirement plan rules by state",
+    "asOf": "2026-11-12",
+    "summary": "The money for starting a plan is federal and works the same in every state. What differs by state is the stick: about 15 states require employers without a plan to enroll their workers in a state automatic IRA, with penalties that vary. Louisiana has no mandate.",
+    "correction": "No state was found that offers its own tax credit for starting a 401(k) as of November 2026. The startup, auto-enrollment and employer contribution credits are federal, from SECURE 2.0, and apply in Louisiana exactly as anywhere else. The only state incentive found is Maryland's waiver of its $300 annual report fee for employers that offer a plan. If you hear of a state credit, ask for the statute before repeating it.",
+    "followTheEmployee": "Mandates follow the employee, not the headquarters. A Louisiana company with a remote employee in California or Illinois may be subject to that state's program for that person. Pull headcount by state before assuming you are exempt.",
+    "mandate": [
+      "California",
+      "Colorado",
+      "Connecticut",
+      "Delaware",
+      "Illinois",
+      "Maine",
+      "Maryland",
+      "Minnesota",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Oregon",
+      "Rhode Island",
+      "Vermont",
+      "Virginia"
+    ],
+    "mandateNote": "Count and list as reported by multiple 2026 summaries. Sources disagree at the edges, for example on when Washington's program becomes mandatory. Confirm a state on its program's own site before naming it.",
+    "pending": [
+      {
+        "name": "Massachusetts",
+        "status": "A program bill passed the state House in July 2026. Not law as of this writing."
+      },
+      {
+        "name": "Washington",
+        "status": "Program reported as launching in 2027. Confirm the start date on the state's site."
+      },
+      {
+        "name": "Federal: Automatic IRA Act (H.R. 6722)",
+        "status": "Introduced in the House in December 2025. Would require employers with ten or more employees to offer an automatic arrangement, with consequences from 2028. No committee action found as of this writing."
+      }
+    ],
+    "penaltyExamples": [
+      {
+        "state": "California",
+        "text": "$250 per eligible employee once the deadline passes, and $500 more per employee if still out of compliance 90 days later.",
+        "confidence": "Consistent across sources. Confirm on CalSavers before quoting."
+      },
+      {
+        "state": "Oregon",
+        "text": "$100 per employee, up to $5,000 a year.",
+        "confidence": "Reported by secondary sources. Confirm on OregonSaves before quoting."
+      }
+    ],
+    "louisiana": {
+      "mandate": "None.",
+      "context": "Pew estimated in 2024 that about 760,000 Louisiana private sector workers, roughly 52%, have no retirement plan at work.",
+      "source": {
+        "name": "Pew Charitable Trusts, Louisiana fact sheet (November 2024)",
+        "url": "https://www.pew.org/en/research-and-analysis/fact-sheets/2024/11/louisiana-workplace-savings-program-would-help-760000-workers-save",
+        "tier": "statistical"
+      }
+    },
+    "carrots": [
+      {
+        "state": "Maryland",
+        "text": "Waives the $300 annual report filing fee for employers that register with MarylandSaves or certify their own plan. Certify by December 31, 2026 for the 2027 waiver.",
+        "source": {
+          "name": "UHY, October 2026",
+          "url": "https://uhy-us.com/insights/news/2026/october/maryland-businesses-don-t-miss-the-300-annual-report-filing-fee-waiver",
+          "tier": "professional"
+        }
+      }
+    ]
+  },
+  "briefings": [
+    {
+      "id": "la-megaprojects",
+      "title": "Louisiana's megaprojects will be won on balance sheets",
+      "region": "Louisiana",
+      "topics": [
+        "business",
+        "tax"
+      ],
+      "frame": "megaproject",
+      "asOf": "2026-11-12",
+      "status": "Draft for the firm's review process",
+      "summary": "Meta reports more than $875 million in contracts with Louisiana businesses in one year at Richland Parish. SpaceX announced a launch site in Vermilion Parish with about $100 billion behind it. The planning story is not the projects. It is what a local company needs on its balance sheet to bid, win and survive this size of work.",
+      "facts": [
+        {
+          "text": "Meta's July 2026 update describes more than $50 billion of investment in the Richland Parish region.",
+          "source": "Meta Data Centers, Deepening our investment in Richland Parish, Louisiana",
+          "url": "https://datacenters.atmeta.com/2026/07/deepening-our-investment-in-richland-parish-louisiana/",
+          "tier": "primary",
+          "date": "July 2026"
+        },
+        {
+          "text": "Meta reports more than $875 million contracted with Louisiana businesses over the prior year, with more than 160 Louisiana businesses, 84% local to Northeast Louisiana, on electrical, paving, utility work and more.",
+          "source": "Meta Data Centers, Richland Parish data center",
+          "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+          "tier": "primary",
+          "date": "2026"
+        },
+        {
+          "text": "Meta projects more than 7,500 workers at peak construction and about 1,000 operational roles. General contractors named: Mortenson, DPR Construction and Turner Construction.",
+          "source": "Meta Data Centers, Richland Parish data center",
+          "url": "https://datacenters.atmeta.com/richland-parish-data-center/",
+          "tier": "primary",
+          "date": "2026"
+        },
+        {
+          "text": "SpaceX announced Starbase Louisiana on August 25, 2026: about 125,000 acres near Pecan Island in Vermilion Parish, roughly $100 billion of investment, construction expected to start in 2027 and a first Starship launch targeted for 2029.",
+          "source": "CNBC; Louisiana Illuminator",
+          "url": "https://www.cnbc.com/2026/08/25/spacex-louisiana-spaceport.html",
+          "tier": "wire",
+          "date": "August 25, 2026"
+        },
+        {
+          "text": "Louisiana Economic Development estimates about 3,000 direct jobs over a decade and more than 11,100 total jobs including indirect.",
+          "source": "Louisiana Illuminator, reporting LED's estimate",
+          "url": "https://lailluminator.com/2026/08/25/spacex-louisiana-2/",
+          "tier": "newsroom",
+          "date": "August 2026"
+        },
+        {
+          "text": "Reporting based on public records puts the state and local incentive package at about $27.5 billion, mostly a 25 year property tax exemption. LED disputes the giveaway characterization.",
+          "source": "Louisiana Illuminator",
+          "url": "https://lailluminator.com/2026/09/01/spacex-tax-breaks/",
+          "tier": "newsroom",
+          "date": "September 1, 2026"
+        },
+        {
+          "text": "Federal law signed July 4, 2025 restored 100% bonus depreciation for qualifying property acquired after January 19, 2025, with no scheduled phase down, and raised Section 179 expensing to $2.5 million, indexed.",
+          "source": "Public Law 119-21 (H.R. 1); Taft Law summary",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1",
+          "tier": "primary",
+          "date": "July 4, 2025"
+        },
+        {
+          "text": "Louisiana repealed its corporate franchise tax for tax periods beginning on or after January 1, 2026.",
+          "source": "BDO summary of the 2024 Louisiana tax reform",
+          "url": "https://www.bdo.com/insights/tax/louisiana-passes-major-tax-reform-with-flat-individual-and-corporate-rates",
+          "tier": "professional",
+          "date": "December 2024"
+        }
+      ],
+      "verify": [
+        "The $50 billion figure is Meta's July 2026 regional number. Earlier coverage used $10 billion and then $27 billion. Use the date with the number.",
+        "Confirm the SpaceX figures against SpaceX's or LED's own release if one is available before publishing. The facts here rest on press coverage of the announcement.",
+        "The incentive package is contested. The article does not characterize it. Keep it that way, or include both the reported figure and LED's response.",
+        "Payment terms and retainage are described as common, not as the terms on these projects. Do not tighten that wording."
+      ],
+      "article": {
+        "title": "Louisiana's megaprojects will be won on balance sheets",
+        "body": "Two of the largest private investments in Louisiana's history are now under way, and both will be built in large part by Louisiana companies that are not Meta or SpaceX.\n\nIn Richland Parish, Meta says its data center campus now represents more than $50 billion of investment in the region. The company reports more than $875 million in contracts with Louisiana businesses over the past year, across more than 160 companies, 84% of them in Northeast Louisiana. The work ranges from electrical and paving to utilities. Peak construction is projected at more than 7,500 workers.\n\nIn Vermilion Parish, SpaceX announced on August 25 a Starship launch site it calls Starbase Louisiana, about 125,000 acres near Pecan Island. Reported investment is roughly $100 billion. Construction is expected to begin in 2027, with a first launch targeted for 2029. Louisiana Economic Development estimates about 3,000 direct jobs over a decade.\n\nIf you own a contracting, trucking, fabrication, electrical, staffing or services company anywhere near either site, you have probably already had this conversation. What gets talked about less is that this kind of work is decided before the bid. It is decided on your balance sheet.\n\n**The work goes to companies that can carry it**\n\nA general contractor on a project this size is not only asking whether you can do the job. They are asking whether you can survive doing it. That question has five parts.\n\nBonding. Surety underwriters set your bonding capacity largely from your working capital, your net worth and the quality of your financial statements. Owners who take every spare dollar out of the company at year end often find their bonding line is smaller than their ambition. The decision you make about distributions this December is a decision about which contracts you can bid next year.\n\nStatements. A compiled statement may have been enough for the bank. Larger contracts and larger bonds often call for reviewed or audited statements and a work in progress schedule. Moving up a level takes a year of preparation with your CPA, not a week.\n\nCash. Large projects pay on their schedule, not yours. Payment terms of 45 to 60 days and retainage held until completion are common in subcontracts, so read yours line by line. Payroll, fuel and materials are due every week regardless. Size your credit line to the widest gap between what you have spent and what you have been paid, and know which personal guarantees sit behind it.\n\nInsurance. Subcontract agreements set minimum limits for general liability, auto, workers' compensation and umbrella coverage, and they can be well above what a smaller book of work needed. Price that before you price the bid.\n\nPeople. One site alone is projected to need more than 7,500 construction workers at its peak. Every company in the region will be hiring from the same pool at the same time, and what you offer beyond the hourly rate starts to decide who stays.\n\n**The risks that do not announce themselves**\n\nThe bigger the contract, the more it depends on you personally. If you hold the relationships, sign the indemnity and guarantee the line, then your disability or death in the middle of a contract is not only a family problem. It is a problem for the surety, the general contractor and every employee on the job. A funded buy-sell agreement and key person coverage set at what the company is worth today, not five years ago, are part of being ready for this work.\n\nThere is also a valuation trap. One customer that becomes most of your revenue makes the company bigger and can make it worth less to a buyer, because concentration is risk. Decide early how much of the business you are willing to put on one project.\n\n**The tax side moved in your favor**\n\nTwo changes help a company gearing up. The federal law signed in July 2025 restored 100% bonus depreciation for qualifying property acquired after January 19, 2025, with no scheduled phase down, and raised Section 179 expensing to $2.5 million, indexed for inflation. And Louisiana repealed its corporate franchise tax for tax periods beginning on or after January 1, 2026. That tax was measured on capital, so it grew as you kept earnings in the company, the same retained earnings a surety wants to see. Your CPA should run both against the equipment and capital you plan to put to work.\n\n**Where to start this month**\n\nPull your last two years of statements and ask your CPA and your surety agent one question: what would we need to show to double our bonding line. Their answer is your plan for the next 12 months. Then test the opportunity against Growth, Liquidity and Control before you commit to it.\n\nIf you want a second set of eyes on whether your company and your family balance sheet are ready for work this size, send me a note."
+      },
+      "linkedin": "More than $875 million.\n\nThat is what Meta reports it contracted with Louisiana businesses in one year at its Richland Parish data center, across more than 160 companies. SpaceX has now announced a launch site in Vermilion Parish with roughly $100 billion behind it.\n\nThe owners who win the next round of that work will not be the ones with the best pitch. They will be the ones whose balance sheet can carry the job.\n\nYour bonding line is set largely by working capital, net worth and the quality of your statements.\nPayment terms of 45 to 60 days, plus retainage, mean you fund payroll long before you are paid.\nSubcontracts set insurance minimums that can be well above what you carry now.\nAnd the bigger the contract, the more it rests on you personally.\n\nIf you take every spare dollar out of the company in December, you are also deciding which contracts you can bid next year.\n\nOne thing to do this month: ask your CPA and your surety agent what you would need to show to double your bonding line.\n\nWhat is the one thing holding your company back from bidding bigger work?",
+      "carousel": [
+        "Louisiana's megaprojects will be won on balance sheets.",
+        "$875 million. What Meta reports it contracted with Louisiana businesses in one year, across 160+ companies.",
+        "Bonding. Your line is set by working capital, net worth and statement quality. December distributions decide next year's bids.",
+        "Cash. 45 to 60 day terms plus retainage. You fund payroll long before you are paid. Size the line to the gap.",
+        "Insurance. Subcontracts set minimum limits. Price them before you price the bid.",
+        "People. 7,500+ construction workers at one site at peak. Everyone hires from the same pool.",
+        "You. The bigger the contract, the more it rests on you. Buy-sell and key person cover at today's value.",
+        "This month: ask your CPA and surety agent what it would take to double your bonding line."
+      ],
+      "video": {
+        "hook": "Meta reports $875 million in contracts with Louisiana companies in one year. Here is who gets the next round.",
+        "seconds": 60,
+        "shot": "Face to camera, seated, a printed balance sheet on the desk. Cut to the page for the three numbers, then back to you for the close.",
+        "script": "Meta reports $875 million in contracts with Louisiana companies in one year. Here is who gets the next round.\n\n[Hold up the balance sheet.]\n\nIt is not the company with the best pitch. It is the company whose balance sheet can carry the job.\n\nThree things decide it. Your bonding line, which is set by your working capital and the quality of your statements. Your cash, because big projects pay in 45 to 60 days and hold back retainage, and payroll is due every Friday. And you, because the bigger the contract, the more it depends on you being there to finish it.\n\n[Back to camera.]\n\nSo before December, ask your CPA and your surety agent one question. What would we need to show to double our bonding line.\n\nThat answer is your plan for next year."
+      },
+      "email": {
+        "subject": "The Meta and SpaceX work, and your bonding line",
+        "body": "Hi {{first}},\n\nYou have probably seen the numbers. Meta reports more than $875 million in contracts with Louisiana companies in a year at Richland Parish, and SpaceX just announced its launch site in Vermilion Parish.\n\nIf any of that work is on your radar, the thing I would look at first is not the bid. It is your bonding line and your cash, because those decide which jobs you can take and survive.\n\nOne question worth asking your CPA and surety agent before year end: what would we need to show to double our bonding line. Your December distributions are part of that answer.\n\nHappy to look at it with you. Reply to this and we will find 30 minutes.\n\n{{advisor}}"
+      },
+      "disclosure": "General information only, not tax, legal or investment advice. Rules and figures change, and how they apply depends on your situation, so talk to your own tax and legal advisors before acting. Figures as of November 12, 2026."
+    },
+    {
+      "id": "retirement-credits",
+      "title": "The retirement plan math changed. Most owners have not run it.",
+      "region": "Louisiana",
+      "topics": [
+        "retirement",
+        "tax"
+      ],
+      "frame": "mandate",
+      "asOf": "2026-11-12",
+      "status": "Draft for the firm's review process",
+      "summary": "Federal credits now pay most of the cost of starting a plan, in every state. About 15 states penalize employers with no plan, and the rules follow the employee across state lines. Louisiana has no mandate, and no state credit could be verified. The angle: decide on your own terms while the credits reward choosing to start.",
+      "facts": [
+        {
+          "text": "Startup credit: for employers with up to 50 employees, 100% of eligible startup and administration costs, up to $5,000 a year for three years. The cap is $250 per eligible non-highly compensated employee, with a floor of $500. Employers with 51 to 100 employees get 50%.",
+          "source": "IRS, Retirement plans startup costs tax credit",
+          "url": "https://www.irs.gov/retirement-plans/retirement-plans-startup-costs-tax-credit",
+          "tier": "primary",
+          "date": "2026"
+        },
+        {
+          "text": "Auto-enrollment credit: $500 a year for three years for adding automatic enrollment.",
+          "source": "IRS, Retirement plans startup costs tax credit",
+          "url": "https://www.irs.gov/retirement-plans/retirement-plans-startup-costs-tax-credit",
+          "tier": "primary",
+          "date": "2026"
+        },
+        {
+          "text": "Employer contribution credit: up to $1,000 per eligible employee. For employers with up to 50 employees, 100% in years one and two, then 75%, 50% and 25%. No credit for employees with FICA wages over $100,000, as indexed. Reduced for 51 to 100 employees.",
+          "source": "IRS; PSCA, How do the retirement plan tax credits work",
+          "url": "https://www.psca.org/news/psca-news/2026/5/how-do-the-retirement-plan-tax-credits-work/",
+          "tier": "professional",
+          "date": "May 2026"
+        },
+        {
+          "text": "The credits are claimed on IRS Form 8881.",
+          "source": "IRS, About Form 8881",
+          "url": "https://www.irs.gov/forms-pubs/about-form-8881",
+          "tier": "primary",
+          "date": "2026"
+        },
+        {
+          "text": "2026 limits: 401(k) deferral $24,500, age 50 catch-up $8,000, ages 60 to 63 catch-up $11,250, IRA $7,500. Catch-up contributions must be Roth for employees whose prior year FICA wages exceeded $150,000.",
+          "source": "Groom Law Group, 2026 retirement plan limits",
+          "url": "https://groom.com/resources/2026-retirement-plan-limits-announced",
+          "tier": "professional",
+          "date": "November 2025"
+        },
+        {
+          "text": "About 15 states require employers without a plan to facilitate a state automatic IRA. Louisiana is not one of them.",
+          "source": "Multiple 2026 summaries; confirm on each program's site",
+          "url": "https://www.betterment.com/work/resources/guide-to-state-mandated-retirement-plans",
+          "tier": "vendor",
+          "date": "2026"
+        },
+        {
+          "text": "Pew estimated about 760,000 Louisiana private sector workers, roughly 52%, lack a retirement plan at work.",
+          "source": "Pew Charitable Trusts",
+          "url": "https://www.pew.org/en/research-and-analysis/fact-sheets/2024/11/louisiana-workplace-savings-program-would-help-760000-workers-save",
+          "tier": "statistical",
+          "date": "November 2024"
+        },
+        {
+          "text": "The Automatic IRA Act (H.R. 6722), introduced in the House in December 2025, would require employers with ten or more employees to offer an automatic arrangement, with consequences from 2028. No committee action found.",
+          "source": "Congress.gov; PlanAdviser",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/6722",
+          "tier": "primary",
+          "date": "December 2025"
+        },
+        {
+          "text": "The startup credit was created in 2001, its cap was raised from $500 to $5,000 by the SECURE Act in 2019, and SECURE 2.0 raised it to 100% of costs for employers with up to 50 employees in 2022. The 2025 tax law left it unchanged.",
+          "source": "RSM; NAPA",
+          "url": "https://rsmus.com/insights/services/business-tax/what-does-secure-20-mean-for-small-employers.html",
+          "tier": "professional",
+          "date": "2022 to 2025"
+        },
+        {
+          "text": "A study of Danish savers found each dollar of retirement tax subsidy raised total saving by about one cent, while automatic employer contributions raised wealth substantially.",
+          "source": "Chetty and others, Quarterly Journal of Economics (2014)",
+          "url": "https://www.nber.org/papers/w18565",
+          "tier": "research",
+          "date": "2014"
+        },
+        {
+          "text": "Maryland waives its $300 annual report fee for employers that offer a plan, the only state incentive found.",
+          "source": "UHY",
+          "url": "https://uhy-us.com/insights/news/2026/october/maryland-businesses-don-t-miss-the-300-annual-report-filing-fee-waiver",
+          "tier": "professional",
+          "date": "October 2026"
+        }
+      ],
+      "verify": [
+        "The IRS pages could not be opened from the studio's build environment. Read the startup credit page and Form 8881 instructions and confirm each figure before publishing.",
+        "The list of mandate states comes from summaries, one of them a vendor's. Confirm any state named in a piece on its program's own site.",
+        "The California penalty is consistent across sources but should be confirmed on CalSavers before it is quoted.",
+        "H.R. 6722's status should be checked on Congress.gov on the day of publishing. Sources disagree on its sponsor, so the piece does not name one.",
+        "Confirm the $500 credit in the Automatic IRA Act against the bill text. Summaries describe it, and none found says the bill repeals the existing credits.",
+        "The startup credit comes from SECURE 2.0 (December 2022), building on the SECURE Act (2019). It is not from the 2025 tax law, which left it unchanged. Do not attribute it to the 2025 law."
+      ],
+      "evidence": {
+        "question": "If a state can penalize an employer for not having a plan, will the federal incentive to start one go away soon.",
+        "verdict": "No credible source says it will, and the firm's own rules forbid predicting legislation. The evidence supports a narrower claim, and the article makes only that one: the one federal mandate proposal pairs a requirement with a much smaller credit, economists find defaults work better than subsidies, and the credits are time-limited for each employer regardless. Against the stronger claim: the credits have grown for 25 years alongside state mandates, the 2025 law left them alone, and mandates are pushing employers into the very plans that earn the credit.",
+        "supports": [
+          {
+            "point": "The only federal mandate proposal pairs a requirement for employers with ten or more employees with a proposed $500 a year credit for three years, against up to $5,000 a year under today's startup credit. Introduced December 15, 2025 and referred to Ways and Means; no further action found.",
+            "source": "H.R. 6722, Automatic IRA Act of 2025, bill text",
+            "url": "https://www.congress.gov/119/bills/hr6722/BILLS-119hr6722ih.htm",
+            "tier": "primary"
+          },
+          {
+            "point": "Same bill, summarized by the plan sponsor trade association.",
+            "source": "PSCA, Federal auto-IRA legislation introduced in House (December 2025)",
+            "url": "https://www.psca.org/news/psca-news/2025/12/federal-auto-ira-legislation-introduced-in-house/",
+            "tier": "professional"
+          },
+          {
+            "point": "Each dollar of government spending on retirement tax subsidies raised total saving by about one cent; automatic employer contributions raised wealth substantially. About 85% of people are passive savers who do not respond to subsidies. The standard evidence for favoring defaults over incentives.",
+            "source": "Chetty, Friedman, Leth-Petersen, Nielsen and Olsen, Quarterly Journal of Economics (2014); NBER Working Paper 18565",
+            "url": "https://www.nber.org/papers/w18565",
+            "tier": "research"
+          },
+          {
+            "point": "The credits are limited by design: the startup credit runs for the first three years of a plan, the contribution credit phases down over five, and neither is available if the employer had a qualified plan in the prior three years.",
+            "source": "26 U.S.C. 45E, statute text",
+            "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title26/html/USCODE-2023-title26-subtitleA-chap1-subchapA-partIV-subpartD-sec45E.htm",
+            "tier": "primary"
+          },
+          {
+            "point": "Retirement tax breaks are among the largest tax expenditures and are under scrutiny: a July 2026 bill would limit very large retirement accounts. That bill does not touch the small employer credits.",
+            "source": "Rep. Neal press release, July 22, 2026; CRFB on JCT tax expenditures",
+            "url": "https://neal.house.gov/2026/07/22/neal-wyden-introduce-bill-to-crack-down-on-mega-retirement-accounts/",
+            "tier": "primary"
+          }
+        ],
+        "against": [
+          {
+            "point": "The credit has only grown: created in 2001, made permanent in 2006, cap raised from $500 to $5,000 in 2019, raised to 100% of costs for employers with up to 50 employees in 2022. Those are the years states were adding mandates.",
+            "source": "RSM, What does SECURE 2.0 mean for small employers",
+            "url": "https://rsmus.com/insights/services/business-tax/what-does-secure-20-mean-for-small-employers.html",
+            "tier": "professional"
+          },
+          {
+            "point": "The 2025 tax law did not change the startup or contribution credits.",
+            "source": "NAPA, Senate's One Big Beautiful Bill spares retirement plans (June 2025); TXCPA, SECURE 2.0 and the One Big Beautiful Bill Act (January 2026)",
+            "url": "https://www.napa-net.org/news/2025/6/breaking-senates-one-big-beautiful-bill-spares-retirement-plans/",
+            "tier": "professional"
+          },
+          {
+            "point": "State mandates increased new private plan formation, mostly at small and mid-sized firms, with no sign of employers shifting to the state option. Mandates are pushing employers into the plans that earn the federal credit, so today the two work together.",
+            "source": "Bloomfield, Goodman, Rao and Slavov, NBER Working Paper 32817 (2024); Georgetown CRI summary",
+            "url": "https://cri.georgetown.edu/state-auto-ira-policies-have-expanded-the-market-for-retirement-plans",
+            "tier": "research"
+          },
+          {
+            "point": "Joining a state program does not forfeit the federal credit later. A state auto-IRA is not a qualified plan for the three-year lookback.",
+            "source": "NAPA, Case of the week: CalSavers plan and the federal plan startup tax credit (January 2023)",
+            "url": "https://www.napa-net.org/news/2023/1/case-week-calsavers-plan-and-federal-plan-startup-tax-credit/",
+            "tier": "professional"
+          },
+          {
+            "point": "No 2026 budget, reconciliation or repeal proposal targeting these credits was found.",
+            "source": "Search of 2026 budget and reconciliation coverage, November 12, 2026",
+            "url": "",
+            "tier": "professional"
+          }
+        ],
+        "context": [
+          {
+            "point": "Only 1% to 5.5% of apparently eligible firms claim the startup credit, depending on the period studied.",
+            "source": "Bloomfield, Goodman, Ramnath and Slavov, Georgetown CRI (2025)",
+            "url": "https://cri.georgetown.edu/wp-content/uploads/2025/07/Bloomfield-Goodman-Ramnath-Slavov-2025-Georgetown-CRI.pdf",
+            "tier": "research"
+          }
+        ],
+        "say": "The credits that exist today are the most generous Congress has offered. The one federal mandate proposal pairs a requirement with a smaller credit. Nobody can tell you whether that becomes law. What is certain is your own clock: the credits run for three to five years from when you start.",
+        "dontSay": [
+          "The incentive is going away.",
+          "Start before the credit disappears.",
+          "The window is closing.",
+          "This is a credit from the 2025 tax law."
+        ]
+      },
+      "article": {
+        "title": "The retirement plan math changed. Most owners have not run it.",
+        "body": "If you own a company with employees and no retirement plan, the federal government will now pay most of the cost of starting one. That has been true since the SECURE 2.0 changes took effect in 2023, and it applies in every state, Louisiana included. Most owners I talk to have not run the numbers.\n\n**What the credits pay**\n\nThree federal credits stack.\n\nThe startup credit covers 100% of eligible setup and administration costs for employers with up to 50 employees, for three years. The yearly cap is $250 for each eligible employee who is not highly compensated, with a floor of $500 and a ceiling of $5,000. Employers with 51 to 100 employees get 50%.\n\nThe auto-enrollment credit adds $500 a year for three years if the plan enrolls employees automatically.\n\nThe employer contribution credit pays up to $1,000 per eligible employee toward what you contribute for them. For employers with up to 50 employees it covers the full amount in the first two years, then 75%, 50% and 25% in years three, four and five. Employees with more than $100,000 in FICA wages, as indexed, do not count, which in most cases means it does not cover what you put in for yourself.\n\nAll three are claimed on IRS Form 8881, and they generally require that you have not had a plan in the prior three years. Your CPA should confirm eligibility before you count on any of it.\n\n**What states are doing instead**\n\nAbout 15 states now require employers without a plan to enroll their workers in a state-run automatic IRA, among them California, Illinois, Oregon, Maryland, Virginia, New York and New Jersey. Penalties vary by state. California's law sets $250 per eligible employee once the deadline passes, and $500 more per employee if the employer is still out of compliance 90 days later. Check the program's own site before quoting any figure, because they change.\n\nLouisiana has no mandate. Pew estimated in 2024 that about 760,000 Louisiana private sector workers, roughly 52%, have no retirement plan at work.\n\nHere is the part that catches Louisiana owners. The mandates follow the employee, not the headquarters. If you have a remote employee in California or Illinois, you may already be subject to that state's program for that person.\n\nAnd for the record: I could not find a state that offers its own tax credit for starting a plan. The closest is Maryland, which waives its $300 annual report fee for employers that offer one. The money is federal.\n\n**The direction of travel**\n\nOwners ask me a fair question here. If states can penalize you for not having a plan, how long will Washington keep paying you to start one.\n\nNobody knows, and I will not pretend to. What the record shows is worth knowing anyway.\n\nThe credits have grown, not shrunk. The startup credit dates to 2001. Congress raised its cap from $500 to $5,000 in 2019 and raised it again to 100% of costs for smaller employers in 2022, in the same years states were adding mandates. The federal tax law signed in July 2025 left these credits alone.\n\nThe one federal mandate on the table pairs a requirement with a smaller incentive. The Automatic IRA Act, introduced in the House in December 2025, would require employers with ten or more employees to offer an automatic arrangement, and it proposes a credit of $500 a year for three years for those arrangements. Today's startup credit can be worth up to $5,000 a year. The bill has not advanced, and it may never pass.\n\nThe economics favor defaults over subsidies. A widely cited study of Danish savers found that each dollar of tax subsidy raised total saving by about one cent, while automatic employer contributions raised it substantially. That finding is a large part of why policy has moved toward automatic enrollment.\n\nAnd the credit is time-limited for you, whatever Congress does. The startup credit covers the first three years of a new plan, and the contribution credit phases down over five. The clock starts when you start.\n\nThat is not a reason to rush. It is a reason to decide on your own terms, while the credits are built to reward owners who choose to start.\n\n**Why a state IRA is not your answer**\n\nA state automatic IRA is a reasonable floor for employees. It does little for you as the owner. The 2026 IRA limit is $7,500. The 401(k) deferral limit is $24,500, with $8,000 more in catch-up contributions from age 50 and $11,250 for ages 60 through 63. State programs do not allow an employer match, which also takes away one of the better recruiting tools you have. With one construction site in Richland Parish projected to need more than 7,500 workers at its peak, that matters in Louisiana right now.\n\nOne more 2026 change. If your prior year FICA wages from the company were over $150,000, your catch-up contributions now have to go in as Roth.\n\n**Your next move**\n\nPull last year's headcount and sort it two ways: by the state each employee works in, and by who earned under $100,000. Those two lists tell you whether any mandate applies and roughly what the credits are worth. Then decide whether a plan fits your priorities for Growth, Liquidity and Control over the next three years.\n\nIf you want me to run the numbers with your CPA, reply to this and we will set up 30 minutes."
+      },
+      "linkedin": "The federal government will pay most of the cost of starting your company's retirement plan.\n\nMost owners I talk to have not run the numbers.\n\nFor employers with up to 50 employees, three federal credits stack:\nThe startup credit covers 100% of eligible costs, up to $5,000 a year for three years, depending on headcount.\nAuto-enrollment adds $500 a year for three years.\nThe contribution credit pays up to $1,000 per eligible employee, in full for the first two years.\n\nThose are federal. They work the same in Louisiana as anywhere else. I could not find a single state that offers its own credit.\n\nWhat states have instead is a stick. About 15 now require employers without a plan to use a state IRA, with penalties. And the rules follow the employee, not the headquarters. One remote hire in California or Illinois can put a Louisiana company inside that state's program.\n\nPull last year's headcount by state and by who earned under $100,000. Those two lists tell you most of what you need to know.\n\nHas your CPA ever run the credit math for your company?",
+      "carousel": [
+        "The retirement plan math changed. Most owners have not run it.",
+        "Startup credit: 100% of eligible costs, up to $5,000 a year, for three years. Employers with up to 50 employees.",
+        "Auto-enrollment credit: $500 a year, for three years.",
+        "Contribution credit: up to $1,000 per eligible employee. Full in years one and two, then 75, 50 and 25%.",
+        "All federal. Same in Louisiana as everywhere. No state credit could be found.",
+        "15 states penalize employers with no plan. The rules follow the employee, not the headquarters.",
+        "A state IRA caps at $7,500 with no match. A 401(k) allows $24,500 plus catch-up.",
+        "This week: pull last year's headcount by state, and by who earned under $100,000."
+      ],
+      "video": {
+        "hook": "The government will pay most of the cost of starting your company's retirement plan.",
+        "seconds": 55,
+        "shot": "Face to camera. Hold up three fingers for the three credits, then a single sheet with two columns: state, and under $100,000.",
+        "script": "The government will pay most of the cost of starting your company's retirement plan. Most owners have never run the numbers.\n\n[Three fingers.]\n\nThree federal credits. One pays your setup costs, up to $5,000 a year for three years. One adds $500 a year if you enroll people automatically. And one pays up to $1,000 per employee toward what you contribute for them.\n\nThey are federal, so they work the same here in Louisiana as anywhere else.\n\nHere is the catch most owners miss. About 15 states now penalize companies with no plan, and those rules follow the employee. One remote hire in California can put you in California's program.\n\n[Hold up the sheet.]\n\nSo pull last year's headcount two ways. By state. And by who earned under $100,000. That tells you almost everything."
+      },
+      "email": {
+        "subject": "The federal money for starting a retirement plan",
+        "body": "Hi {{first}},\n\nQuick one. If your company does not have a retirement plan yet, the federal credits for starting one now cover most of the cost for a smaller employer, and they apply in Louisiana the same as anywhere.\n\nThe part worth checking even if you are not ready to start: whether you have anyone working remotely in a state with a mandate. About 15 states now require a plan or a state IRA, and the rule follows the employee.\n\nIf you send me last year's headcount by state, I will run the rough numbers with your CPA and you can decide from there.\n\n{{advisor}}"
+      },
+      "disclosure": "General information only, not tax, legal or investment advice. Rules and figures change, and how they apply depends on your situation, so talk to your own tax and legal advisors before acting. Figures as of November 12, 2026."
+    },
+    {
+      "id": "estate-exemption",
+      "title": "The estate tax number stopped moving. Your plan should not.",
+      "region": "",
+      "topics": [
+        "estate",
+        "tax"
+      ],
+      "frame": "law",
+      "asOf": "2026-11-12",
+      "status": "Draft for the firm's review process",
+      "summary": "The 2026 sunset that drove years of rushed planning is gone: the federal exemption is $15 million per person from 2026, indexed, with no scheduled expiry. The planning questions for a business owner remain: valuation, the buy-sell, liquidity, and the expanded small business stock exclusion.",
+      "facts": [
+        {
+          "text": "The federal estate and gift tax exemption is $15 million per person for 2026, $30 million for a married couple, indexed for inflation from 2027, with no scheduled expiration.",
+          "source": "Public Law 119-21 (H.R. 1); Taft Law summary",
+          "url": "https://www.taftlaw.com/news-events/law-bulletins/the-one-big-beautiful-bill-becomes-law-and-includes-sweeping-tax-changes/",
+          "tier": "professional",
+          "date": "July 2025"
+        },
+        {
+          "text": "Without the 2025 law, the exemption was scheduled to fall to roughly $7 million per person in 2026.",
+          "source": "Professional summaries of the 2025 law",
+          "url": "https://www.taftlaw.com/news-events/law-bulletins/the-one-big-beautiful-bill-becomes-law-and-includes-sweeping-tax-changes/",
+          "tier": "professional",
+          "date": "July 2025"
+        },
+        {
+          "text": "For qualified small business stock issued after July 4, 2025, the exclusion cap rose to $15 million, the gross asset ceiling to $75 million, and a partial exclusion begins after three years: 50% at three, 75% at four, 100% at five.",
+          "source": "Public Law 119-21 (H.R. 1); professional summaries",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/1",
+          "tier": "primary",
+          "date": "July 4, 2025"
+        },
+        {
+          "text": "Louisiana has no estate tax and no inheritance tax.",
+          "source": "Louisiana Department of Revenue",
+          "url": "https://revenue.louisiana.gov/",
+          "tier": "primary",
+          "date": "2026"
+        }
+      ],
+      "verify": [
+        "Confirm the 2026 exemption figure against the IRS's published inflation adjustments before publishing.",
+        "Confirm the QSBS tiers and caps against the statute text or the IRS. They apply only to stock issued after July 4, 2025.",
+        "The piece mentions that other states have estate taxes without naming them or their thresholds. Keep it that way unless each figure is sourced."
+      ],
+      "article": {
+        "title": "The estate tax number stopped moving. Your plan should not.",
+        "body": "For most of the last decade, estate planning for business owners had a deadline built into it. The federal exemption was scheduled to fall roughly in half at the start of 2026, and a lot of planning was rushed to beat it.\n\nThat deadline is gone. The federal law signed on July 4, 2025 set the estate and gift tax exemption at $15 million per person for 2026, $30 million for a married couple, indexed for inflation from 2027, with no scheduled expiration. Congress can change any law, but for the first time in years there is no sunset on the calendar.\n\nFor a lot of owners, that changes the question from how fast to how well.\n\n**What did not change**\n\nYour company is still most of what you own, and its value is still the number everything else depends on. If your buy-sell agreement was set at a figure from years ago, it decides who gets what at a price nobody agreed to today. And if most of your wealth is in the business, your family still needs cash it can reach: for taxes above the exemption, for buying out a sibling who does not want the company, or for running it through a hard year without you.\n\n**Where the new rules open room**\n\nThe larger exemption gives you room to move ownership to the next generation, or into trusts, while the company's value is still growing, without an immediate tax bill.\n\nThe same law also expanded the exclusion for qualified small business stock issued after July 4, 2025. The cap rose to $15 million, companies with up to $75 million in assets can qualify, and a partial exclusion now begins after three years instead of five. If you are forming a new entity or raising capital, the structure you choose now can matter a great deal at exit. That is a conversation for your attorney and CPA together, before the paperwork, not after.\n\n**State lines still matter**\n\nLouisiana has no estate tax and no inheritance tax. Several other states do, often with exemptions far below the federal number. If you own property elsewhere or plan to retire somewhere else, that state's rules can matter more than the federal ones.\n\n**Your next move**\n\nFind your buy-sell agreement and look at two things: the date and the number. If either is more than three years old, that is the first thing to fix. Then look at your plan through Growth, Liquidity and Control: what you want the company to become, what your family can reach if you cannot, and who decides.\n\nIf you would like to walk through it together, call me."
+      },
+      "linkedin": "The estate tax deadline everyone planned around is gone.\n\nThe exemption was scheduled to fall roughly in half at the start of 2026. Instead, the law signed in July 2025 set it at $15 million per person, $30 million for a married couple, indexed, with no scheduled expiration.\n\nFor business owners, the pressure to rush is gone. The planning is not.\n\nYour company is still most of what you own.\nYour buy-sell still sets the price if something happens to you.\nYour family still needs cash it can reach, not just shares it holds.\n\nOne more change worth knowing if you are starting or restructuring a company: for small business stock issued after July 4, 2025, the tax exclusion now starts after three years instead of five, with a $15 million cap.\n\nFind your buy-sell agreement this week. If the date or the number on it is more than three years old, start there.",
+      "carousel": [
+        "The estate tax number stopped moving. Your plan should not.",
+        "$15 million per person in 2026. $30 million per couple. Indexed. No scheduled sunset.",
+        "The rush is over. The planning is not.",
+        "Your company is still most of what you own. Its value drives everything else.",
+        "An old buy-sell sets the price at a number nobody agreed to today.",
+        "Small business stock issued after July 4, 2025: exclusion starts at three years, cap $15 million.",
+        "Louisiana has no estate or inheritance tax. Other states do.",
+        "This week: check the date and the number on your buy-sell agreement."
+      ],
+      "video": {
+        "hook": "The estate tax deadline everyone was planning around is gone.",
+        "seconds": 50,
+        "shot": "Desk. Pick up a buy-sell agreement, turn to the signature page, point at the date.",
+        "script": "The estate tax deadline everyone was planning around is gone.\n\nThe exemption was going to drop roughly in half this year. Instead it is $15 million per person, indexed, with no end date on the calendar.\n\nSo the rush is over. But for a business owner, the important part of the plan was never the deadline.\n\n[Pick up the agreement. Turn to the signature page.]\n\nIt is this. Your buy-sell agreement. Look at the date. Look at the number. If either one is more than three years old, it is setting the price of your company at a figure nobody would agree to today.\n\nThat is the first thing to fix. The rest of the plan follows from it."
+      },
+      "email": {
+        "subject": "The estate number, and your buy-sell",
+        "body": "Hi {{first}},\n\nYou may have seen that the federal estate exemption settled at $15 million per person this year, with no sunset on the calendar. For most families that takes the urgency out.\n\nIt does not take the buy-sell agreement off the list. If yours was signed more than three years ago, the number in it probably does not reflect what the company is worth now, and that number is what your family and your partners would live with.\n\nWorth pulling out this month. If you send it over, I will take a look before we talk.\n\n{{advisor}}"
+      },
+      "disclosure": "General information only, not tax, legal or investment advice. Rules and figures change, and how they apply depends on your situation, so talk to your own tax and legal advisors before acting. Figures as of November 12, 2026."
+    },
+    {
+      "id": "la-tax-reset",
+      "title": "Louisiana rewrote its tax code. Here is what it means for owners in 2026.",
+      "region": "Louisiana",
+      "topics": [
+        "tax"
+      ],
+      "frame": "law",
+      "asOf": "2026-11-12",
+      "status": "Draft for the firm's review process",
+      "summary": "Flat 3% personal income tax from 2025, flat 5.5% corporate, the corporate franchise tax gone for periods from 2026, and a higher sales tax through 2029. For owners that reopens entity choice, removes a tax on retained capital, and changes what goes into a bid.",
+      "facts": [
+        {
+          "text": "Louisiana's personal income tax is a flat 3% for tax years beginning January 1, 2025, with the standard deduction raised to $12,500.",
+          "source": "BDO; KPMG summaries of the 2024 special session",
+          "url": "https://www.bdo.com/insights/tax/louisiana-passes-major-tax-reform-with-flat-individual-and-corporate-rates",
+          "tier": "professional",
+          "date": "December 2024"
+        },
+        {
+          "text": "Louisiana's corporate income tax is a flat 5.5%.",
+          "source": "BDO",
+          "url": "https://www.bdo.com/insights/tax/louisiana-passes-major-tax-reform-with-flat-individual-and-corporate-rates",
+          "tier": "professional",
+          "date": "December 2024"
+        },
+        {
+          "text": "The corporate franchise tax is repealed for tax periods beginning on or after January 1, 2026. The return filed in 2025 was the last.",
+          "source": "KPMG; Baker Tilly",
+          "url": "https://www.bakertilly.com/insights/significant-tax-changes-in-louisiana",
+          "tier": "professional",
+          "date": "December 2024"
+        },
+        {
+          "text": "The state sales tax was raised to offset the income tax cuts, with the increase scheduled through 2029.",
+          "source": "Professional summaries; Louisiana Illuminator coverage",
+          "url": "https://lailluminator.com/2026/03/12/no-chance-of-louisiana-nixing-its-income-tax/",
+          "tier": "newsroom",
+          "date": "2026"
+        }
+      ],
+      "verify": [
+        "Confirm each rate on the Louisiana Department of Revenue's site. The facts here rest on professional summaries.",
+        "The piece does not state the new sales tax rate. Add it only from the Department of Revenue.",
+        "Check whether the 2026 session changed any of this before publishing. A March 2026 report expected debate on further rate cuts."
+      ],
+      "article": {
+        "title": "Louisiana rewrote its tax code. Here is what it means for owners in 2026.",
+        "body": "Louisiana's 2024 special session changed more of the state tax code than any session in a generation, and 2026 is the first year the whole package is in force. If you own a company here, three changes are worth an hour with your CPA.\n\n**Flat rates, and the entity question reopens**\n\nPersonal income tax is now a flat 3%, and the standard deduction rose to $12,500. Corporate income tax is a flat 5.5%. When the rates were graduated, the comparison between running your company as a pass-through and as a C corporation was already complicated. With flat rates on both sides, it is worth running again with real numbers, alongside the federal rules that changed in 2025. The answer may well stay the same. The point is to know.\n\n**The tax on keeping capital is gone**\n\nThe corporate franchise tax is repealed for tax periods beginning on or after January 1, 2026. The return filed in 2025 was the last. That tax was measured on capital, which meant it grew as you kept earnings in the company. For an owner trying to build working capital for bonding, or a reserve for a slow year, keeping money in the business no longer carries that state cost.\n\n**Sales tax went up, and it belongs in your bids**\n\nTo pay for the income tax cuts, the Legislature raised the state sales tax, with the increase scheduled to run through 2029. If you buy materials for jobs, that cost sits in every bid you price. Make sure your estimating reflects it, and that contracts priced before the change are not quietly eating it.\n\n**What has not changed**\n\nNone of this changes the federal side, which is where most of an owner's tax bill still sits. And none of it is a reason to restructure in a hurry. It is a reason to check that the structure you chose years ago is still the right one at today's rates.\n\n**Your next move**\n\nAsk your CPA to rerun the entity comparison for your company at the 2026 Louisiana and federal rates, and to show you what the franchise tax repeal is worth to you this year. Then decide what to do with that room using Growth, Liquidity and Control: reinvest it, keep it as a reserve, or take it out.\n\nIf you would like that conversation to include your personal balance sheet as well as the company's, send me a note."
+      },
+      "linkedin": "2026 is the first year Louisiana's new tax code is fully in force.\n\nIf you own a company here, three changes deserve an hour with your CPA.\n\nFlat rates. Personal income tax is 3%. Corporate is 5.5%. The pass-through versus C corporation comparison is worth running again with real numbers.\n\nNo more franchise tax. It was repealed for tax periods beginning in 2026. It was measured on capital, so keeping earnings in the company no longer carries that state cost. That matters if you are building working capital for bonding.\n\nHigher sales tax, through 2029. If you buy materials for jobs, it belongs in every bid.\n\nNone of this is a reason to restructure in a hurry. It is a reason to check that the structure you chose years ago still fits today's rates.",
+      "carousel": [
+        "Louisiana rewrote its tax code. 2026 is the first full year.",
+        "Personal income tax: flat 3%. Standard deduction: $12,500.",
+        "Corporate income tax: flat 5.5%. Rerun the entity comparison.",
+        "Franchise tax: repealed from 2026. Keeping capital in the company no longer costs you that tax.",
+        "Sales tax: higher, through 2029. Put it in every bid.",
+        "Not a reason to restructure in a hurry. A reason to check.",
+        "This month: ask your CPA to rerun your entity choice at 2026 rates."
+      ],
+      "video": {
+        "hook": "If you own a company in Louisiana, your tax code changed more than you think.",
+        "seconds": 45,
+        "shot": "Face to camera. Simple, direct, one cut to a sheet with three lines: 3%, 5.5%, franchise tax crossed out.",
+        "script": "If you own a company in Louisiana, your tax code changed more than you think.\n\n[Cut to the sheet.]\n\nPersonal income tax is a flat 3%. Corporate is a flat 5.5%. And the franchise tax, the one that grew every time you kept money in the company, is gone for 2026.\n\n[Back to camera.]\n\nThat means two things. The choice you made years ago about how your company is taxed is worth checking again at today's rates. And keeping capital in the business just got cheaper, which matters if you want a bigger bonding line.\n\nOne hour with your CPA. That is the whole ask."
+      },
+      "email": {
+        "subject": "Louisiana's new tax code, and your entity",
+        "body": "Hi {{first}},\n\n2026 is the first year Louisiana's new tax setup is fully in force: flat 3% personal, flat 5.5% corporate, and no more franchise tax.\n\nFor your company, the one thing I would ask your CPA to do is rerun the comparison between how you are taxed now and the alternative, at this year's rates. It may not change anything. Worth knowing either way.\n\nIf you want, I can join that call so we look at the company and your personal side together.\n\n{{advisor}}"
+      },
+      "disclosure": "General information only, not tax, legal or investment advice. Rules and figures change, and how they apply depends on your situation, so talk to your own tax and legal advisors before acting. Figures as of November 12, 2026."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "note": "The standards this studio runs under for Women Worth & Wealth, taken from CLAUDE.md and the build spec in the womens-wealth- repository. A working reminder, not a compliance opinion: Becky's compliance review decides what may go out.",
+  "identity": {
+    "practice": "Women Worth & Wealth",
+    "positioning": "A small group money and worth experience for women in New Orleans",
+    "channel": "An educational program, invoiced separately from any advisory practice",
+    "credentialsDefault": "",
+    "note": "Enrollment does not create an advisory relationship with either host. Keep the program separate from Becky's advisory practice in every piece of copy."
+  },
+  "audienceClasses": [
+    {
+      "id": "client",
+      "label": "Participant and applicant facing",
+      "tone": "alert",
+      "applies": [
+        "Participant",
+        "Applicant",
+        "Client",
+        "Prospect"
+      ],
+      "rule": "Goes to a participant, an applicant or the public. Route through Becky's compliance review before it is sent.",
+      "checks": [
+        "Educational framing: general education, not financial, tax, or legal advice",
+        "No product recommendation, no \"you should buy\"",
+        "No performance claim and no outcome guarantee",
+        "No testimonial, outcome or quote that is not real and approved",
+        "No Eternal Wealth Partners, Northwestern Mutual or broker-dealer name without approved disclosure language",
+        "Worth never tied to income: no \"earn your worth\"",
+        "No em dashes"
+      ]
+    },
+    {
+      "id": "professional",
+      "label": "Professionals",
+      "tone": "info",
+      "applies": [
+        "Professional team",
+        "CPA",
+        "Attorney",
+        "Third party"
+      ],
+      "rule": "Goes to a coordinating professional under their own engagement. Written in professional register, and it surfaces implications rather than giving advice in their discipline.",
+      "checks": [
+        "Surfaces implications and timing, does not give advice in their discipline",
+        "Assigns nothing to a professional that they have not already indicated",
+        "States that the planning lead coordinates and does not direct licensed work"
+      ]
+    },
+    {
+      "id": "coi",
+      "label": "Sponsors and partners",
+      "tone": "warn",
+      "applies": [
+        "Sponsor or partner",
+        "Prospective COI",
+        "COI"
+      ],
+      "rule": "Sponsor and partner development. Anything they will share publicly routes through review first.",
+      "checks": [
+        "No participant detail of any kind",
+        "Sponsor named publicly only with their approved wording",
+        "Any public derivative routed through review"
+      ]
+    },
+    {
+      "id": "internal",
+      "label": "Internal",
+      "tone": "idle",
+      "applies": [
+        "Internal"
+      ],
+      "rule": "Never leaves Amy and Becky. Write it for the person doing the work.",
+      "checks": []
+    }
+  ],
+  "standingRules": [
+    "Educational only. Teach concepts, never recommend a product or strategy.",
+    "No performance claims, no outcome guarantees, no figures that do not trace to a source.",
+    "Never fabricate a testimonial, an outcome or a quote.",
+    "Own your worth, steward your wealth. Never tie worth to income.",
+    "Amy's lane is worth, leadership and mindset; Becky's is the money.",
+    "No em dashes, anywhere."
+  ],
+  "attribution": {
+    "why": "What the program claims as its own work, and what it quotes. Quoted material keeps its source every time it is used.",
+    "ewpOriginal": {
+      "heading": "The program's own tools",
+      "items": [
+        "The Whole Worth Inventory",
+        "The Money Story Timeline",
+        "The One-Page Financial Snapshot",
+        "The Values-Aligned Spending Plan",
+        "The Ask Script",
+        "The Debt Map",
+        "The Protection Checklist",
+        "The Family Money Conversation Guide",
+        "The One-Year Stewardship Plan",
+        "Wealth Wednesdays",
+        "The Money Isn't Lucky Summit"
+      ]
+    },
+    "quoted": {
+      "heading": "Quoted, always with attribution",
+      "items": [
+        "Shonda Rhimes, Year of Yes: the passage used for the Summit"
+      ]
+    }
+  },
+  "routing": {
+    "heading": "What leaves the room",
+    "body": "The program teaches, it does not advise. A question about a participant's own situation is answered in general and routed to her own financial, tax or legal professional."
+  }
+}

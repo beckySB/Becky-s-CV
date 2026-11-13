@@ -1,0 +1,1302 @@
+{
+  "version": 1,
+  "asOf": "2026-11-12",
+  "sources": {
+    "plan": {
+      "title": "Client Retention, Appreciation, and Acquisition Plan",
+      "date": "November 9, 2026",
+      "url": "https://docs.google.com/document/d/1UQAQU85D1aioMpsE6PATdzmjngq6DV5pkrQLmgNjiUs/edit"
+    },
+    "manual": {
+      "title": "Operations and Client Experience Manual",
+      "date": "November 2026",
+      "url": "https://docs.google.com/document/d/1YNMIvLVzPoKLvZ0Pi5Fh0rSPVjvmxggUqwLCINaqgGE/edit"
+    }
+  },
+  "principle": "Redtail is the system of record and Zocks feeds it. If it is not in Redtail, it did not happen. This section holds the experience program and makes its materials. It does not hold client records, so nothing typed here is saved, and every gift, card, event and touch is logged in Redtail.",
+  "signatures": [
+    {
+      "name": "Speed",
+      "detail": "Every request acknowledged within 4 business hours, resolved or updated within 2 business days."
+    },
+    {
+      "name": "Memory",
+      "detail": "No client repeats themselves. The Redtail profile and Zocks notes brief whoever picks up the call."
+    },
+    {
+      "name": "Anticipation",
+      "detail": "Contact before the client asks: key dates, milestones, the pre-filing window for draft returns, year end, business inflection points."
+    },
+    {
+      "name": "Access",
+      "detail": "A named human with a direct line: Becky for Tier 1, Maddie for service in Tiers 1 to 3."
+    },
+    {
+      "name": "Belonging",
+      "detail": "The Owner Roundtable: six to eight Tier 1 owners, twice a year, opt in, no sales content, compliance cleared. Peer access is what an owner cannot buy elsewhere."
+    }
+  ],
+  "tiers": [
+    {
+      "n": 1,
+      "name": "VIP Anchor Families",
+      "who": "Retainer families on the full Seven Pillars",
+      "criteria": "Signed retainer ($12,000 per year)",
+      "model": "Quarterly 90-day sprint, monthly pulse, direct access, milestone program, multigenerational track, Owner Roundtable"
+    },
+    {
+      "n": 2,
+      "name": "Building Owners",
+      "who": "Owners in or entering the $6,000 Complete Assessment, or with a defined exit or growth window and no retainer",
+      "criteria": "Assessment signed or in active pipeline",
+      "model": "Onboarding workflow, monthly contact, conversion conversation at day 90"
+    },
+    {
+      "n": 3,
+      "name": "Core Clients",
+      "who": "Active advisory or in-force insurance clients without a retainer",
+      "criteria": "Active account or policy, no retainer",
+      "model": "Annual review, two scheduled touches, milestone cards, annual client event"
+    },
+    {
+      "n": 4,
+      "name": "Dormant",
+      "who": "No meaningful contact in 18 or more months and no active service need",
+      "criteria": "Last contact date",
+      "model": "One 60-day reactivation sequence, then a closing letter. No experience spend."
+    }
+  ],
+  "tags": [
+    {
+      "name": "Advocate",
+      "rule": "Introduced at least one qualified prospect, or scored 9 or 10 on the Net Promoter question"
+    },
+    {
+      "name": "Next-Gen",
+      "rule": "An adult heir or successor is engaged or identified"
+    },
+    {
+      "name": "Exit Window",
+      "rule": "Business sale or transition expected within 36 months"
+    },
+    {
+      "name": "Life Event",
+      "rule": "An open personal or business event"
+    },
+    {
+      "name": "At Risk",
+      "rule": "Gap over limit, two missed meetings, unexplained outflow, complaint, or mention of another advisor"
+    }
+  ],
+  "targets": [
+    {
+      "metric": "Unplanned Tier 1 household losses",
+      "target": "0 per year; any loss gets a written review within 14 days",
+      "review": "Monthly"
+    },
+    {
+      "metric": "Scheduled touchpoints completed on time",
+      "target": "95% or higher",
+      "review": "Weekly"
+    },
+    {
+      "metric": "Longest gap between contacts, Tier 1",
+      "target": "45 days or fewer",
+      "review": "Weekly"
+    },
+    {
+      "metric": "Longest gap between contacts, Tier 3",
+      "target": "120 days or fewer",
+      "review": "Monthly"
+    },
+    {
+      "metric": "Service request response",
+      "target": "Acknowledged within 4 business hours; resolved or status given within 2 business days",
+      "review": "Weekly"
+    },
+    {
+      "metric": "Profile completeness",
+      "target": "100% Tier 1 and 80% Tier 3 by February 5, 2027",
+      "review": "Monthly"
+    },
+    {
+      "metric": "Next-generation coverage",
+      "target": "Every Tier 1 household has each adult heir or successor in Redtail with at least one meeting a year",
+      "review": "Quarterly"
+    },
+    {
+      "metric": "Milestones recognized on time",
+      "target": "100% acknowledged within 7 days",
+      "review": "Monthly"
+    },
+    {
+      "metric": "Net Promoter Score, Tier 1",
+      "target": "70 or higher",
+      "review": "Day 90 and each December"
+    },
+    {
+      "metric": "Introductions per Tier 1 family per year",
+      "target": "1.0 or more",
+      "review": "Quarterly"
+    },
+    {
+      "metric": "Introduction to Complete Assessment conversion",
+      "target": "40% or higher",
+      "review": "Quarterly"
+    }
+  ],
+  "capacity": [
+    "Twenty Tier 1 families on quarterly sprints is 80 sessions a year. At 4.5 hours each, that is 360 hours, about 6.9 hours a week of Becky's calendar.",
+    "Events and family sessions add about 172 hours, for 532 hours a year, about 10.2 hours a week, before onboarding, annual reviews and Tier 3.",
+    "Each new Tier 1 family adds 18 hours a year. The planning seat is the capacity valve.",
+    "Every target is a proposal until the Phase 0 baseline is pulled from Redtail."
+  ],
+  "rollout": [
+    {
+      "phase": "Phase 0: baseline",
+      "start": "2026-11-09",
+      "end": "2026-11-20",
+      "work": "Pull from Redtail: household counts by provisional tier, last contact dates, referral history, open service items.",
+      "gate": "Tier thresholds set and every household assigned a provisional tier."
+    },
+    {
+      "phase": "Phase 1: build",
+      "start": "2026-11-23",
+      "end": "2026-12-18",
+      "work": "Fields, tags, smart lists and the onboarding, key date and milestone, service, Life Event and At Risk workflows. Written gift and entertainment limits obtained. Handwritten year-end note to every Tier 1 household by December 18.",
+      "gate": "Maddie runs a test household through every workflow."
+    },
+    {
+      "phase": "Phase 2: launch Tier 1",
+      "start": "2026-12-21",
+      "end": "2027-01-15",
+      "work": "Lock the Q1 sprint calendar, start the monthly pulse, send the two-question Net Promoter survey, begin heir identification with parent consent.",
+      "gate": "Every Tier 1 household has a next sprint date in Redtail."
+    },
+    {
+      "phase": "Phase 3: referrals and belonging",
+      "start": "2027-01-19",
+      "end": "2027-02-05",
+      "work": "Referral workflow live, first Owner Roundtable invitations (compliance cleared), first family session scheduled, first metrics report on February 5.",
+      "gate": "Baseline report reviewed; decide whether to extend the Tier 3 touches."
+    }
+  ],
+  "clientYear": [
+    {
+      "month": 0,
+      "event": "Complete Assessment delivered; first 90-day sprint set"
+    },
+    {
+      "month": 3,
+      "event": "Sprint 1 review; Sprint 2 set"
+    },
+    {
+      "month": 6,
+      "event": "Sprint 2 review; Sprint 3 set; mid-year Guardrails check on Growth, Liquidity and Control"
+    },
+    {
+      "month": 9,
+      "event": "Sprint 3 review; Sprint 4 set; tax planning window, coordinated with the client's CPA once the client authorizes it"
+    },
+    {
+      "month": 12,
+      "event": "Annual review; renewal conversation; Seven Pillars re-scored; next year's sprint sequence set"
+    }
+  ],
+  "sprint": [
+    {
+      "when": "30 days before",
+      "action": "Review confirmed on the calendar; document request list sent to the client"
+    },
+    {
+      "when": "14 days before",
+      "action": "Document chase; status of every sprint commitment pulled from Redtail; outstanding items flagged to Becky"
+    },
+    {
+      "when": "7 days before",
+      "action": "Prep packet to Becky: sprint goals, what was done, what stalled and why, documents received, Seven Pillars status, any life or business event"
+    },
+    {
+      "when": "2 days before",
+      "action": "Confirmation to the client with the agenda"
+    },
+    {
+      "when": "Review day",
+      "action": "Maddie joins the first and last 10 minutes for logistics and commitments. Meeting captured in Zocks."
+    },
+    {
+      "when": "1 day after",
+      "action": "Recap to the client: decisions, commitments by owner, next sprint goals, next review date"
+    },
+    {
+      "when": "3 days after",
+      "action": "Every commitment in Redtail as a dated task. Specialist introductions only after client authorization is on file."
+    },
+    {
+      "when": "30 days after",
+      "action": "Progress check: a substantive touch on sprint progress"
+    }
+  ],
+  "annual": [
+    {
+      "m": 1,
+      "event": "Annual client letter (cleared in December); Q1 sprint reviews; renewal invoices for January anniversaries",
+      "deliverable": "Letter mailed by January 15; all Q1 reviews scheduled"
+    },
+    {
+      "m": 2,
+      "event": "Tax document season; CPA coordination only with client authorization on file. Client briefing.",
+      "deliverable": "Document delivery tracker complete"
+    },
+    {
+      "m": 3,
+      "event": "Q1 close; quarterly operations review; Q1 COI event; Owner Roundtable",
+      "deliverable": "Q1 report; events held"
+    },
+    {
+      "m": 4,
+      "event": "Q2 sprint reviews; post tax season COI touches",
+      "deliverable": "COI touch list executed"
+    },
+    {
+      "m": 5,
+      "event": "Client appreciation touch, relational not sales; annual Redtail and tool review. Client briefing.",
+      "deliverable": "Appreciation delivered; tool review done"
+    },
+    {
+      "m": 6,
+      "event": "Q2 close; quarterly review; Q2 COI event; mid-year Guardrails check for every retainer family; Next-Gen gathering",
+      "deliverable": "Q2 report; Guardrails status on file"
+    },
+    {
+      "m": 7,
+      "event": "Q3 sprint reviews; annual template and workbook refresh begins; build week",
+      "deliverable": "Refresh list to Becky"
+    },
+    {
+      "m": 8,
+      "event": "Template refresh submitted to compliance as one packet. Client briefing.",
+      "deliverable": "Packet submitted"
+    },
+    {
+      "m": 9,
+      "event": "Q3 close; quarterly review; Q3 COI event; Owner Roundtable; year-end tax planning window opens",
+      "deliverable": "Q3 report; tax planning meetings on the calendar"
+    },
+    {
+      "m": 10,
+      "event": "Q4 sprint reviews; annual reviews begin for January-anniversary families; policy review cycle; annual client event",
+      "deliverable": "Annual review schedule set"
+    },
+    {
+      "m": 11,
+      "event": "Year-end gifting and charitable planning logistics; holiday touches planned. Client briefing.",
+      "deliverable": "Deadline tracker complete"
+    },
+    {
+      "m": 12,
+      "event": "Q4 close; annual operations review; next year's calendar built; annual client letter to compliance; Net Promoter survey to Tier 1; build week",
+      "deliverable": "Next year locked by December 15"
+    }
+  ],
+  "huddle": [
+    "Touches due in the next 7 days",
+    "Tier 1 households with a gap over 45 days",
+    "Key dates and milestones in the next 14 days",
+    "Service items older than 2 business days",
+    "Advocates not asked in 12 months",
+    "At Risk households",
+    "Next-Gen heirs with no meeting in 12 months"
+  ],
+  "scorecard": [
+    {
+      "id": "ack",
+      "measure": "Client messages acknowledged within 4 business hours",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "resolve",
+      "measure": "Client items resolved or scheduled within 2 business days",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "touch14",
+      "measure": "Retainer families touched in the last 14 days",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "prep",
+      "measure": "Meeting prep packets delivered 48 hours ahead",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "recap",
+      "measure": "Recaps sent within 24 hours",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "zocks",
+      "measure": "Zocks summaries saved to Redtail by 5:00 PM the same day",
+      "kind": "pct",
+      "target": 100
+    },
+    {
+      "id": "overdue",
+      "measure": "Overdue Redtail tasks older than 2 business days",
+      "kind": "zero",
+      "target": 0
+    },
+    {
+      "id": "compliance",
+      "measure": "Compliance items outstanding over 10 business days",
+      "kind": "zero",
+      "target": 0
+    },
+    {
+      "id": "intros",
+      "measure": "Qualified introductions received this month",
+      "kind": "range",
+      "min": 4,
+      "max": 7
+    },
+    {
+      "id": "firstmtg",
+      "measure": "First meetings held this month",
+      "kind": "range",
+      "min": 3,
+      "max": 4
+    },
+    {
+      "id": "hours",
+      "measure": "Hours in client service this week",
+      "kind": "max",
+      "target": 18
+    }
+  ],
+  "generations": {
+    "why": "Heirs are the largest unprotected retention risk in a family practice, because the relationship sits with the parent. The track builds a direct relationship with each generation before a transfer, not after, so that when the transfer comes the next generation already knows the team, the plan and the reasons behind it.",
+    "stages": [
+      {
+        "stage": "Foundation",
+        "who": "Parents, the Tier 1 owners",
+        "experience": "Pillars 6 and 7 built into every sprint: transition, legacy and estate decisions. Parents approve in writing which heirs are invited and what is shared."
+      },
+      {
+        "stage": "Introduction",
+        "who": "Adult heirs, 18 to 30",
+        "experience": "One introductory meeting a year; financial education on their terms; Redtail record created with parent consent."
+      },
+      {
+        "stage": "Stewardship",
+        "who": "Heirs and successors, 30 and older",
+        "experience": "Annual meeting; successor readiness check tied to the exit plan; a seat at the annual family session."
+      },
+      {
+        "stage": "Family session",
+        "who": "All generations",
+        "experience": "One a year per household: values and vision refresh, decision rights, how the family talks about money. Becky facilitates; the family's attorney and CPA join through the client."
+      },
+      {
+        "stage": "Continuity",
+        "who": "The next generation, after a transfer",
+        "experience": "Extension, for approval: the heir is invited to engage under their own agreement, with a team they already know. Nothing about the parents' plan is carried over without written consent.",
+        "extension": true
+      }
+    ],
+    "boundaries": [
+      "Heirs are not clients until they engage under their own agreement.",
+      "No parent information is shared with an heir without the parent's written consent.",
+      "Minors receive no advisory contact, and no cards are addressed to minors.",
+      "The program coordinates and routes to licensed professionals. It does not direct them or draft legal documents.",
+      "A child's birth date is recorded only with the parent's consent, and only so the card to the parents can acknowledge it."
+    ],
+    "materials": [
+      {
+        "id": "consent",
+        "name": "Parent consent request",
+        "when": "Before any heir is invited",
+        "kind": "letter",
+        "formal": true,
+        "note": "A request for consent, not a legal document. Routes through compliance before first use.",
+        "body": "Dear {{first}},\n\nAs part of the planning we are doing together, you have mentioned wanting {{heir}} to understand more about how your family's plan works. Before I contact {{heir}}, I would like your written direction on two things.\n\nFirst, may I invite {{heir}} to an introductory conversation with me. It is a get-acquainted meeting about {{heir}}'s own questions and goals, not a review of your plan.\n\nSecond, what, if anything, may I share with {{heir}} about your plan. You may choose nothing at all, general principles only, or specific items you list. Whatever you decide, I will share nothing beyond it, and you may change your answer at any time.\n\nPlease reply with your choices, or we can talk them through at our next meeting.\n\nWith warm regards,\n{{advisor}}"
+      },
+      {
+        "id": "heir-intro",
+        "name": "First meeting with an adult heir",
+        "when": "Introduction stage, once a year",
+        "kind": "guide",
+        "formal": false,
+        "note": "A conversation guide for Becky. The meeting belongs to the heir.",
+        "body": "Purpose: get to know {{heir}} on their own terms, and be the person they would call with a money question.\n\nBefore the meeting\n- Confirm the parent's written consent and exactly what may be shared. When in doubt, share nothing.\n- No meeting with anyone under 18.\n\nOpen with their world\n- What are you working on right now, and what is next.\n- What do you wish someone had explained to you about money.\n- Who do you go to with financial questions today.\n\nOffer education they choose (pick one or two, never all)\n- Your first paycheck: benefits elections, the 401(k) match, and what to do first.\n- Credit and debt: how a score works and how to build one deliberately.\n- Your first investments: what a diversified account is and what it costs.\n- The family business: what ownership, a buy-sell and a board actually mean.\n- How your family makes decisions about money, and where you fit.\n\nClose\n- Agree one thing they will do in the next 30 days.\n- Tell them how to reach you directly.\n- Log the meeting in Redtail on the heir's linked record the same day.\n\nNever\n- Discuss the parents' plan, balances or intentions beyond what was consented in writing.\n- Recommend a product."
+      },
+      {
+        "id": "readiness",
+        "name": "Successor readiness check",
+        "when": "Stewardship stage, tied to the exit plan",
+        "kind": "guide",
+        "formal": false,
+        "note": "Questions for a successor aged 30 or older. Readiness is about the person and the role, not about the balance sheet.",
+        "body": "Role\n- What role do you want in the company in five years, and what role do your parents expect you to have.\n- Who in the company would you report to today, and who would report to you.\n\nPreparation\n- What decisions have you already made on your own in the business.\n- What would you need to learn, and from whom, to run it.\n\nOwnership\n- Do you understand how ownership would pass to you: gift, sale, trust or buy-sell.\n- Have you read the buy-sell agreement, and do you know what it says happens if a parent dies or becomes disabled.\n\nFamily\n- If you are not the only heir, how will fairness be handled between those who work in the business and those who do not.\n- Who decides when the family disagrees.\n\nNext step\n- One action before the next family session, logged in Redtail."
+      },
+      {
+        "id": "family-session",
+        "name": "Annual family session agenda",
+        "when": "Once a year per household, January to June",
+        "kind": "agenda",
+        "formal": false,
+        "note": "Three hours, Pillars 1, 6 and 7. Becky facilitates; the family's attorney and CPA join through the client.",
+        "body": "Before: parents approve the invitation list and what is shared, in writing. Pre-read sent five business days ahead: last year's values statement and the open decisions.\n\n0:00 Welcome and ground rules. What is said here stays here unless the family agrees otherwise.\n0:15 What matters. Each person reads or says, in their own words, what they want the family's wealth to make possible.\n0:45 Values and vision refresh (Pillar 1). What has changed since last year, and what has not.\n1:30 Break.\n1:45 Decision rights and succession (Pillar 6). Who decides what today, who will decide it later, and how the next generation is being prepared.\n2:15 Legacy and estate intentions (Pillar 7). The intentions behind the documents, explained by the family, with the attorney present if invited.\n2:40 How we talk about money. One practice the family will keep this year.\n2:55 Close. One commitment from each generation, and what goes into the Legacy Book this year.\n\nAfter: recap within 24 hours to the parents; heirs receive only what the parents approve. Every commitment logged in Redtail."
+      },
+      {
+        "id": "nextgen",
+        "name": "Next-Gen gathering outline",
+        "when": "Once a year, June",
+        "kind": "agenda",
+        "formal": false,
+        "note": "Two hours, 10 to 15 adult heirs aged 18 to 30 from Tier 1 households, with parent consent. Education and peer connection, no sales content.",
+        "body": "0:00 Arrivals and introductions: name, what you do, one money question you want answered tonight.\n0:20 One topic the group chose in advance, 30 minutes, taught plainly.\n0:50 Peer round: small tables, one prompt each. What did you learn about money growing up that you want to keep, and what do you want to do differently.\n1:30 Open questions, answered in general terms only.\n1:50 Close: how to reach Becky directly, and the date of next year's gathering.\n\nRules: no discussion of any family's plan; no photos or names shared without written consent; invitations cleared by compliance."
+      },
+      {
+        "id": "legacy-book",
+        "name": "Legacy Book outline",
+        "when": "Delivered at the third engagement anniversary",
+        "kind": "outline",
+        "formal": true,
+        "note": "Bound on archival paper. The family's own words and values only: no performance figures and no fee references.",
+        "body": "1. The family, in its own words: who we are and where we come from.\n2. What matters: the values statement from the Values, Vision and Purpose work.\n3. The vision: what the family wants its wealth to make possible, across generations.\n4. The company: how it was founded, the people who built it, and what it stands for.\n5. How we decide: decision rights and how the family talks about money.\n6. What each generation committed to, year by year, from the family sessions.\n7. Letters: one page from each generation to the next, written by hand if they choose.\n8. Blank pages for the next chapter."
+      }
+    ]
+  },
+  "milestones": {
+    "budget": "Proposed $750 per Tier 1 household a year, 2.9% of the modeled $25,500 gross revenue per family, or $15,000 across 20 families. Nothing is ordered until written gift and entertainment limits are in hand from the new broker-dealer.",
+    "catalog": [
+      {
+        "milestone": "Engagement signed",
+        "tier": "1",
+        "gesture": "Handwritten note plus a considered welcome gift",
+        "ceiling": "$100"
+      },
+      {
+        "milestone": "December",
+        "tier": "1",
+        "gesture": "Personal year-end gift tied to the client's stated priorities",
+        "ceiling": "$100"
+      },
+      {
+        "milestone": "Business milestone: opening, new location, 10th or 25th anniversary, acquisition",
+        "tier": "1",
+        "gesture": "Note plus an engraved keepsake",
+        "ceiling": "$100"
+      },
+      {
+        "milestone": "Personal milestones: birth, grandchild, graduation, wedding, major anniversary, retirement",
+        "tier": "1",
+        "gesture": "Note, call and a gesture; at most two a year",
+        "ceiling": "$200"
+      },
+      {
+        "milestone": "Owner Roundtable seats",
+        "tier": "1",
+        "gesture": "Hosted dinner, two a year",
+        "ceiling": "$225"
+      },
+      {
+        "milestone": "Stationery and postage",
+        "tier": "1",
+        "gesture": "Handwritten notes on all touches",
+        "ceiling": "$25"
+      },
+      {
+        "milestone": "Welcome item, notes, one milestone",
+        "tier": "2",
+        "gesture": "Handwritten notes plus one gesture",
+        "ceiling": "$150"
+      },
+      {
+        "milestone": "Key date card, milestone card, shared event seat",
+        "tier": "3",
+        "gesture": "Card and annual client event",
+        "ceiling": "$75"
+      },
+      {
+        "milestone": "Sale closing or exit",
+        "tier": "1, 2",
+        "gesture": "Call the same day, a note, and a hosted acknowledgment after close",
+        "ceiling": "Inside the $200 personal line unless compliance sets otherwise"
+      }
+    ],
+    "test": "Would it still be on a shelf in 30 years. Durable, engraved to mark the event, personal to the family, and no firm logo. The firm appears only on a handwritten card.",
+    "heirlooms": [
+      {
+        "milestone": "Birth or adoption of a child or grandchild",
+        "item": "Silver-plated piggy bank, engraved with the child's name and birth date",
+        "price": "$59 to $79 at the retailers checked on November 9, 2026",
+        "note": "Plated, not sterling. Never describe it as sterling."
+      },
+      {
+        "milestone": "Wedding or major anniversary",
+        "item": "Engraved frame holding a professional photo from the event",
+        "price": "To be sourced",
+        "note": ""
+      },
+      {
+        "milestone": "Graduation",
+        "item": "Engraved fountain pen or leather-bound journal",
+        "price": "To be sourced",
+        "note": ""
+      },
+      {
+        "milestone": "Business opening or new location",
+        "item": "Engraved ribbon-cutting scissors plus a framed opening-day print",
+        "price": "To be sourced",
+        "note": ""
+      },
+      {
+        "milestone": "10th or 25th business anniversary",
+        "item": "Bound founder's book: timeline, photos and the founder's own words",
+        "price": "To be sourced",
+        "note": ""
+      },
+      {
+        "milestone": "Sale closing",
+        "item": "Engraved desk piece marking founding date to closing date",
+        "price": "To be sourced",
+        "note": ""
+      },
+      {
+        "milestone": "Third engagement anniversary",
+        "item": "The Legacy Book, made with the family",
+        "price": "To be sourced",
+        "note": "Competes with the Roundtable seats for budget. Decide which is funded first."
+      }
+    ],
+    "engraving": [
+      "Every gift is engraved to mark the event. Nothing leaves the office unengraved.",
+      "Text: the recipient or family name, the date and a short event line. For a business: the business name, the date and the occasion. Never the firm's name or logo.",
+      "Proof: Maddie checks spelling and dates against Redtail, and the client confirms the exact wording in writing before engraving.",
+      "Durability: record the engraving method and depth, the plating thickness, and whether the piece can be replated.",
+      "Acknowledge within 7 days by call or note. The object can follow within 21 days. If it cannot, tell the client the delivery date."
+    ],
+    "guardrails": [
+      "Limits come from the broker-dealer's compliance manual. FINRA Rule 3220 is commonly cited as capping gifts at $100 per person per year in a business context. Verify the rule and the firm's limit in writing before any spend.",
+      "If a $100 annual aggregate applies to a recipient, gifts cannot stack. Move spend to hosted events, education and service, with compliance classifying each item.",
+      "Log every gift and event in Redtail with amount, date and recipient. Review totals per recipient each quarter.",
+      "No cash, no fee discounts, and nothing conditioned on a referral.",
+      "Client quotes, survey responses and endorsements need compliance clearance before any external use. The SEC Marketing Rule governs testimonials for advisory services."
+    ],
+    "occasions": [
+      {
+        "id": "birthday",
+        "name": "Birthday",
+        "tier": "Tiers 1 to 3",
+        "timing": "Arrives on or before the day. Drafted 14 days ahead from the key date workflow.",
+        "gift": "Card only",
+        "ceiling": "Inside stationery and postage",
+        "fields": [
+          "first",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nHappy birthday. {{detail}}\n\nI hope the year ahead is a good one for you and everyone around your table.\n\nWarmly,\n{{advisorFirst}}",
+        "cautions": [
+          "Decade birthdays (40, 50, 60, 70, 80) for Tier 1 get a call as well as the card.",
+          "Verify the date in Redtail. A card on the wrong date is worse than no card."
+        ]
+      },
+      {
+        "id": "biz-anniversary",
+        "name": "Business anniversary (10th or 25th)",
+        "tier": "Tier 1",
+        "timing": "Note within 7 days; keepsake within 21.",
+        "gift": "Bound founder's book or engraved keepsake",
+        "ceiling": "$100",
+        "fields": [
+          "first",
+          "business",
+          "years",
+          "founded",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on {{years}} years of {{business}}. {{detail}}\n\nVery few companies reach this mark, and the ones that do are built by people who keep showing up. Thank you for letting us be part of it.\n\nWith admiration,\n{{advisorFirst}}",
+        "engraving": "{{business}}\nFounded {{founded}}\n{{years}} years",
+        "cautions": [
+          "A business anniversary is a relational touch, never a sales touch."
+        ]
+      },
+      {
+        "id": "opening",
+        "name": "Grand opening or new location",
+        "tier": "Tier 1",
+        "timing": "Becky attends in person where possible. Note within 7 days.",
+        "gift": "Engraved ribbon-cutting scissors and a framed opening-day print",
+        "ceiling": "$100",
+        "fields": [
+          "first",
+          "business",
+          "location",
+          "date",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on opening {{location}}. {{detail}}\n\nIt was a privilege to see it. I hope these mark the day for a long time.\n\nWarmly,\n{{advisorFirst}}",
+        "engraving": "{{business}}\n{{location}}\nOpened {{date}}"
+      },
+      {
+        "id": "birth",
+        "name": "Birth or adoption of a child or grandchild",
+        "tier": "Tier 1",
+        "timing": "Call or note within 7 days; the gift can follow within 21, because engraving adds time.",
+        "gift": "Engraved baby rattle, brass or silver plated, with the first name and birth date (keep two in stock); or the engraved silver-plated piggy bank",
+        "ceiling": "$200 line, at most two personal milestones a year",
+        "fields": [
+          "first",
+          "child",
+          "date",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on the arrival of {{child}}. {{detail}}\n\nA small keepsake with {{child}}'s name on it is on its way, for the first of many good things to come. We are so happy for your whole family.\n\nWith love and warm regards,\n{{advisorFirst}}",
+        "engraving": "{{child}}\n{{date}}",
+        "cautions": [
+          "The card goes to the parents or grandparents, never to the child.",
+          "Record the birth date in Redtail only with the parent's consent.",
+          "Brass or silver plated. Never call silver plate sterling; sterling rattles usually run past the ceiling.",
+          "For a grandchild, send it to the grandparent to give, unless they ask otherwise."
+        ]
+      },
+      {
+        "id": "graduation",
+        "name": "Graduation",
+        "tier": "Tier 1",
+        "timing": "Note within 7 days.",
+        "gift": "Engraved fountain pen or leather-bound journal",
+        "ceiling": "$200 line",
+        "fields": [
+          "first",
+          "graduate",
+          "school",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on {{graduate}}'s graduation from {{school}}. {{detail}}\n\nIt is a proud day, and a beginning. Please pass on my congratulations.\n\nWarmly,\n{{advisorFirst}}",
+        "engraving": "{{graduate}}\n{{school}}",
+        "cautions": [
+          "If the graduate is an adult heir on the Next-Gen track, a note to them directly needs the parent's consent on file."
+        ]
+      },
+      {
+        "id": "college",
+        "name": "College acceptance, commitment or signing day",
+        "tier": "Tier 1",
+        "timing": "Within 14 days of the news, and before move-in once the school is chosen.",
+        "gift": "A hat or sweatshirt from the college, bought from the official campus store, sized through the parent",
+        "ceiling": "$200 line",
+        "fields": [
+          "first",
+          "student",
+          "school",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations to {{student}} on {{school}}. {{detail}}\n\nA little something in the school colors is on its way for {{student}}. Please pass on how proud we are.\n\nWarmly,\n{{advisorFirst}}",
+        "cautions": [
+          "Ask the parent for the size quietly, or choose a hat.",
+          "Buy from the official store. Nothing with the firm's name on it.",
+          "For a grandchild, send it to the grandparent to give.",
+          "Wait until the choice is announced. An acceptance is not a decision."
+        ]
+      },
+      {
+        "id": "achievement",
+        "name": "A child's or grandchild's achievement",
+        "tier": "Tier 1",
+        "timing": "Within 7 days.",
+        "gift": "A handwritten note addressed to the young person, sent to the parent or grandparent to pass on. Young people rarely get real mail.",
+        "ceiling": "Inside stationery and postage",
+        "fields": [
+          "young",
+          "achievement",
+          "detail"
+        ],
+        "note": "Dear {{young}},\n\nI heard about {{achievement}}, and I wanted to say congratulations. {{detail}}\n\nThat kind of work does not happen by accident. Keep going.\n\nWith admiration,\n{{advisorFirst}}",
+        "cautions": [
+          "Send it to the parent or grandparent to pass on, never directly to a minor.",
+          "Nothing about money, saving or the firm. It is a note to a young person, not a first touch.",
+          "Examples: Eagle Scout or Gold Award, a state title, all-state, honor society, valedictorian, a recital, a krewe court or a debut."
+        ]
+      },
+      {
+        "id": "first-steps",
+        "name": "A grown child's first job, first home or first business",
+        "tier": "Tier 1",
+        "timing": "Within 14 days.",
+        "gift": "A good book on the first years of earning, with an open invitation to a next-generation conversation, offered through the parent",
+        "ceiling": "$200 line",
+        "fields": [
+          "first",
+          "young",
+          "milestone",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations to {{young}} on {{milestone}}. {{detail}}\n\nIf {{young}} would ever like an hour to talk through the first years of a paycheck, I would be glad to, whenever it suits. Please pass on my congratulations either way.\n\nWarmly,\n{{advisorFirst}}",
+        "cautions": [
+          "The offer goes through the parent, and is made once.",
+          "Any conversation with an adult child follows the Next-Gen track, with the parent's consent on file."
+        ]
+      },
+      {
+        "id": "wedding",
+        "name": "Wedding or major anniversary",
+        "tier": "Tier 1",
+        "timing": "Note within 7 days.",
+        "gift": "Engraved frame for a photo from the day",
+        "ceiling": "$200 line",
+        "fields": [
+          "first",
+          "couple",
+          "date",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations to {{couple}}. {{detail}}\n\nWishing you many more years of the kind of partnership worth celebrating.\n\nWarmly,\n{{advisorFirst}}",
+        "engraving": "{{couple}}\n{{date}}"
+      },
+      {
+        "id": "retirement",
+        "name": "Retirement",
+        "tier": "Tier 1",
+        "timing": "Call the same week; note within 7 days.",
+        "gift": "A gesture chosen from what they said they want to do next",
+        "ceiling": "$200 line",
+        "fields": [
+          "first",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on your retirement. {{detail}}\n\nYou have earned every bit of what comes next. I look forward to hearing about it.\n\nWarmly,\n{{advisorFirst}}"
+      },
+      {
+        "id": "closing",
+        "name": "Sale closing or exit",
+        "tier": "Tiers 1 and 2",
+        "timing": "Call the same day. Note within 7 days. Hosted acknowledgment after close.",
+        "gift": "Engraved desk piece, founding date to closing date",
+        "ceiling": "Inside the $200 line unless compliance sets otherwise",
+        "fields": [
+          "first",
+          "business",
+          "founded",
+          "closed",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nCongratulations on the sale of {{business}}. {{detail}}\n\nWhat you built will keep going, and so will you. It has been an honor to be beside you for this.\n\nWith admiration,\n{{advisorFirst}}",
+        "engraving": "{{business}}\n{{founded}} to {{closed}}"
+      },
+      {
+        "id": "welcome",
+        "name": "Engagement signed (welcome)",
+        "tier": "Tier 1",
+        "timing": "Handwritten note on day 1 of the onboarding workflow.",
+        "gift": "A considered welcome gift",
+        "ceiling": "$100",
+        "fields": [
+          "first",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nThank you for trusting us with your family's plan. {{detail}}\n\nYou will hear from Maddie this week with everything you need, and you can always reach me directly.\n\nWarmly,\n{{advisorFirst}}"
+      },
+      {
+        "id": "december",
+        "name": "December",
+        "tier": "Tier 1",
+        "timing": "Delivered before the holidays. Year-end note to every Tier 1 household by December 18.",
+        "gift": "A personal gift tied to what the client said matters this year",
+        "ceiling": "$100",
+        "fields": [
+          "first",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nAs the year closes, thank you. {{detail}}\n\nWishing you and your family a peaceful season and a good year ahead.\n\nWarmly,\n{{advisorFirst}}"
+      },
+      {
+        "id": "loss",
+        "name": "A loss in the family",
+        "tier": "All tiers",
+        "timing": "Becky calls within 1 business day. Handwritten note.",
+        "gift": "None",
+        "ceiling": "No gift",
+        "fields": [
+          "first",
+          "name"
+        ],
+        "note": "Dear {{first}},\n\nI am so sorry about {{name}}. I am thinking of you and your family.\n\nThere is nothing you need to do and nothing you need to answer. I am here whenever you want me.\n\nWith deepest sympathy,\n{{advisorFirst}}",
+        "cautions": [
+          "No gift, no marketing, and no business conversation unless the client raises it.",
+          "Apply the Life Event tag. No referral ask while it is open."
+        ]
+      },
+      {
+        "id": "referral-thanks",
+        "name": "Thank you for an introduction",
+        "tier": "Clients and COIs",
+        "timing": "Handwritten within 24 hours of the introduction, whether or not it converts.",
+        "gift": "None",
+        "ceiling": "No gift tied to a referral",
+        "fields": [
+          "first",
+          "detail"
+        ],
+        "note": "Dear {{first}},\n\nThank you for the introduction. {{detail}}\n\nI know what it means to put your name behind someone, and I will take good care of it.\n\nWith gratitude,\n{{advisorFirst}}",
+        "cautions": [
+          "Never include anything about the prospect beyond what the prospect has allowed.",
+          "Nothing of value is offered for an introduction without the broker-dealer's written approval."
+        ]
+      }
+    ]
+  },
+  "templates": [
+    {
+      "id": "confirm",
+      "name": "Meeting confirmation",
+      "group": "Meetings",
+      "when": "2 business days before every meeting",
+      "owner": "Maddie",
+      "subject": "Confirming {{meeting}} on {{date}}",
+      "body": "Dear {{first}},\n\nThis confirms {{meeting}} with Becky on {{date}} at {{time}}, {{place}}.\n\nWhat we will cover:\n{{agenda}}\n\nPlease bring, or send ahead:\n{{items}}\n\nIf anything has changed in your family or your business since we last spoke, it is helpful to know before we meet. Simply reply to this note.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "recap",
+      "name": "Meeting recap",
+      "group": "Meetings",
+      "when": "Within 24 hours of every meeting",
+      "owner": "Maddie, from the saved Zocks summary",
+      "subject": "Recap of our meeting on {{date}}",
+      "body": "Dear {{first}},\n\nThank you for your time on {{date}}. Here is what we agreed.\n\nDecisions:\n{{decisions}}\n\nWho is doing what:\n{{owners}}\n\nOur next meeting: {{nextDate}}.\n\nIf anything here does not match your notes, please reply and we will correct it.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "docs",
+      "name": "Document request",
+      "group": "Meetings",
+      "when": "30 days before a sprint review, and at onboarding",
+      "owner": "Maddie",
+      "subject": "Documents for {{meeting}}",
+      "body": "Dear {{first}},\n\nTo prepare for {{meeting}}, Becky will need the following:\n{{items}}\n\nYou can upload them through the secure portal at the link we sent separately. Please do not send account numbers or tax documents by ordinary email.\n\nI will confirm each item the day it arrives.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "status",
+      "name": "Weekly assessment status",
+      "group": "Onboarding",
+      "when": "Every week during the Complete Assessment",
+      "owner": "Maddie",
+      "subject": "Your assessment: week {{week}}",
+      "body": "Dear {{first}},\n\nHere is where your Complete Assessment stands this week.\n\nDone this week:\n{{done}}\n\nStill needed from you:\n{{items}}\n\nNext step: {{next}}.\n\nWe remain on track for delivery on {{date}}.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "coi-thanks",
+      "name": "COI thank you for an introduction",
+      "group": "Centers of influence",
+      "when": "Within 24 hours of every introduction",
+      "owner": "Maddie drafts, Becky signs",
+      "subject": "Thank you",
+      "body": "Dear {{first}},\n\nThank you for introducing us to {{prospect}}. I know what it means to put your name behind someone, and we will take good care of the introduction.\n\nWarm regards,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "coi-note",
+      "name": "COI between-meeting note",
+      "group": "Centers of influence",
+      "when": "Per the COI tier cadence",
+      "owner": "Maddie drafts, Becky approves",
+      "subject": "{{topic}}",
+      "body": "Dear {{first}},\n\nThis caught my attention with your clients in mind: {{topic}}.\n\n{{why}}\n\nIf it would be useful to talk it through, I would be glad to.\n\nWarm regards,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": true
+    },
+    {
+      "id": "ack",
+      "name": "Service acknowledgment",
+      "group": "Service",
+      "when": "Within 4 business hours of any request",
+      "owner": "Maddie",
+      "subject": "Re: {{subject}}",
+      "body": "Dear {{first}},\n\nThank you for your note. I have it, and I will have an answer or a status for you by {{date}}.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "day7",
+      "name": "Onboarding day 7: meet the team",
+      "group": "Onboarding",
+      "when": "Day 7 after the engagement is signed",
+      "owner": "Maddie",
+      "subject": "Your team at Women Worth & Wealth",
+      "body": "Dear {{first}},\n\nWelcome. I wanted you to have everyone's direct line in one place.\n\nBecky Gustafson, your lead advisor: {{beckyPhone}}\n{{maddie}}, operations and client service: {{maddiePhone}}\n\nFor anything about scheduling, documents or service, start with me. For anything about your plan, Becky is a call away. We acknowledge every message within four business hours.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "day30",
+      "name": "Onboarding day 30 and day 60 check-in",
+      "group": "Onboarding",
+      "when": "Days 30 and 60",
+      "owner": "Maddie",
+      "subject": "Checking in",
+      "body": "Dear {{first}},\n\nA short check-in from all of us. Is there anything you expected to hear from us by now that you have not. Your answer helps us more than you might think.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "day90",
+      "name": "Onboarding day 90: two questions",
+      "group": "Onboarding",
+      "when": "At the day 90 review",
+      "owner": "Becky",
+      "subject": "Two questions",
+      "body": "Dear {{first}},\n\nWe are 90 days into working together, and I would value your honest answers to two questions.\n\n1. On a scale of 0 to 10, how likely are you to recommend Women Worth & Wealth to a friend or colleague.\n2. What is one thing we could do better.\n\nThank you.\n\nWarmly,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "reactivate-1",
+      "name": "Reactivation, first touch",
+      "group": "Dormant",
+      "when": "Day 1 of the 60-day sequence",
+      "owner": "Becky",
+      "subject": "It has been a while",
+      "body": "Dear {{first}},\n\nIt has been a while since we last spoke, and I wanted to check in. A great deal can change in 18 months, in a family and in a business.\n\nIf you would like a conversation about where things stand, simply reply and we will find a time. If not, no reply is needed.\n\nWarm regards,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "reactivate-2",
+      "name": "Reactivation, second touch",
+      "group": "Dormant",
+      "when": "Day 30",
+      "owner": "Maddie",
+      "subject": "Following up",
+      "body": "Dear {{first}},\n\nFollowing up on Becky's note last month. If a short conversation would be useful, I can find a time that works for you this month.\n\nWarm regards,\n{{maddie}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "closing-letter",
+      "name": "Closing letter",
+      "group": "Dormant",
+      "when": "Day 60, if there is no reply",
+      "owner": "Becky",
+      "subject": "With thanks",
+      "body": "Dear {{first}},\n\nI have not heard back, and I want to respect your time. I will not write again about this, but my door stays open. If anything changes in your family or your business, I would be glad to hear from you.\n\nThank you for the trust you have placed in us.\n\nWith warm regards,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "first-meeting",
+      "name": "Prospect: summary of the first conversation",
+      "group": "Prospects",
+      "when": "Within 24 hours of the first 45-minute conversation",
+      "owner": "Becky",
+      "subject": "What I heard",
+      "body": "Dear {{first}},\n\nThank you for the conversation. Here is what I heard, in one page.\n\nWhat matters to you:\n{{matters}}\n\nWhat is on your mind for the next 18 to 24 months:\n{{horizon}}\n\nWhat we would look at first, if we worked together:\n{{first3}}\n\nThere is no obligation in any of this. If it would be useful to talk about next steps, reply and we will find a time.\n\nWarm regards,\n{{advisor}}",
+      "formal": true,
+      "firstBatch": false
+    },
+    {
+      "id": "referral-ask",
+      "name": "The referral ask (spoken)",
+      "group": "Referrals",
+      "when": "Day 90 with a 9 or 10, after a sprint the client names a result, or after a Roundtable",
+      "owner": "Becky",
+      "subject": "",
+      "body": "Never in the same conversation as an open problem, and never during a Life Event.\n\n\"I am glad this has been useful. The owners I do my best work for usually come from people like you. Is there one person you think of who is carrying a business and a family plan that have never been put on the same page. If you are comfortable, I would welcome an introduction. It would be a 45-minute conversation with me, no obligation, and I will not contact anyone else in your circle.\"",
+      "formal": false,
+      "firstBatch": false
+    }
+  ],
+  "events": [
+    {
+      "id": "roundtable",
+      "name": "Owner Roundtable",
+      "audience": "Tier 1 owners",
+      "timing": "Twice a year, March and September",
+      "months": [
+        3,
+        9
+      ],
+      "format": "Six to eight owners, a 90-minute facilitated conversation plus dinner. Owners choose the topics. Confidentiality ground rules.",
+      "purpose": "Peer belonging and retention",
+      "owner": "Becky hosts; Maddie runs logistics",
+      "invite": {
+        "subject": "An invitation: the Owner Roundtable, {{date}}",
+        "body": "Dear {{first}},\n\nI would like to invite you to the Owner Roundtable on {{date}} at {{place}}.\n\nIt is a small table: six to eight business owners, a 90-minute conversation on topics the group chooses, followed by dinner. There is no presentation and nothing is sold. What is said at the table stays at the table.\n\nThe topic this time: {{topic}}.\n\nI will call you this week to see whether you can join us. Should you prefer to reply here, please do so by {{rsvp}}.\n\nWarm regards,\n{{advisor}}"
+      }
+    },
+    {
+      "id": "family",
+      "name": "Annual Family Session",
+      "audience": "Each Tier 1 household and its heirs",
+      "timing": "Once a year per household, January to June",
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "format": "Three hours on Pillars 1, 6 and 7. The family's attorney and CPA join through the client.",
+      "purpose": "Legacy and heir relationships",
+      "owner": "Becky",
+      "invite": {
+        "subject": "Your family session, {{date}}",
+        "body": "Dear {{first}},\n\nIt is time to plan this year's family session. It is three hours with the people you choose, to refresh what matters to your family, talk through how decisions are made, and add this year's chapter to the record of your family's intentions.\n\nWho is invited, and what is shared with them, is entirely your decision. I will ask you to confirm both in writing before we send anything to anyone.\n\nWould {{date}} work for you.\n\nWarm regards,\n{{advisor}}"
+      }
+    },
+    {
+      "id": "nextgen",
+      "name": "Next-Gen gathering",
+      "audience": "Adult heirs aged 18 to 30 in Tier 1 households, with parent consent",
+      "timing": "Once a year, June",
+      "months": [
+        6
+      ],
+      "format": "Two hours, 10 to 15 attendees: financial education and peer connection.",
+      "purpose": "Heir relationships before any transfer",
+      "owner": "Becky and Maddie",
+      "invite": {
+        "subject": "An evening for the next generation, {{date}}",
+        "body": "Dear {{first}},\n\nI would like to invite you to an evening with a small group of people your age whose families, like yours, have built something meaningful.\n\nWe will spend two hours on {{topic}}, taught plainly, and leave plenty of time for your own questions. There is nothing to buy and nothing about your family's plan will be discussed.\n\n{{date}}, {{place}}. Please reply by {{rsvp}}.\n\nWarm regards,\n{{advisor}}"
+      }
+    },
+    {
+      "id": "briefing",
+      "name": "Client briefing",
+      "audience": "Tiers 1 to 3",
+      "timing": "Four a year: February, May, August, November",
+      "months": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "format": "Virtual, 45 minutes. Compliance-cleared content; topics come from questions logged in Redtail.",
+      "purpose": "Value delivered at low capacity cost",
+      "owner": "Becky",
+      "newsroom": true,
+      "invite": {
+        "subject": "Client briefing: {{topic}}, {{date}}",
+        "body": "Dear {{first}},\n\nOur next client briefing is on {{date}} at {{time}}, online, for 45 minutes.\n\nThe topic: {{topic}}. Several of you asked about it this quarter, so we will cover what changed, who it affects and what is worth doing now.\n\nThe link to join is below. If you cannot attend, reply and we will send you the notes.\n\nWarm regards,\n{{advisor}}"
+      }
+    },
+    {
+      "id": "annual",
+      "name": "Annual client event",
+      "audience": "Tiers 1 to 3; each Tier 1 household may bring one peer owner as a guest",
+      "timing": "Once a year, late October or November, with a weather backup date",
+      "months": [
+        10,
+        11
+      ],
+      "format": "Recognition and community. Size set after the Phase 0 baseline.",
+      "purpose": "Belonging and introductions",
+      "owner": "Becky and Maddie",
+      "invite": {
+        "subject": "You are invited, {{date}}",
+        "body": "Dear {{first}},\n\nPlease join us on {{date}} at {{place}} for our annual evening with the families we serve.\n\nIt is an evening to say thank you, and to spend time with people who share a lot in common. If you know another business owner who would enjoy it, you are welcome to bring one guest.\n\nPlease reply by {{rsvp}}.\n\nWarm regards,\n{{advisor}}"
+      }
+    },
+    {
+      "id": "attend",
+      "name": "Milestone attendance",
+      "audience": "Tier 1 owners",
+      "timing": "As logged",
+      "months": [],
+      "format": "Becky attends grand openings, new locations and anniversaries in person.",
+      "purpose": "Showing up",
+      "owner": "Becky"
+    },
+    {
+      "id": "service",
+      "name": "Community service afternoon",
+      "audience": "Tiers 1 and 2",
+      "timing": "Once a year, from year 2",
+      "months": [],
+      "format": "Clients choose a local nonprofit.",
+      "purpose": "Shared values",
+      "owner": "Deferred until capacity is proven"
+    }
+  ],
+  "eventRules": [
+    "Tier 1: a personal call first, then the written invitation 30 days before. Tiers 2 and 3: the written invitation 30 days before.",
+    "Tag each event in Redtail (for example, Event: Roundtable 2027-03) and track RSVPs on the household.",
+    "Reminder 7 days before. Dietary preferences are captured for logistics only.",
+    "Follow-up call or note within 48 hours. Log what the client raised and any introductions offered.",
+    "Cost per attendee is logged against the gift and entertainment limits.",
+    "Invitations, speaker content and programs route through broker-dealer compliance before use.",
+    "No photos or client names are posted or shown without written consent and compliance clearance. Roundtable attendees are never named outside the room.",
+    "No reference to any prior affiliation in any event material. The community name stays a working label until trademark counsel and compliance clear one."
+  ],
+  "redtail": {
+    "fields": [
+      "Tier and tier-change date",
+      "Pillar status for each of the Seven Pillars, and current sprint focus in one line",
+      "Key dates: each adult's birthday, wedding anniversary, business founding anniversary, policy anniversaries",
+      "Milestone log: type, date, what was sent or done, amount, who approved",
+      "Family and advisor map: spouse, children, heirs and successors, CPA, attorney, banker, with each adult heir as a linked contact",
+      "What matters: one sentence from the Values, Vision and Purpose work, in the client's words",
+      "Communication preference and best day and time",
+      "Referral source, introduced by, and introductions made",
+      "Last meaningful contact and next planned touch",
+      "Last Net Promoter score and date"
+    ],
+    "workflows": [
+      {
+        "name": "VIP onboarding, first 90 days",
+        "trigger": "Signed engagement",
+        "steps": "Day 0 welcome call within 24 hours; day 1 handwritten note; day 7 team introduction and direct lines; day 14 first visible win; day 30 and day 60 check-ins; day 90 review and the Net Promoter question",
+        "owner": "Maddie runs; Becky calls"
+      },
+      {
+        "name": "Quarterly sprint",
+        "trigger": "14 days before each quarter",
+        "steps": "Agenda from Zocks notes; pre-read 3 business days ahead; meeting; written recap within 24 hours; tasks into Redtail",
+        "owner": "Becky, planning seat, Maddie"
+      },
+      {
+        "name": "Annual review (Tier 3)",
+        "trigger": "Anniversary month",
+        "steps": "Prep packet; meeting; recap within 48 hours",
+        "owner": "Becky and team"
+      },
+      {
+        "name": "Key date and milestone",
+        "trigger": "14 days before, or on a logged event",
+        "steps": "Select from the milestone catalog; approval; send within 7 days",
+        "owner": "Maddie drafts, Becky signs"
+      },
+      {
+        "name": "Next-generation track",
+        "trigger": "Next-Gen tag applied",
+        "steps": "Annual heir meeting; successor readiness check; family session scheduled",
+        "owner": "Becky"
+      },
+      {
+        "name": "Service request",
+        "trigger": "Any inbound",
+        "steps": "Acknowledge within 4 business hours; status or resolution within 2 business days; escalate to Becky on day 2",
+        "owner": "Maddie"
+      },
+      {
+        "name": "Life or business event",
+        "trigger": "Life Event tag",
+        "steps": "Becky calls within 1 business day; plan review offered within 7 days",
+        "owner": "Becky"
+      },
+      {
+        "name": "At risk",
+        "trigger": "Gap over limit, two missed meetings, unexplained outflow, complaint, mention of another advisor",
+        "steps": "Becky calls within 2 business days; written review",
+        "owner": "Becky"
+      },
+      {
+        "name": "Referral",
+        "trigger": "Advocate tag or a day 90 score of 9 or 10",
+        "steps": "The ask at a defined moment; introduction tracked through the pipeline; thank you within 24 hours",
+        "owner": "Becky and Maddie"
+      }
+    ],
+    "note": "Field and workflow names come from the plan and must be checked in the Redtail instance. Verify the Zocks field mapping before launch."
+  },
+  "decisions": [
+    {
+      "item": "Confirm tier thresholds after the Redtail baseline pull",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Name the broker-dealer and custodian. This controls Redtail feeds, the gift policy and every disclosure.",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Obtain written gift and entertainment limits, then approve the $750, $150 and $75 budget levels",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Decide who prepares sprints. The planning seat is open.",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Set the compliance submission process at the new broker-dealer and clear the first six templates",
+      "owner": "Becky and Maddie",
+      "src": "manual"
+    },
+    {
+      "item": "Set the date by which every client, prospect and COI record is in Redtail, and when Zocks is connected with its four templates",
+      "owner": "Becky",
+      "src": "manual"
+    },
+    {
+      "item": "Confirm whether AI-generated meeting notes must be archived as books and records",
+      "owner": "Maddie",
+      "src": "manual"
+    },
+    {
+      "item": "Confirm credentials, address and title for the next business card and signature block",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Approve the Georgia and Arial fallbacks for email and shared documents, or name others",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Name one print vendor and one engraver, and approve proofs against the brand guide",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Decide whether the Legacy Book or the Roundtable seats are funded first",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Confirm the Contnuum entity structure and data-sharing position",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Decide whether any Tier 3 client gets Roundtable access, and how Tier 4 households are released",
+      "owner": "Becky",
+      "src": "plan"
+    },
+    {
+      "item": "Name the A tier (8 to 10) and B tier (10 to 15) of the COI feeder list",
+      "owner": "Becky",
+      "src": "manual"
+    },
+    {
+      "item": "Confirm the 18-hour client service hiring trigger, or set another",
+      "owner": "Becky",
+      "src": "manual"
+    }
+  ],
+  "guardrails": [
+    "Every consumer-facing template, invitation and printed piece routes through broker-dealer compliance before use, and only the new firm's disclosures appear.",
+    "No reference to any prior affiliation in footers, templates, signature blocks or event materials.",
+    "No contractions in client or COI correspondence, invitations, letters or the Legacy Book. Exact figures with a named source. No manufactured urgency.",
+    "Client names, quotes and photographs appear in nothing external without written consent and compliance clearance.",
+    "Nothing about Contnuum appears in any client piece, and no client data flows to it.",
+    "Maddie never gives advice or answers a planning question in writing, and never contacts a client's CPA or attorney without Becky's instruction and the client's authorization.",
+    "No email goes out in response to a distressed or angry message without Becky reading it first."
+  ]
+}

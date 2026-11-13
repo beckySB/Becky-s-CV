@@ -1,0 +1,91 @@
+{
+  "title": "The COI Relationship Plan",
+  "subtitle": "Centers of influence, run as a system rather than a list of names",
+  "premise": "A real system for building connected, two-way relationships with your centers of influence. Who your ideal client is, who touches them before you do, the cadence you hold, what you bring, and how you stay top of mind between meetings. Your COI network is both the team and the referral engine.",
+  "why": "Centers of influence are 13.9 percent of advisors' new clients, second only to personal referrals at 54.2 percent, and 63 percent of practice-management professionals rate COI partnerships as a highly effective growth strategy. The professionals you coordinate for one owner refer the next, so coordination and growth are the same activity.",
+  "discipline": "Writing down names is not a plan. A real plan starts with who you serve, names who serves them, holds a cadence, and shows up with something every time.",
+  "avatar": {
+    "note": "The sharpest referrals start with a sharp picture of who you serve. If your COIs can recognize your ideal owner the moment one walks in, they send that owner to you without being asked twice. Vague advisors get vague referrals.",
+    "fields": [
+      { "k": "business", "l": "The business", "h": "Industry or type, revenue and enterprise size, number of entities, and whether they are in growth or transition.", "t": "textarea" },
+      { "k": "owner", "l": "The owner", "h": "Age and life stage, role in the business, and what actually keeps them up at night.", "t": "textarea" },
+      { "k": "moment", "l": "The moment", "h": "The trigger that makes them need you now: a transition in view, a liquidity event, a family question, or a stalled plan.", "t": "textarea" },
+      { "k": "fit", "l": "The fit", "h": "The values and working style of an owner you do your best work with, the ones worth a decade of it.", "t": "textarea" },
+      { "k": "oneLine", "l": "The one-line description you hand a COI", "h": "This is the sentence that makes every ask specific. Write it so a CPA could recognise the owner across a table.", "t": "textarea" }
+    ],
+    "triggers": [
+      { "name": "In an aggressive growth stretch", "detail": "Adding real value, fast, and hiring the people to sustain it. They want a structure and a team that keep pace with everything they are building." },
+      { "name": "Coming off a breakout year", "detail": "A big year put real money and real choices on the table. They want to deploy it well, pay themselves right, and reward the people who got them there." },
+      { "name": "Building it to last", "detail": "A decade or more from any exit, with no plans to slow down. They want the whole picture built right, so nothing they have earned is left to chance." }
+    ]
+  },
+  "lanes": [
+    { "id": "estate", "name": "Estate planning attorney", "why": "Every owner needs the estate handled and the buy-sell drafted; you serve the same transfer." },
+    { "id": "bizatty", "name": "Business planning attorney", "why": "Entity structure, contracts, and the transaction, right alongside your integration work." },
+    { "id": "cpa", "name": "CPA", "why": "The tax lane you route to constantly; usually your closest working partner." },
+    { "id": "coo", "name": "Outsourced COO", "why": "Runs operations for owners and sees dependency and transferability firsthand." },
+    { "id": "cfo", "name": "Outsourced CFO", "why": "Owns the numbers inside the business, a natural counterpart to your planning." },
+    { "id": "adjacent", "name": "Adjacent lanes", "why": "Banker, surety, M&A advisor, valuation specialist, insurance, bookkeeper: anyone working directly with owners." }
+  ],
+  "feederSteps": [
+    "Start with your best current owners. For each, list every professional on their team: the CPA, the attorney, the banker, the outsourced COO or CFO, the bookkeeper.",
+    "Map the professions that sit next to your avatar. These are the lanes your feeder list has to cover.",
+    "Name specific firms and people in your market for each lane, not just categories. A feeder list is names, not job titles.",
+    "Rank each by two things: how close they sit to your ideal owner, and how warm the relationship is today.",
+    "Work the top of the list first, and add a new name every time an owner mentions a professional you have not met."
+  ],
+  "feederNote": "The feeder list is a living document. It grows every time you serve an owner, because every owner comes with a team.",
+  "buildingToward": "Your current clients' teams are the start, not the whole list. The highest-value COIs are often the ones you have not met yet: the outsourced COOs and CFOs who see dependency and transferability firsthand, the estate and business attorneys, the bankers and surety agents who work your avatar's world. Name the handful you most want, and open those relationships deliberately rather than waiting for a client to connect you.",
+  "cadence": {
+    "days": 90,
+    "note": "Aim to meet each core COI about once a quarter, usually over coffee or lunch, something built for the relationship rather than a transaction. The quarterly rhythm is what turns a referral source into a genuine partner. Between those meetings, a lighter touch system keeps you present without another calendar hold."
+  },
+  "bring": [
+    { "id": "educational", "name": "Something educational", "how": "An article or piece of information that shows why your two areas working well together matters. Meeting an outsourced COO? Bring a strong piece on how operations and integrated planning reinforce each other." },
+    { "id": "current", "name": "The area you are in now", "how": "If you are working heavily in a new area, stress what it means and what it can mean for the owners they might introduce you to." },
+    { "id": "ask", "name": "A specific ask", "how": "A short list of the clients you are looking for that you know they know. Specific names and profiles, never \"anyone you can think of.\"" },
+    { "id": "return", "name": "The same in return", "how": "Ask what they are looking for and make the introduction. The one you give is what earns the one that comes back." }
+  ],
+  "touches": [
+    { "id": "event", "name": "Event invitations", "how": "Bring them to things: a client appreciation event, an educational session you host, or a dinner with two or three complementary COIs. Being in the room together builds the relationship faster than any email.", "everyDays": 180 },
+    { "id": "article", "name": "Articles and information", "how": "When you see a piece that matters to their world, or to the intersection of your work, send it. Loop your team into your core COIs so they flag and send relevant content on your behalf, and the touches keep happening even in your busy stretches.", "everyDays": 45 },
+    { "id": "birthday", "name": "Birthday lunches", "how": "Note each core COI's birthday and take them to lunch. A birthday is a reason to connect that has nothing to do with a referral, which is exactly why it deepens the relationship.", "everyDays": 365 },
+    { "id": "card", "name": "Thank-you cards", "how": "Send a handwritten card after every meeting, and after every referral, received or given. It is small, it is rare, and it is remembered.", "everyDays": 0 }
+  ],
+  "touchesNote": "The system is the point. Put your handful of core COIs in front of your team so the events, the articles, the birthdays, and the cards are tracked and happen on schedule, not by memory.",
+  "positioning": "Lead with their world and the owner you both serve, not your services. The educational piece frames the meeting as a collaboration between equals; the update tells them exactly what kind of owner to send you; the ask is specific and reciprocal. You are not selling them, you are building a partnership around the owners you both work with, which is why the referrals flow both ways.",
+  "logTypes": [
+    { "id": "meeting", "name": "Quarterly meeting", "tone": "good", "resetsCadence": true },
+    { "id": "event", "name": "Event invitation", "tone": "info" },
+    { "id": "article", "name": "Article sent", "tone": "info" },
+    { "id": "birthday", "name": "Birthday lunch", "tone": "good", "resetsCadence": true },
+    { "id": "card", "name": "Thank-you card", "tone": "info" },
+    { "id": "refGiven", "name": "Referral given", "tone": "gold", "reciprocity": 1 },
+    { "id": "refReceived", "name": "Referral received", "tone": "gold", "reciprocity": -1 },
+    { "id": "intro", "name": "Introduction made to me", "tone": "gold" },
+    { "id": "call", "name": "Call or note", "tone": "idle" }
+  ],
+  "statuses": [
+    { "id": "target", "label": "Target", "tone": "warn", "note": "Wanted, not yet opened." },
+    { "id": "opening", "label": "Opening", "tone": "info", "note": "First conversation had, relationship not yet established." },
+    { "id": "warm", "label": "Warm", "tone": "good", "note": "A genuine two-way relationship on a cadence." },
+    { "id": "core", "label": "Core", "tone": "good", "note": "One of the handful the whole touch system runs for." },
+    { "id": "dormant", "label": "Dormant", "tone": "idle", "note": "Not currently worked." }
+  ],
+  "activityTargets": {
+    "note": "Monthly targets from the Study Group. These are the activity the network is supposed to produce, and the reason to keep the cadence honest.",
+    "monthly": [
+      { "k": "intros", "l": "Introductions", "target": 6, "range": "5 to 7" },
+      { "k": "firstMeetings", "l": "First meetings", "target": 4, "range": "3 to 4" }
+    ],
+    "annual": { "intros": "50 to 70", "firstMeetings": "30 to 44", "closed": "5 to 8 clients" }
+  },
+  "howToUse": [
+    "Start with the avatar: define your ideal owner in one line before you name a single COI. It is what makes every ask specific.",
+    "Build the feeder list, then work it top-down. Add a name every time an owner mentions a professional you have not met.",
+    "Keep the cadence on the calendar: one quarterly touch per core COI, coffee or lunch, with something educational in hand.",
+    "Run the between-meeting system through your team: events, articles, birthday lunches, and thank-you cards, tracked so they happen on schedule.",
+    "Track the relationship, not just the name: what you brought, the clients you are seeking, and the next reciprocal move."
+  ],
+  "compliance": "Practice tool. Any consumer-facing derivative routes through compliance review before use."
+}

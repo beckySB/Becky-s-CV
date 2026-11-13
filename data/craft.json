@@ -1,0 +1,1428 @@
+{
+  "title": "The craft",
+  "note": "What holds true whatever brand you are posting for: what the platforms reward, the shape of a working week, how video gets made, how commenting works, and what can honestly be automated. Brands bring the voice and the content. This part does not change between them.",
+  "cadence": {
+    "heading": "What the data actually supports",
+    "note": "Most posting advice is vendor blogspam recycling the same numbers. This is the part that holds up across independent datasets, the part that does not, and what both mean for a practice whose every post goes through review.",
+    "firm": [
+      {
+        "finding": "Tuesday to Thursday is the window",
+        "detail": "Every large dataset puts peak engagement Tuesday through Thursday. Weekend engagement falls 50 to 70 percent against weekdays.",
+        "source": "Four independent studies covering more than 8 million posts, summarised by Buffer, Sprout Social and Supergrow, 2026"
+      },
+      {
+        "finding": "Comments are worth far more than likes",
+        "detail": "A comment carries roughly 15 times the algorithmic weight of a like, and posts with comments are two to three times more likely to reach second and third degree connections. A like is passive; a comment says somebody had something to say.",
+        "source": "LinkedIn algorithm analyses, 2026"
+      },
+      {
+        "finding": "Dwell time is a primary signal",
+        "detail": "Roughly 30 seconds of attention on a post reads as strong interest and widens distribution. This is why a post that takes a while to read outperforms a clever one line.",
+        "source": "Multiple 2026 algorithm breakdowns"
+      },
+      {
+        "finding": "The first 30 to 60 minutes decides the ceiling",
+        "detail": "The platform samples a small audience first and the reach trajectory is set by how that sample behaves. Around half of a post's total impressions land inside 48 hours.",
+        "source": "2026 algorithm studies"
+      },
+      {
+        "finding": "Documents outperform every other format",
+        "detail": "Native document posts, the PDF carousel, run about 6.6 percent engagement, the highest of any format. Native video around 5.6 to 5.9 percent. Text only around 2 percent.",
+        "source": "Socialinsider and Oktopost benchmarks, Q2 2026"
+      },
+      {
+        "finding": "Polls are dead",
+        "detail": "Down to roughly 0.07 percent engagement after the platform's crackdown on engagement bait. Do not use them.",
+        "source": "2026 authenticity update analyses"
+      },
+      {
+        "finding": "Three to five posts a week, and no more",
+        "detail": "Past five a week, engagement per post drops 18 to 32 percent. Pages posting weekly see 5.6 times the follower growth of pages posting monthly, so the gap that matters is between sporadic and regular, not between three and seven.",
+        "source": "Buffer, 2 million posts, 2026"
+      },
+      {
+        "finding": "Replying beats posting more",
+        "detail": "Accounts posting three times a week that engaged actively in the first 90 minutes outperformed accounts posting daily without it by 4.2 times on lead generation. This is the single largest effect in the whole body of research.",
+        "source": "2026 inbound studies"
+      },
+      {
+        "finding": "It works in this industry specifically",
+        "detail": "80 percent of advisors using social media report gaining clients through it, with a median asset gain of 1.9 million dollars. LinkedIn is the platform they use.",
+        "source": "Putnam Investments Social Advisor research"
+      }
+    ],
+    "soft": [
+      {
+        "claim": "The best hour to post",
+        "reality": "The window holds across studies. The hour does not: one dataset says Wednesday at 4pm, another says 10 to 11am, and the difference tracks whose accounts were sampled rather than anything about the platform. Pick a time inside the window, hold it for a quarter, then read your own numbers. Nobody else's hour is yours."
+      },
+      {
+        "claim": "Text posts underperform",
+        "reality": "Only on engagement rate, which is a ratio. A text post takes five minutes and a carousel takes an hour. Per hour of effort text is the best return on the platform, and it is the format that carries a specific point best."
+      },
+      {
+        "claim": "Engagement rate is the goal",
+        "reality": "It is not, for this practice. One owner reading one post and recognising their own buy-sell in it is worth more than 500 likes from people who will never own a company. Read the conversations started, not the reactions."
+      }
+    ],
+    "forThisPractice": "Every post here goes through review, so volume has a cost the published research does not price in. That turns out not to matter: the evidence already says three disciplined posts a week plus real commenting beats five posts a week without it. The compliant choice and the optimal choice are the same choice, which is rare enough to be worth saying out loud."
+  },
+  "week": {
+    "heading": "The week, every week",
+    "note": "Three posting days inside the window the data supports, and two working days that are not about posting at all. The rhythm is fixed so it survives a busy quarter, which is the only test that matters.",
+    "honesty": "The window, the frequency and the reply block below are what the research supports. Which format lands on which of the three days is production convenience, not evidence: no credible dataset says a carousel does better on a Tuesday than a Thursday. It is fixed anyway, because a rota you do not have to decide each week is a rota that actually runs.",
+    "days": [
+      {
+        "day": "Monday",
+        "role": "Prepare",
+        "posts": false,
+        "what": "Write the week. The Thursday text post gets drafted from whatever actually happened, everything goes to review together, and the video for Wednesday gets confirmed as edited and captioned.",
+        "why": "One review submission a week rather than three keeps the reviewer on your side. Monday engagement is also the weakest of the weekdays, so nothing is lost by not posting.",
+        "minutes": 60
+      },
+      {
+        "day": "Tuesday",
+        "role": "The document",
+        "posts": true,
+        "format": "Native document carousel",
+        "what": "The teaching piece. Six to eight slides, one idea a slide, built from a post in the library. This is the highest reach format on the platform and the one worth the production time.",
+        "why": "Documents run about 6.6 percent engagement, the highest of any format, and they hold attention long enough to clear the dwell time threshold that widens distribution.",
+        "minutes": 45
+      },
+      {
+        "day": "Wednesday",
+        "role": "The video",
+        "posts": true,
+        "format": "Native video, under 90 seconds",
+        "what": "One idea, face to camera, captions burned in. Recorded in a batch weeks earlier, not on the day.",
+        "why": "Wednesday is the single most cited peak day, and video is the format the platform is actively pushing. Video needs the biggest available audience, so it gets the biggest day.",
+        "minutes": 15
+      },
+      {
+        "day": "Thursday",
+        "role": "The live post",
+        "posts": true,
+        "format": "Text",
+        "what": "Written from something that actually happened this week: a question an owner asked, a number you looked up, a thing you changed your mind about.",
+        "why": "The freshest slot needs the lowest production cost, and text is the format that carries one specific point best. It is also what keeps the feed from reading like a content plan.",
+        "minutes": 20
+      },
+      {
+        "day": "Friday",
+        "role": "Engage and read",
+        "posts": false,
+        "what": "The engagement queue: comments on people who matter, per the playbook. Then read the week's numbers against what was published.",
+        "why": "The largest effect in the entire body of research is that replying and commenting beats posting more. Friday posting engagement is weak; Friday commenting is not.",
+        "minutes": 45
+      }
+    ],
+    "replyBlock": {
+      "heading": "The ninety minutes that matter more than the post",
+      "body": "Block 30 minutes immediately after each of the three posts goes up, and stay reachable for an hour after that. The platform samples a small audience first and sets the post's ceiling on how they behave, and a comment is worth about 15 times a like. Answering every comment in that window is the highest leverage activity in this entire system. It is also the one that gets skipped first.",
+      "rule": "A reply adds something, stays under two sentences, and never answers a named person's actual situation. That last one moves to a call."
+    },
+    "cadenceElsewhere": [
+      {
+        "channel": "Instagram",
+        "what": "Two a week, whenever suits. The Tuesday carousel reshaped, and one human or local piece.",
+        "why": "It is the credibility and personality check rather than the acquisition engine. Nobody is winning a business owner from Instagram, and plenty have lost one to an empty profile."
+      },
+      {
+        "channel": "LinkedIn company page",
+        "what": "Once or twice a week, reshared from the personal profile with one line of new framing.",
+        "why": "People follow people. The page is what a prospect checks after a post caught them, so it needs to be current rather than busy."
+      },
+      {
+        "channel": "Email",
+        "what": "Monthly, same week each month.",
+        "why": "The only channel here that no algorithm sits in front of."
+      }
+    ]
+  },
+  "repurpose": {
+    "heading": "One idea, five places",
+    "note": "Nothing in this practice should be written once. The constraint is attention, not ideas, and the same idea lands differently depending on where somebody meets it.",
+    "chain": [
+      {
+        "step": "1",
+        "name": "The LinkedIn post",
+        "detail": "Write it here first, because the length forces the idea to be sharp. If it does not work in 180 words it is not one idea yet."
+      },
+      {
+        "step": "2",
+        "name": "The Instagram carousel",
+        "detail": "Take the same post and cut it to one idea per slide. Anything that will not fit on a slide in under 20 words was padding in the post."
+      },
+      {
+        "step": "3",
+        "name": "The monthly email",
+        "detail": "Rewrite the best performing post of the month for people who already know you. Warmer, shorter, one action at the end."
+      },
+      {
+        "step": "4",
+        "name": "The centre of influence piece",
+        "detail": "The team and coordination posts become the educational piece you bring to a quarterly coffee. Print it. Handing over a page is a different act than sending a link."
+      },
+      {
+        "step": "5",
+        "name": "The client conversation",
+        "detail": "The post that got the most replies is the question your clients are also sitting on. Put it on the next quarterly agenda."
+      }
+    ],
+    "rule": "A post that performed well is not finished. Run it again in a different pillar's language two quarters later. The overlap between the people who saw it the first time and the second is smaller than it feels."
+  },
+  "metrics": {
+    "heading": "What is worth counting",
+    "note": "Impressions are the least useful number available and they are the one every platform shows first. These are the readings that actually track whether this is working, and they line up with the activity targets the practice already runs.",
+    "leading": [
+      {
+        "k": "conversations",
+        "l": "Conversations started from content",
+        "detail": "A reply, a direct message, an inbound email that references something you wrote. This is the number that matters. Target three to five a month before it is worth changing anything else."
+      },
+      {
+        "k": "profileviews",
+        "l": "Profile views after a post",
+        "detail": "The read on whether the hook is doing its job. A post with high views and no conversations has a good hook and a weak close."
+      },
+      {
+        "k": "coiengagement",
+        "l": "Centre of influence engagement",
+        "detail": "Comments and shares from CPAs, attorneys and fractional CFOs. The team pillar posts should produce most of this. Track it by name, not by count."
+      },
+      {
+        "k": "saves",
+        "l": "Saves and shares",
+        "detail": "On Instagram, saves beat likes by a wide margin as a signal that a carousel taught something."
+      }
+    ],
+    "lagging": [
+      {
+        "k": "intros",
+        "l": "Introductions",
+        "detail": "The practice target is five to seven a month from all sources. Note which of them can be traced to something published."
+      },
+      {
+        "k": "firstmeetings",
+        "l": "First meetings",
+        "detail": "Three to four a month from all sources."
+      },
+      {
+        "k": "attribution",
+        "l": "How they found you",
+        "detail": "Ask it in every first meeting and write down the answer. It is the only honest attribution available and almost nobody collects it."
+      }
+    ],
+    "review": "Read these once a quarter, in week 12, against the calendar you just ran. Change one thing, not five."
+  },
+  "production": {
+    "heading": "Working weeks ahead",
+    "note": "Nothing here should be made on the day it posts except the Thursday text. Everything else is produced in batches, reviewed in batches, and scheduled, so a busy quarter costs you the live slot rather than the whole feed.",
+    "pipeline": [
+      {
+        "n": "1",
+        "stage": "Idea",
+        "lead": "Ongoing",
+        "who": "Advisor",
+        "detail": "From quarterly meetings, questions owners actually asked, the board, and what the last month's numbers said worked. Keep a running list rather than starting from nothing on a Monday."
+      },
+      {
+        "n": "2",
+        "stage": "Draft",
+        "lead": "3 to 4 weeks out",
+        "who": "Whoever runs this",
+        "detail": "Write the month's posts and the month's video scripts together. Writing five at once is faster than five times writing one, and the voice holds steadier across a batch."
+      },
+      {
+        "n": "3",
+        "stage": "Review",
+        "lead": "3 weeks out",
+        "who": "The firm's process",
+        "detail": "One submission a month carrying everything: posts, carousel copy, captions, and video scripts. Video scripts must clear review before the shoot, never after."
+      },
+      {
+        "n": "4",
+        "stage": "Record",
+        "lead": "2 weeks out",
+        "who": "Advisor",
+        "detail": "One session, one shirt change halfway, four to six videos. See the batch day below."
+      },
+      {
+        "n": "5",
+        "stage": "Edit and caption",
+        "lead": "1 to 2 weeks out",
+        "who": "Whoever runs this",
+        "detail": "Trim, burn in captions, read the captions back because the industry words come out wrong every time. Export vertical."
+      },
+      {
+        "n": "6",
+        "stage": "Build the carousel",
+        "lead": "1 week out",
+        "who": "Whoever runs this",
+        "detail": "The approved post, cut to one idea a slide. Export as PDF for the native document upload, which is the format the reach data actually rewards."
+      },
+      {
+        "n": "7",
+        "stage": "Schedule",
+        "lead": "The Friday before",
+        "who": "Whoever runs this",
+        "detail": "Tuesday and Wednesday go into the scheduler. Thursday stays empty on purpose."
+      },
+      {
+        "n": "8",
+        "stage": "Post and reply",
+        "lead": "On the day",
+        "who": "Advisor",
+        "detail": "Thursday's text gets written and posted live. And the reply block runs after all three, which is the part that decides how far any of it travels."
+      }
+    ],
+    "batchDay": {
+      "heading": "The recording session",
+      "note": "Two hours, once a month, produces a quarter of Wednesdays. Doing it any other way is why most advisors post three videos and stop.",
+      "steps": [
+        "Set up once: tripod at eye height, window in front, lapel mic on, background with depth behind you.",
+        "Record a throwaway first. The first take of the day is always the worst and it is better spent on nothing.",
+        "Shortest scripts first. They warm you up and they are the ones most likely to survive in one take.",
+        "One take, then one more, then move on. The third take is always worse than the second and everybody learns this the expensive way.",
+        "Change shirt at the halfway point so a batch does not look like a batch when it goes out across six weeks.",
+        "Say the hook twice at the top of each take, so the edit has a choice.",
+        "Name the files as you go. Six unlabelled clips a fortnight later is how a batch day gets wasted."
+      ]
+    },
+    "scheduling": {
+      "heading": "Scheduling, and what auto-posting can honestly do",
+      "body": "Two of the three weekly slots can be genuinely automated, and it is worth being precise about how, because this is the one place on the platform where automation is both permitted and free.",
+      "options": [
+        {
+          "name": "LinkedIn's own scheduler",
+          "tone": "good",
+          "detail": "Built into the composer on both personal profiles and company pages. Costs nothing, breaks no terms, and hands your credentials to nobody. Schedule Tuesday's document and Wednesday's video the Friday before.",
+          "verdict": "Start here. For a three post week it is genuinely all you need."
+        },
+        {
+          "name": "A scheduling tool",
+          "tone": "warn",
+          "detail": "Buffer, Hootsuite, Later and the rest post through the official API, so they are legitimate. They add a queue, a calendar and analytics, and a monthly cost, and they hold a token to your account.",
+          "verdict": "Worth it when more than one person is publishing, or when the archiving requirement is easier to satisfy through a tool the firm has already approved."
+        },
+        {
+          "name": "The official API, wired into this studio",
+          "tone": "idle",
+          "detail": "LinkedIn's API does allow publishing to a profile or page you own, with an approved app. That is the one seam where this site could push a post itself rather than hand you a draft.",
+          "verdict": "Possible, not yet built. It buys a click over the native scheduler, which is a poor trade until the volume justifies it."
+        }
+      ],
+      "never": "Nothing schedules a comment, and nothing should. The reply block is a person, in the window, every time. It is also the highest leverage thing in this entire system, so automating the posting in order to protect time for the replying is the right way round."
+    },
+    "weeksAhead": "Four weeks of drafts, two weeks of recorded video, one week of built carousels. Hit that and a week where everything goes wrong costs you the Thursday post and nothing else."
+  },
+  "video": {
+    "heading": "Video",
+    "why": "Native video runs around 5.6 to 5.9 percent engagement, second only to documents, and it is the format the platform is actively pushing. It is also the only one where a prospect decides whether they would like working with you before they ever speak to you, which for this practice is most of the job.",
+    "rules": [
+      {
+        "name": "Under 90 seconds, and under 30 is better",
+        "detail": "Videos under 30 seconds complete at 70 to 80 percent. Every second past 90 is paid for out of the completion rate."
+      },
+      {
+        "name": "The hook is the first three seconds",
+        "detail": "It autoplays silent into a scroll. If the first line on screen does not stop somebody, nothing after it matters."
+      },
+      {
+        "name": "Captions burned in, always",
+        "detail": "Most of the audience watches with sound off. Uncaptioned video on this platform is a video nobody watched."
+      },
+      {
+        "name": "Vertical or square, never landscape",
+        "detail": "It is watched on a phone, held upright, in a feed."
+      },
+      {
+        "name": "One idea per video",
+        "detail": "The same discipline as a post. Two ideas is two videos, and both will be better."
+      },
+      {
+        "name": "The script goes to review before the shoot",
+        "detail": "This is the one that separates video from every other format here. A written post that comes back marked up costs a rewrite. A recorded video that comes back marked up costs a reshoot, a haircut that no longer matches, and a shirt you have to find again. Approve the words, then record them."
+      }
+    ],
+    "setup": {
+      "heading": "What you actually need",
+      "note": "Nothing that requires a studio, a crew, or a budget line. The bar is looking like a person who knows what they are talking about, not like a commercial.",
+      "kit": [
+        "A phone on a small tripod at eye height. Eye height is the whole difference between authority and a hostage video.",
+        "A window in front of you, never behind you. That is the lighting solved.",
+        "A lapel microphone, wired, twenty dollars. Sound is what makes video feel cheap, not picture.",
+        "A background with depth: an office with something behind you, a job site, the city. Never a blank wall, never a car.",
+        "Captions from whatever the editing app does automatically, then read them back, because it will get the industry words wrong every time."
+      ]
+    },
+    "formats": [
+      {
+        "id": "talking",
+        "name": "Face to camera",
+        "use": "The default. One idea, straight down the lens.",
+        "cost": "Low"
+      },
+      {
+        "id": "walk",
+        "name": "Walk and talk",
+        "use": "Anything about a business as a place: dependency, transferability, a site visit. Movement holds attention through a longer point.",
+        "cost": "Low"
+      },
+      {
+        "id": "page",
+        "name": "The one page",
+        "use": "Anything with a structure to it. You, a sheet of paper or a whiteboard, drawing the thing while you explain it. The balance sheet piece is made for this.",
+        "cost": "Medium"
+      },
+      {
+        "id": "two",
+        "name": "The two hander",
+        "use": "You and a CPA, an attorney or a fractional CFO, on one question you disagree about slightly. The single strongest format in this library for the reason below.",
+        "cost": "Medium"
+      },
+      {
+        "id": "answer",
+        "name": "The answered question",
+        "use": "Read a real question out loud, stripped of anything identifying, then answer it in 40 seconds. Endless supply, because owners keep asking.",
+        "cost": "Low"
+      }
+    ],
+    "collaboration": {
+      "heading": "Why the two hander is worth the trouble",
+      "body": "The user of this system asked what makes other professionals want to be involved, and this is the answer the data supports. A post reaches your network. A post somebody else is in reaches theirs, because they comment, their network sees it, and comments are what carries a post into second and third degree feeds. A two hander with a CPA puts you in front of every owner that CPA knows, with that CPA's implicit endorsement attached, which no amount of posting alone will buy.",
+      "how": [
+        "Pick one question where you and they genuinely see it differently. Agreement is boring and everybody can tell it is staged.",
+        "Ten minutes, two takes, their office. Make it easy for them or it does not happen twice.",
+        "They get the file to post themselves. Two posts beat one, and it is theirs as much as yours.",
+        "Tag them properly and reply to everybody who comments on both copies.",
+        "Then do it again with somebody in a lane you are thin in. Three of these a quarter is a referral engine."
+      ]
+    },
+    "compliance": "Video carries every rule the written pieces carry, and two of its own. Nothing identifying about a client may appear on camera, including a whiteboard behind you, a screen, a document on the desk or a logo on a wall. And the firm's archiving has to capture the video as published, not the script, so confirm how that works before the first one goes up rather than after."
+  },
+  "engagementPlay": {
+    "heading": "Engaging with other people's posts",
+    "note": "Commenting is the highest yielding and most abused activity on the platform. Done properly it is how you stay visible to a hundred people without publishing anything. Done automatically it is how you become the advisor whose comments everybody scrolls past.",
+    "rule": "A comment adds something or it does not get posted. That is the entire standard. Great post, Well said, and Couldn't agree more are worse than silence, because silence at least does not put your name next to nothing.",
+    "cadence": "Fifteen minutes, three mornings a week. Five to eight comments in that window on people who matter, not thirty on whoever the feed served up.",
+    "who": [
+      {
+        "name": "Your core COIs",
+        "detail": "Every one of them, every time they post something substantive. This is the between-meetings touch system doing its job in public."
+      },
+      {
+        "name": "Clients and their companies",
+        "detail": "Their wins, their hires, their milestones. Congratulations in public, planning in private, always."
+      },
+      {
+        "name": "Professionals in a lane you are thin in",
+        "detail": "Three months of thoughtful comments is a warmer opening than any connection note."
+      },
+      {
+        "name": "Owners who fit the avatar",
+        "detail": "Sparingly and genuinely. An owner notices the advisor who engaged with three of their posts before ever messaging them."
+      }
+    ],
+    "never": [
+      "Anything political, and anything adjacent to political.",
+      "A post about a live transaction, a deal, or a company being sold. Even a like is a signal you cannot control.",
+      "Anything medical, legal, or about somebody's divorce, including sympathy that names the situation.",
+      "A competitor's client, on anything.",
+      "Grief and hard news, in public. Send a private note instead. A condolence in a comment thread is for the commenter, not the bereaved.",
+      "Anything where your comment would contain planning content. That is a communication with the public and it has not been reviewed."
+    ],
+    "archetypes": [
+      {
+        "id": "add",
+        "name": "Add the detail they left out",
+        "when": "They made a good point and stopped one step short.",
+        "draft": "The part that surprises people most is {{detail}}. Almost nobody finds that out until it is expensive.",
+        "note": "The strongest comment type by a distance. It demonstrates rather than claims."
+      },
+      {
+        "id": "specific",
+        "name": "The specific compliment",
+        "when": "You genuinely liked it and have nothing to add.",
+        "draft": "The line about {{quote}} is the one I will be stealing. Most people write around that point rather than at it.",
+        "note": "Naming the specific line is what separates this from Great post."
+      },
+      {
+        "id": "question",
+        "name": "The question that is not a quiz",
+        "when": "You actually want to know, and their answer would be interesting to other readers.",
+        "draft": "Curious how you handle {{situation}} when {{complication}}. That is where I see it break down.",
+        "note": "Never ask something you already know the answer to. It reads as a setup and everybody can tell."
+      },
+      {
+        "id": "congrats",
+        "name": "The congratulation with a reason",
+        "when": "A client or COI won something.",
+        "draft": "Congratulations {{first}}. {{specific_thing}} is not nothing, and it says something about how you run the place.",
+        "note": "One line on what it says about them is what makes it different from the fourteen other congratulations underneath."
+      },
+      {
+        "id": "disagree",
+        "name": "The respectful disagreement",
+        "when": "They are wrong about something you know well, and the correction helps readers.",
+        "draft": "Mostly with you, though I would push back on {{point}}. In practice {{alternative}}, at least with owners.",
+        "note": "Use rarely and never with a COI you are still opening. Correct the idea, never the person, and never twice on one thread."
+      }
+    ],
+    "liking": "A like is cheap and it is still a public act by a licensed person. Like generously among clients and COIs, and apply the never list above to likes exactly as you would to comments. A like on a substantive claim is an endorsement of it."
+  },
+  "reality": {
+    "heading": "What can be automated, and what cannot",
+    "note": "Read this before anyone buys a tool that promises otherwise. The distinction is not caution, it is what the platforms permit and what a licensed practice can defend. Every row below is a design decision this studio has already made.",
+    "channels": [
+      {
+        "channel": "LinkedIn, publishing to your own profile or page",
+        "state": "Possible with approval",
+        "tone": "good",
+        "detail": "LinkedIn's official API allows posting and scheduling to an account or company page you own, once the app is approved for the relevant permission. That is the one piece of LinkedIn this studio can eventually push to directly.",
+        "needs": "A LinkedIn developer app, the member social permission approved, and an access token per posting account."
+      },
+      {
+        "channel": "LinkedIn direct messages and InMail",
+        "state": "No API",
+        "tone": "alert",
+        "detail": "There is no general messaging API. Tools that send LinkedIn messages in bulk drive a browser session against the platform's terms. The consequence people actually hit is account restriction, and the account at risk is the one holding the entire referral network.",
+        "needs": "Nothing to build. The studio drafts, a person sends."
+      },
+      {
+        "channel": "LinkedIn connection requests",
+        "state": "No API",
+        "tone": "alert",
+        "detail": "Same position as messaging, with a lower tolerance. Connection request automation is the pattern platform enforcement looks for first, because the volume signature is obvious.",
+        "needs": "Nothing to build. The studio drafts the note, a person sends the request."
+      },
+      {
+        "channel": "Liking and commenting on other people's posts",
+        "state": "No API, and a bad idea besides",
+        "tone": "alert",
+        "detail": "No API exists for it. Beyond that, a generated comment published under a licensed advisor's name is an unreviewed communication with the public, and it reads as automated to exactly the audience this practice wants. The positioning is that the owners worth having distrust that sort of thing, correctly.",
+        "needs": "A queue of posts worth engaging with and a drafted comment. A person decides and posts it."
+      },
+      {
+        "channel": "Email, one to one",
+        "state": "Fully automatable",
+        "tone": "good",
+        "detail": "Your own mailbox, your own sending domain, ordinary email. This is the only outbound channel where a genuine send button can be wired into the studio, and it is the reason the sequences below lean on email once a connection exists.",
+        "needs": "A mail API connected to the sending mailbox, plus the firm's archiving in front of it."
+      },
+      {
+        "channel": "Instagram",
+        "state": "Partial",
+        "tone": "warn",
+        "detail": "A business account can publish through the official API. Direct messages are limited to responding inside a short window after somebody messages you first, which suits replies and does not suit outreach.",
+        "needs": "A business account linked to a page, and an approved app."
+      },
+      {
+        "channel": "Calendar and scheduling",
+        "state": "Fully automatable",
+        "tone": "good",
+        "detail": "A scheduling link does the work of the whole back and forth. The only thing worth building here is the language around the link, which is below, and the follow up when nobody books.",
+        "needs": "A scheduling link with your real availability and a buffer that survives a long meeting."
+      }
+    ],
+    "position": "The studio automates the decision and the draft. A person performs the send. That is not a limitation to work around later, it is the design: it keeps the account safe, it keeps a human signature on every outbound message, and it is the only version the firm's review process can sign off on."
+  },
+  "scheduling": {
+    "heading": "Getting it on the calendar",
+    "note": "The meeting is the point of all of this. Most outreach dies at the transition from conversation to calendar, usually because the ask got vague at exactly the moment it needed to be specific.",
+    "pieces": [
+      {
+        "id": "ask",
+        "name": "The ask",
+        "audience": "Prospect",
+        "body": "Two options and let them pick, rather than an open question about their availability.\n\n\"{{first}}, worth twenty minutes? I am free Tuesday morning or Thursday after three. Either works, or send me a better time and I will make it work.\"\n\nNever: let me know what works for you. That makes them do the work and it is why they do not reply."
+      },
+      {
+        "id": "link",
+        "name": "When to send the link",
+        "audience": "Prospect",
+        "body": "After they have said yes to the idea, never before. A scheduling link in a first message reads as a funnel, and the people this practice wants will read it that way.\n\n\"Easiest is probably this: {{link}}. Grab whatever suits. If nothing on there works, tell me and I will open something up.\""
+      },
+      {
+        "id": "confirm",
+        "name": "The confirmation",
+        "audience": "Prospect",
+        "body": "Same day they book, short.\n\n\"{{first}}, got it for {{when}}. I will call you on {{number}}.\n\nNothing to prepare. I will ask you what you are building and what is keeping you up, and we will see where that goes.\""
+      },
+      {
+        "id": "remind",
+        "name": "The reminder",
+        "audience": "Prospect",
+        "body": "The morning of, one line, and only for a first meeting.\n\n\"Speaking at {{time}} today. Looking forward to it.\""
+      },
+      {
+        "id": "noshow",
+        "name": "When they do not show",
+        "audience": "Prospect",
+        "body": "Assume the best thing and make it easy to recover. People are busy and being made to feel bad about it is how you lose them permanently.\n\n\"{{first}}, I think we got crossed today. Happens. Same time next week, or tell me when is better and I will work around it.\"\n\nOne of these. If nothing comes back, move them to the not ready sequence and leave it."
+      },
+      {
+        "id": "after",
+        "name": "The note after a first meeting",
+        "audience": "Prospect",
+        "body": "Within 24 hours, and it names three specific things rather than saying it was good to meet.\n\nThe full draft is in the social library as The note after a first meeting. It is the highest converting piece in the studio because almost nobody else sends anything with substance in it."
+      }
+    ]
+  },
+  "training": {
+    "heading": "Running this, for whoever is running it",
+    "note": "This is the internal runbook. It assumes the person doing it is not the advisor, and that the advisor still signs everything.",
+    "daily": [
+      {
+        "time": "Twenty minutes, Tuesday and Thursday morning",
+        "what": "Work the top five on the connections board. Read each draft, change what is wrong about it, send it, mark it sent."
+      },
+      {
+        "time": "Fifteen minutes, three mornings",
+        "what": "The engagement queue. Five to eight comments on people who matter. Nothing generic gets posted."
+      },
+      {
+        "time": "Friday, ten minutes",
+        "what": "Clear the queue. Anything that got no reply advances or stops per the sequence. Nothing sits."
+      },
+      {
+        "time": "Monthly, thirty minutes",
+        "what": "Add names. Every client quarterly produces professionals and family members who are not on the board yet."
+      }
+    ],
+    "whatGoodLooks": [
+      "A first message that could not have gone to anybody else.",
+      "A comment that a stranger reading the thread would find useful.",
+      "A no that gets honoured on the date you named.",
+      "A thank you card that goes out whether or not the introduction worked.",
+      "A board that gets to zero, because five a week is achievable and thirty is not."
+    ],
+    "failureModes": [
+      {
+        "name": "Volume as a substitute for thought",
+        "detail": "The moment somebody asks how to send more of these, the practice has lost the thing that makes them work. The answer is always fewer and better."
+      },
+      {
+        "name": "The draft going out unread",
+        "detail": "Every draft in this studio is a starting point with the system's guesses in it. A merged field that is wrong, sent, is worse than no message at all."
+      },
+      {
+        "name": "Chasing the inbound",
+        "detail": "Somebody engages once and gets three messages. It is the fastest way to teach owners not to engage with advisors, and it is the most common mistake in this whole discipline."
+      },
+      {
+        "name": "Comments as a numbers game",
+        "detail": "Thirty generic comments a day is visible to everyone and it costs the practice its posture."
+      },
+      {
+        "name": "Treating the board as a to do list",
+        "detail": "It is a ranked prompt. Skipping somebody because now is wrong is a legitimate use of it."
+      }
+    ],
+    "selfAudit": [
+      "Read the last ten messages you sent. How many could have gone to somebody else unchanged.",
+      "Read the last ten comments. How many added something.",
+      "How many people did you tell you would check back on a date, and did you.",
+      "How many introductions did you make for other people this quarter, against how many you asked for."
+    ]
+  },
+  "discovery": {
+    "heading": "Who is worth connecting with",
+    "note": "The board reads the network you already have rather than a database you rented. Every name it surfaces is somebody already standing next to a household you serve, which means every suggestion arrives with a route in. A list of strangers is a list. A list of people one introduction away is a pipeline.",
+    "sources": [
+      {
+        "id": "team",
+        "name": "A professional on a client's team you have not met",
+        "why": "The CPA, attorney, banker or fractional CFO already working alongside you on a household. They are the warmest COI lead available and most practices never systematically work them.",
+        "path": "The client introduces you. They already trust both of you.",
+        "weight": 5,
+        "sequence": "coi_warm"
+      },
+      {
+        "id": "lane",
+        "name": "A lane with nobody in it",
+        "why": "A professional category your avatar needs that your network does not cover. The gap shows up as a referral you cannot make and a client you cannot serve completely.",
+        "path": "Cold, or through another professional in an adjacent lane.",
+        "weight": 3,
+        "sequence": "coi_cold"
+      },
+      {
+        "id": "household",
+        "name": "Somebody in a client's family or company",
+        "why": "A spouse, a child in the business, a key employee taking equity, a partner on the other side of the buy-sell. Each is a household in waiting and each is already inside the plan.",
+        "path": "The client brings them in, at a quarterly, on their terms.",
+        "weight": 4,
+        "sequence": "",
+        "openingDraft": "{{referrer_first}}, one for the next agenda.\n\n{{name}} is inside this plan whether or not they are ever in the room for it, and at some point they will be living with decisions we are making right now. I would rather they met me before that than after.\n\nNo agenda beyond an introduction. An hour, and I will follow your lead entirely on how much of the detail they see.",
+        "draftNote": "Goes to the client, not to the person. They decide who comes into the room and when."
+      },
+      {
+        "id": "coi_ask",
+        "name": "An owner a warm COI can introduce",
+        "why": "A COI who is genuinely warm and has not been given a specific ask in a while. Specific asks are the whole reason the avatar exists.",
+        "path": "The COI, at the next quarterly coffee.",
+        "weight": 4,
+        "sequence": "owner_intro",
+        "openingDraft": "{{first}}, coffee this month?\n\nTwo things I want out of it. Hear what you are working on so I can point the right people at you, and be specific for once about what I am looking for instead of saying anyone you can think of.\n\nThe owners I do my best work with own the company, most of their net worth is sitting inside it, and they are still building rather than winding down. If one comes to mind while we are sitting there, good. If not, I still owe you a coffee.",
+        "draftNote": "The specific ask is the entire point. A warm COI who has never been given one cannot send you anything."
+      },
+      {
+        "id": "signal",
+        "name": "A client whose moment just arrived",
+        "why": "A recorded signal on a household you already serve: a breakout year, an award, a liquidity event, a key hire. It is a touch first, and it is also the warmest moment in the year to ask that client for an introduction.",
+        "path": "Already a household. This is depth and expansion, not acquisition.",
+        "weight": 5,
+        "sequence": "owner_intro",
+        "openingDraft": "{{first}}, saw this and it is not nothing.\n\nSays something about how you run the place.\n\nThat is the whole message. I will put the planning side of it on the next quarterly agenda rather than turning a good week into a meeting.",
+        "draftNote": "Congratulate now, plan later. An owner who gets a meeting request attached to their good news learns not to share the next one."
+      },
+      {
+        "id": "manual",
+        "name": "Somebody you added yourself",
+        "why": "A name from an event, a publication, a Sales Navigator search, or a conversation. The board treats it the same way once it is in.",
+        "path": "Whatever you know about them.",
+        "weight": 2,
+        "sequence": "coi_cold"
+      }
+    ],
+    "scoring": {
+      "note": "Every candidate carries a score so the board can rank rather than just list. It is a prompt for where to spend a Tuesday morning, never a verdict on a person.",
+      "factors": [
+        "The source weight above: how close they already stand to a household you serve.",
+        "Whether a named warm path exists. A route in is worth more than any other attribute.",
+        "Whether their lane is one your network is currently thin in.",
+        "Whether anything has happened to them recently that makes now the moment.",
+        "How long they have been sitting on this board untouched. Age is a penalty, because a board that never clears is a board nobody reads."
+      ]
+    },
+    "weekly": "Work the top five. Not the whole board. Five real approaches a week is roughly 250 a year, which against the practice's own targets is far more than the network needs to produce five to eight new clients. Volume is not the constraint here and never has been."
+  },
+  "casualVoice": {
+    "heading": "The inbox voice",
+    "note": "The published voice is considered. This one is not. A message to one person should read like it was typed once, by someone with something specific to say, who is not trying to sell anything in the first message. If a draft could have gone to fifty people, rewrite it.",
+    "rules": [
+      {
+        "name": "Forty to seventy words on a first message",
+        "detail": "A long first message is the clearest signal that it went to a list. Short reads as personal even when it is not much shorter in effort."
+      },
+      {
+        "name": "The specific reason, in the first sentence",
+        "detail": "Why this person, why now. A post they wrote, a client you share, a thing their firm just did. If you cannot name it, you are not ready to send."
+      },
+      {
+        "name": "Contractions are fine here",
+        "detail": "The published voice keeps a certain formality. A message to one person does not. Write the way you would talk to a colleague you respect."
+      },
+      {
+        "name": "One ask, and make it small",
+        "detail": "Coffee. Twenty minutes. A yes or no question. Never two asks, and never an ask that requires them to think about their calendar before they can reply."
+      },
+      {
+        "name": "No link in the first message",
+        "detail": "A link in a cold message reads as a funnel. Earn the second message and put it there."
+      },
+      {
+        "name": "No pitch until they ask",
+        "detail": "The first message says why you are writing. It does not say what you do. If they want to know, they will look, and they will."
+      },
+      {
+        "name": "Mirror their language",
+        "detail": "If they say shop, say shop. If they say practice, say practice. Nothing kills a message faster than industry vocabulary the reader does not use."
+      },
+      {
+        "name": "End on the easiest possible reply",
+        "detail": "Worth a coffee. Any interest. Does that sound useful. Something they can answer with one word while walking."
+      }
+    ],
+    "never": [
+      "I hope this message finds you well",
+      "I wanted to reach out",
+      "As a business owner, you know",
+      "Quick question (when it is not a quick question)",
+      "I will keep this brief (then not doing so)",
+      "Circling back, bumping this, just following up",
+      "Any name in the subject line of a first email",
+      "A calendar link before a conversation has happened"
+    ],
+    "goodOpeners": [
+      "Saw your note on {{topic}} and it is the thing I argue with owners about most.",
+      "{{referrer}} said we should know each other, and was specific about why, which is rare.",
+      "We have {{shared}} in common and I would rather meet you before we end up on the same file.",
+      "Read what you wrote about {{topic}}. The part about {{detail}} is the part almost nobody says.",
+      "You spoke at {{event}} last week. The question you got at the end is one I get constantly."
+    ]
+  },
+  "guardrails": {
+    "heading": "The rules outreach runs under",
+    "note": "A message to one prospect is correspondence and a message to many is advertising, and both are records. The firm's review process is the authority on which is which and what may be sent.",
+    "rules": [
+      {
+        "name": "Nothing tailored in a text box",
+        "detail": "A direct message or a comment answering a named person's actual situation is advice, delivered in a channel with no review in front of it. Answer generally, then move it to a call."
+      },
+      {
+        "name": "Every message is a record",
+        "detail": "Direct messages, comments, connection notes. If the firm's archiving does not capture a channel, the practice should not be using that channel for business."
+      },
+      {
+        "name": "Templates go through review once, edits do not go through it again",
+        "detail": "Approve the template, then personalise inside the parts the review allows. If a change alters what the message claims or offers, it is a new template."
+      },
+      {
+        "name": "No performance, no guarantee, no client detail",
+        "detail": "Identical to the published standard. A private message is not a lower bar, it is the same bar with fewer witnesses."
+      },
+      {
+        "name": "Honour a no permanently",
+        "detail": "A do not contact is forever and it survives a change of tool, list or staff member. Mark it in the record and mean it."
+      },
+      {
+        "name": "One person, one voice",
+        "detail": "If a team member drafts on the advisor's behalf, the advisor reads it before it sends. The signature has to mean something."
+      },
+      {
+        "name": "Frequency is part of compliance and part of taste",
+        "detail": "Two unanswered messages is the ceiling on any cold branch in this studio. A third is not persistence, it is the thing that gets accounts reported."
+      }
+    ]
+  },
+  "gmail": {
+    "heading": "Sending through Gmail",
+    "note": "The queue can put a drafted message straight into your Gmail drafts, addressed and subject lined, where you read it and press send yourself. That keeps the send inside your normal mail flow and your firm's archiving, and it keeps a person genuinely performing the send rather than a web page doing it on your behalf.",
+    "privacy": "The site has no backend. Your browser talks to Gmail directly, the access token lives in memory for the session and is never written to storage, and the only permission asked for is the one that creates drafts and sends. It cannot read your mailbox because it never asks to.",
+    "setup": [
+      {
+        "n": "1",
+        "name": "Make a Google Cloud project",
+        "detail": "console.cloud.google.com, new project, any name. Then under APIs and Services, enable the Gmail API."
+      },
+      {
+        "n": "2",
+        "name": "Configure the consent screen",
+        "detail": "If the practice is on Google Workspace, choose Internal. That is the whole approval process, and it is why Internal is worth using. If you pick External you stay in Testing mode and add each person as a test user, which works but caps at 100 people."
+      },
+      {
+        "n": "3",
+        "name": "Add the one scope",
+        "detail": "gmail.compose, and nothing else. It creates drafts and sends. It does not read mail."
+      },
+      {
+        "n": "4",
+        "name": "Create an OAuth client ID",
+        "detail": "Credentials, Create credentials, OAuth client ID, application type Web application. Under Authorised JavaScript origins add every address this site runs at, including http://localhost:8000 if the team runs it locally. No redirect URI is needed."
+      },
+      {
+        "n": "5",
+        "name": "Paste the client ID below",
+        "detail": "It is not a secret. A browser OAuth client ID is public by design, and the authorised origins list is what actually protects it, which is why step 4 matters more than this one."
+      }
+    ],
+    "caveat": "Each person connects their own mailbox on their own machine. There is no shared sending account and there should not be: a message that says it came from an advisor should have left that advisor's mailbox."
+  },
+  "compliance": {
+    "heading": "Before anything is posted",
+    "note": "This is a working checklist, not a compliance opinion. The broker-dealer or RIA review process is the authority on what may go out, and it outranks everything on this page. Public content is advertising the moment it is visible to a prospect, whether or not it names the firm.",
+    "rules": [
+      {
+        "name": "Everything public goes through review first",
+        "detail": "A social post, a profile, a comment that gives substantive planning content, a newsletter. Drafted here, approved there, posted after. Nothing on this screen is approved by being here."
+      },
+      {
+        "name": "No performance and no guarantees",
+        "detail": "No return figure, no revenue projection, no income guarantee, no promise of an outcome. Not in a post, not in a caption, not in a reply."
+      },
+      {
+        "name": "No client, ever, without written permission",
+        "detail": "No name, no industry plus city combination that identifies them, no deal detail, no photograph. A composite must say it is a composite in the piece itself."
+      },
+      {
+        "name": "Testimonials and endorsements are a firm decision",
+        "detail": "A client comment praising the work, a recommendation on a profile, a review, a repost of either. Do not solicit them and do not adopt them. Route the question to the firm before touching it."
+      },
+      {
+        "name": "Sharing someone else's content adopts it",
+        "detail": "A reshare, a like on a substantive claim, a comment agreeing with one. If the underlying claim would not survive review as the firm's own, do not carry it."
+      },
+      {
+        "name": "No advice in a comment or a direct message",
+        "detail": "Public and private replies are both records. Answer generally, then move it to a call. Nothing tailored to a named person's facts happens in a text box."
+      },
+      {
+        "name": "Keep the records",
+        "detail": "Every post, edit and reply is a business record. Archive per the firm's process before posting, not after somebody asks."
+      },
+      {
+        "name": "Say what you are",
+        "detail": "Titles, credentials and firm affiliation as the firm requires them. Required disclosures attached per the firm's process."
+      }
+    ],
+    "selfCheck": [
+      "Could a reader take this as a promise about an outcome",
+      "Does any figure in this appear without being labeled an estimate or an illustration",
+      "Could anyone identify a real client from this",
+      "Does this claim a credential, a capability or an affiliation the firm has not approved",
+      "Does this give advice in tax or law rather than surfacing the question",
+      "Has this been through the firm's review process in the form it will actually post in"
+    ],
+    "footer": "Nothing on this screen is approved. Everything here is a draft prepared for the firm's review process, which is the authority on what may be published, in what form, and with what disclosures attached."
+  },
+  "engagementGroups": [
+    {
+      "id": "onboard",
+      "name": "Starting the relationship"
+    },
+    {
+      "id": "quarter",
+      "name": "The quarterly rhythm"
+    },
+    {
+      "id": "between",
+      "name": "Between the meetings"
+    },
+    {
+      "id": "expand",
+      "name": "Introductions and the wider family"
+    },
+    {
+      "id": "social",
+      "name": "Replying in public"
+    }
+  ],
+  "tokens": [
+    {
+      "token": "{{client.name}}",
+      "fills": "Client or household name"
+    },
+    {
+      "token": "{{client.entity}}",
+      "fills": "Operating company name"
+    },
+    {
+      "token": "{{client.industry}}",
+      "fills": "Industry"
+    },
+    {
+      "token": "{{sprint.quarter}}",
+      "fills": "The quarter label, for example Q3 2026"
+    },
+    {
+      "token": "{{sprint.priorities}}",
+      "fills": "The three priorities with outcome, owner, first action and target date"
+    },
+    {
+      "token": "{{ADVISOR}}",
+      "fills": "Left as a placeholder in client facing drafts by design"
+    },
+    {
+      "token": "{{FIRM}}",
+      "fills": "Left as a placeholder in client facing drafts by design"
+    },
+    {
+      "token": "{{SPOUSE}} {{CHILD}} {{TEAM}}",
+      "fills": "The people in the household and around it. Fill by hand."
+    },
+    {
+      "token": "{{NAME}}",
+      "fills": "The person you are replying to in public"
+    },
+    {
+      "token": "{{EVENT}} {{DATE}} {{PLACE}}",
+      "fills": "Event details"
+    },
+    {
+      "token": "{{ITEM}} {{WHY}} {{SOURCE}}",
+      "fills": "The outstanding document, why it matters, who else could supply it"
+    },
+    {
+      "token": "{{WATCHING}} {{YEAR_SUMMARY}} {{OPEN}} {{NEXT}}",
+      "fills": "Written by hand from the record. Never generated."
+    },
+    {
+      "token": "{{IDEA}} {{ACTION}} {{SUBJECT}}",
+      "fills": "The monthly note's single idea"
+    },
+    {
+      "token": "{{ONE_SPECIFIC}} {{GENERAL_PRINCIPLE}}",
+      "fills": "One piece of substance in a public reply, general and never tailored"
+    },
+    {
+      "token": "{{ONE_LINE_FRAMING}}",
+      "fills": "The new line on a company page reshare. Never left empty."
+    },
+    {
+      "token": "{{FIRST}} {{SECOND}} {{THIRD}} {{WHY_FIRST}}",
+      "fills": "The three things you would actually look at, written from the meeting"
+    },
+    {
+      "token": "{{NUMBER}} {{TOPIC}} {{PARTNERS}} {{WHEN}}",
+      "fills": "Event details and the date you promised to check back"
+    },
+    {
+      "token": "{{first}}",
+      "fills": "Their first name, taken from the record"
+    },
+    {
+      "token": "{{referrer_first}}",
+      "fills": "The first name of whoever the message actually goes to, when that is not the candidate"
+    },
+    {
+      "token": "{{name}} {{firm}} {{role}}",
+      "fills": "Who they are and where they work"
+    },
+    {
+      "token": "{{city}} {{lane_plural}}",
+      "fills": "Their market, and their profession in the plural"
+    },
+    {
+      "token": "{{referrer}}",
+      "fills": "Whoever made the introduction, or the client whose team they sit on"
+    },
+    {
+      "token": "{{topic}} {{detail}} {{quote}}",
+      "fills": "The specific thing you are referencing. Filled by hand, always."
+    },
+    {
+      "token": "{{event}} {{promised}}",
+      "fills": "Where you met and what you said you would send"
+    },
+    {
+      "token": "{{situation}} {{shared}} {{when}}",
+      "fills": "Their moment, what you have in common, the date you promised"
+    },
+    {
+      "token": "{{general_principle}}",
+      "fills": "One general point in a public or direct reply. Never tailored to their facts."
+    },
+    {
+      "token": "{{link}} {{number}} {{time}}",
+      "fills": "Scheduling link, the number you will call, the meeting time"
+    },
+    {
+      "token": "{{ADVISOR}}",
+      "fills": "Fills from Settings when a name has been set"
+    }
+  ],
+  "defaultSequences": [
+    {
+      "id": "coi_cold",
+      "name": "Cold, to a professional you have not met",
+      "who": "A CPA, an estate or business attorney, a fractional CFO or COO who sits next to your avatar",
+      "when": "You have identified them on the feeder list and no warm path exists yet",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "li_connect",
+          "name": "The connection note",
+          "audience": "Prospective COI",
+          "body": "{{first}}, we work with a lot of the same kind of owner and you sit closer to the operating side than I do. Would like to follow your work.\n\nNo ask attached.",
+          "ifNoReply": "If it is not accepted in 14 days, stop. Do not send a second request. Come back in six months with a reason."
+        },
+        {
+          "day": 3,
+          "channel": "li_dm",
+          "name": "After they accept",
+          "audience": "Prospective COI",
+          "body": "Thanks for connecting, {{first}}.\n\nGenuinely no agenda here. I work with owners on the whole picture, business and personal, and I end up alongside {{lane_plural}} on most of it. Figured it was worth knowing who is good in {{city}} before I need to know.\n\nIf you are ever up for a coffee, I would take it.",
+          "ifNoReply": "No third message on this branch. Move them to the engagement queue and let them see your work for a few months."
+        },
+        {
+          "day": 21,
+          "channel": "li_engage",
+          "name": "Engage rather than message",
+          "audience": "Internal",
+          "body": "No message this step. Find two of their posts worth engaging with and leave a comment that adds something, per the engagement playbook.\n\nIf they respond to a comment, that is your opening and you can go back to step 2 language warmly."
+        },
+        {
+          "day": 60,
+          "channel": "email",
+          "name": "The one useful thing",
+          "audience": "Prospective COI",
+          "body": "Subject: the {{topic}} piece\n\n{{first}},\n\nNot selling anything. I wrote this for owners and it is really about the seam between your work and mine, so you might find it useful or might think it is wrong.\n\nEither reaction is worth a coffee if you have one in you.\n\n{{ADVISOR}}",
+          "ifNoReply": "Stop here. Log them as opened, not warm, and revisit at the next quarter's feeder review."
+        }
+      ],
+      "note": "Four touches over two months, three of which ask for nothing. This is deliberately slower than any tool would run it. The relationships this practice needs are the ones that took a while."
+    },
+    {
+      "id": "coi_warm",
+      "name": "Introduced by a client or another professional",
+      "who": "Any professional lane, arriving through somebody you both trust",
+      "when": "A client or COI has made the introduction, or agreed to",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "email",
+          "name": "The reply to the introduction",
+          "audience": "Prospective COI",
+          "body": "Subject: re: intro\n\nThanks {{referrer}}, taking you off this one.\n\n{{first}}, good to meet you this way. {{referrer}} was specific about why we should talk, which does not always happen.\n\nI am around most of next week. Coffee near you, or twenty minutes on the phone if that is easier. Whatever is less effort.\n\n{{ADVISOR}}",
+          "ifNoReply": "Five days, then one short nudge. After that leave it and thank the referrer anyway."
+        },
+        {
+          "day": 5,
+          "channel": "email",
+          "name": "The single nudge",
+          "audience": "Prospective COI",
+          "body": "{{first}}, no rush on this at all. Say the word whenever the timing is better and I will work around you.",
+          "ifNoReply": "Stop. Tell the referrer you connected and it was not the moment, so they know the introduction was honoured."
+        },
+        {
+          "day": 1,
+          "channel": "note",
+          "name": "The thank you to the referrer",
+          "audience": "Internal",
+          "body": "Handwritten card, same week, whether or not the meeting happens.\n\nAn introduction that goes unthanked does not get repeated, and the person who made it is worth more to this practice than the person it was made to."
+        }
+      ]
+    },
+    {
+      "id": "owner_inbound",
+      "name": "An owner engaged with something you published",
+      "who": "A business owner who commented, replied, or opened a message first",
+      "when": "Within 24 hours of the engagement, while they still remember writing it",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "li_dm",
+          "name": "The reply that does not pitch",
+          "audience": "Prospect",
+          "body": "{{first}}, thanks for the note on that post.\n\nShort answer to what you asked: {{general_principle}}.\n\nThe longer answer depends on things I would rather ask you than assume. If you ever want to talk it through, twenty minutes on the phone and I will tell you what I would look at first. If it turns out you do not need me, I will say that too.",
+          "ifNoReply": "No follow up. They engaged once, that is not permission. Keep publishing and let them come back."
+        },
+        {
+          "day": 7,
+          "channel": "li_engage",
+          "name": "Watch, do not chase",
+          "audience": "Internal",
+          "body": "No message. Add them to the engagement queue and pay attention to what they post for a quarter.\n\nAn owner who engages twice is a different signal than one who engaged once, and the second time you can be warmer."
+        }
+      ],
+      "note": "The discipline here is the restraint. An inbound engagement is the single most over-chased signal in this business, and chasing it is what teaches an owner not to engage with advisors."
+    },
+    {
+      "id": "owner_intro",
+      "name": "Warm introduction to an owner",
+      "who": "A business owner introduced by a client, a COI, or somebody at an event",
+      "when": "The introduction has been made and you are the one who moves next",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "email",
+          "name": "The first note",
+          "audience": "Prospect",
+          "body": "Subject: {{referrer}} put us together\n\n{{first}},\n\n{{referrer}} mentioned you are {{situation}}, which is most of what I do.\n\nNo pitch in this email. If it is useful, I will tell you the three things I would look at first in your position, and you can do them with your CPA or with me or with nobody. Twenty minutes, phone or coffee.\n\nIf the timing is wrong, say so and I will leave you alone until it is not.\n\n{{ADVISOR}}",
+          "ifNoReply": "Six days, then one nudge, then stop."
+        },
+        {
+          "day": 6,
+          "channel": "email",
+          "name": "The nudge that gives them an out",
+          "audience": "Prospect",
+          "body": "{{first}}, no pressure at all on this. If now is not the moment just say not now and I will check back after the year end rather than keep appearing in your inbox.",
+          "ifNoReply": "Move to the not ready nurture sequence and honour the date you named."
+        },
+        {
+          "day": 1,
+          "channel": "note",
+          "name": "The thank you to whoever made it",
+          "audience": "Internal",
+          "body": "Handwritten card to the referrer, same week, regardless of outcome."
+        }
+      ]
+    },
+    {
+      "id": "event_followup",
+      "name": "Met at an event",
+      "who": "Anyone, owner or professional, you actually spoke with",
+      "when": "Within 48 hours, while they can still put a face to the name",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "li_connect",
+          "name": "The connection request that references the room",
+          "audience": "Prospective COI",
+          "body": "{{first}}, good to meet you at {{event}}. You said something about {{detail}} that I have been thinking about since.",
+          "ifNoReply": "If not accepted in ten days, let it go. You met once."
+        },
+        {
+          "day": 2,
+          "channel": "email",
+          "name": "The follow through on whatever you promised",
+          "audience": "Prospective COI",
+          "body": "Subject: the thing I said I would send\n\n{{first}},\n\nGood to meet you at {{event}}. Here is the {{promised}} I mentioned.\n\nThat is genuinely all this email is. If you want to pick up the {{topic}} conversation properly at some point, I would enjoy it.\n\n{{ADVISOR}}",
+          "ifNoReply": "Nothing further. You have made contact and delivered on a promise, which is the whole point of this sequence."
+        }
+      ],
+      "note": "The value of this one is entirely in doing what you said you would do inside two days. Almost nobody does, and it is remembered out of proportion to the effort."
+    },
+    {
+      "id": "reengage",
+      "name": "Somebody who went quiet",
+      "who": "A COI or prospect you have not spoken to in six months or more",
+      "when": "The relationship was real and then it lapsed, usually because you got busy",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "email",
+          "name": "The honest one",
+          "audience": "Prospective COI",
+          "body": "Subject: overdue\n\n{{first}},\n\nThis is overdue on my side rather than yours. We talked in {{when}} and then I got busy and the thread went cold, which is my fault.\n\nAnything changed on your end worth catching up on? Happy to buy the coffee this time by way of apology.\n\n{{ADVISOR}}",
+          "ifNoReply": "Two weeks. If nothing, mark them dormant and stop. A dormant relationship is not a dead one, it just is not this quarter's work."
+        }
+      ],
+      "note": "Owning the lapse outright is what makes this work. Every other version of this email is a pretence that both people can see through."
+    },
+    {
+      "id": "notready",
+      "name": "Said no for now",
+      "who": "An owner or professional who told you the timing is wrong",
+      "when": "They gave you a real answer and it deserves a real response",
+      "steps": [
+        {
+          "day": 0,
+          "channel": "email",
+          "name": "The note that actually leaves them alone",
+          "audience": "Prospect",
+          "body": "Subject: no rush\n\n{{first}},\n\nYou said the timing is not right and I believe you. This is not a nudge.\n\nOne thing worth doing whether or not we ever work together: put everything your family owns on one page. The company at a real number, the real estate, the accounts, what the insurance would actually pay, and every debt including the ones you have personally guaranteed. Most owners have never seen it on a single page.\n\nIf it turns up something you want a second opinion on, call me. If not, you have spent an afternoon and you know where you stand.\n\nI will check back around {{when}}, and not before.\n\n{{ADVISOR}}"
+        },
+        {
+          "day": 180,
+          "channel": "email",
+          "name": "The check back you promised",
+          "audience": "Prospect",
+          "body": "Subject: as promised\n\n{{first}}, said I would check back around now and here I am, once.\n\nAnything changed? If not, no problem at all and I will ask again this time next year.\n\n{{ADVISOR}}",
+          "ifNoReply": "One more annual check, then stop entirely."
+        }
+      ],
+      "note": "The entire value of this sequence is that you do what you said. Checking back early destroys it. Checking back on the day builds more credibility than any content ever will."
+    }
+  ],
+  "defaultEngagement": [
+    {
+      "id": "eng_welcome",
+      "group": "onboard",
+      "audience": "Client",
+      "name": "The welcome note",
+      "when": "Within two days of the engagement being signed",
+      "body": "Subject: What happens next\n\n{{client.name}},\n\nThank you for this. I do not take on many of these and I am glad it is you.\n\nHere is what the next 60 days look like so nothing is a surprise.\n\nFirst, the values and vision work. That is a conversation, not a form, and I would like {{SPOUSE}} in the room for it. It is the piece everything else gets measured against, so we do it before we touch a number.\n\nSecond, the picture. We put everything your family owns on one page. The company at a real number, the real estate, the accounts, the insurance, and every debt including the ones you have personally guaranteed. Most people have never seen it on a single page.\n\nThird, your team. I would like to meet your CPA and your attorney, with your permission, so all of us are working from the same plan rather than three separate ones.\n\nAfter that we settle into a quarterly rhythm and the work becomes maintenance rather than construction.\n\nI will send the first of those with times attached. Anything you want to raise before we start, call me directly.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_quarter_invite",
+      "group": "quarter",
+      "audience": "Client",
+      "name": "The quarterly meeting invitation",
+      "when": "Two weeks before the meeting",
+      "body": "Subject: Your quarter, {{sprint.quarter}}\n\n{{client.name}},\n\nTime for the quarterly. Here is the agenda so you can think about it before we sit down rather than in the room.\n\nWhat changed. In the business, in the family, in the numbers. Include the things that do not feel financial. A new hire, a health scare, a child moving home, a customer that has grown too large. Those move the plan more often than the markets do.\n\nWhere the picture stands. I will bring the Snapshot updated, and the read on Growth, Liquidity and Control, with anything that has drifted flagged.\n\nThe three. We pick the three things that get done in the next 90 days, each with a name attached and a first action that starts inside two weeks. Three, not eight. That is the discipline that makes the quarter actually happen.\n\nOne thing to bring: the decision you have been putting off. Everyone has one, and it is usually the highest value item on the agenda.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_quarter_recap",
+      "group": "quarter",
+      "audience": "Client",
+      "name": "The recap that goes out the same day",
+      "when": "Within 24 hours of the meeting",
+      "body": "Subject: The three for this quarter\n\n{{client.name}},\n\nGood conversation today. Here is where we landed, short enough to actually read.\n\n{{sprint.priorities}}\n\nCoordination: I am sending the relevant piece of this to {{TEAM}} so nobody is working from an old version.\n\nWhat I need from you: the items above that carry your name, and nothing else. If any of them stops being the right priority, tell me early and we will change it rather than let it sit there looking unfinished.\n\nNext check-in is on the calendar. Call me before then if anything moves.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_quiet",
+      "group": "quarter",
+      "audience": "Client",
+      "name": "The nothing changed quarter",
+      "when": "When a quarter genuinely has no news",
+      "body": "Subject: Quiet quarter\n\n{{client.name}},\n\nI looked at your picture this week and there is nothing that needs you. The guardrails are where they should be, the documents are current, and nothing in the numbers moved enough to matter.\n\nI am telling you that on purpose, because a quiet quarter is a result rather than an absence, and you should know when you are in one.\n\nTwo things I am watching that are not urgent: {{WATCHING}}.\n\nEnjoy the quarter. I will be in touch before the next one.\n\n{{ADVISOR}}",
+      "note": "The most underused piece in this library. Clients notice a firm that tells them when there is nothing to do, and it is the opposite of what they expect."
+    },
+    {
+      "id": "eng_annual",
+      "group": "quarter",
+      "audience": "Client",
+      "name": "The year in review",
+      "when": "January, or on the engagement anniversary",
+      "body": "Subject: The year\n\n{{client.name}},\n\nA year in, here is what actually got done, because it is easy to lose track of it a quarter at a time.\n\n{{YEAR_SUMMARY}}\n\nWhat is still open, honestly: {{OPEN}}\n\nWhat I think next year is for: {{NEXT}}\n\nThat last one is a proposal, not a decision. Push back on it and we will use the first quarter to argue it out.\n\nThank you for a good year of this. It is genuinely more interesting work than most of what I do.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_docsnudge",
+      "group": "between",
+      "audience": "Client",
+      "name": "The document nudge that does not nag",
+      "when": "When something has been outstanding for six weeks",
+      "body": "Subject: One outstanding item\n\n{{client.name}},\n\nOne thing still open on my side: {{ITEM}}.\n\nI am not chasing you for the sake of the file. It matters because {{WHY}}, and until I have it that part of the picture is a guess.\n\nIf it is easier to get it from {{SOURCE}} directly, say the word and I will handle it from here.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_spouse",
+      "group": "expand",
+      "audience": "Client and team",
+      "name": "Bringing the spouse in properly",
+      "when": "Before the values work, and again before anything estate related",
+      "body": "Subject: Both of you, for this one\n\n{{client.name}},\n\nI would like {{SPOUSE}} at the next one, and I want to say why rather than just adding a name to the invitation.\n\nTwo of the seven parts of this plan are not really about the business. What the money is for, and what happens to all of it eventually. Those are not decisions one person makes on behalf of a household, and a plan built without the other half of the conversation tends to be a plan that quietly does not get followed.\n\nThere is also a plainer reason. If something happens to you, the person who has to live inside this plan is {{SPOUSE}}, and they should know how it works before they need it to.\n\nAn hour, no preparation needed.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_nextgen",
+      "group": "expand",
+      "audience": "Client and team",
+      "name": "Inviting the next generation",
+      "when": "After the estate documents are current",
+      "body": "Subject: A conversation with {{CHILD}}\n\n{{client.name}},\n\nNow that the documents are current, there is a conversation worth having while you are here to have it.\n\nFamilies rarely come apart over the amount. They come apart over the surprise, and over one person being handed something the others were not, with nobody having explained why.\n\nWhat I am suggesting is one meeting, with {{CHILD}} in the room, where you say what is coming, why it is arranged this way, and what is expected of them and what is not. I will hold the structure and stay out of the family part of it.\n\nYou do not have to disclose numbers to do this well. Most families do not, at first.\n\nSay the word and I will put something together.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_intro",
+      "group": "expand",
+      "audience": "Client",
+      "name": "Asking for an introduction, without the awkwardness",
+      "when": "After a quarter where something visibly worked",
+      "body": "Subject: One ask\n\n{{client.name}},\n\nSomething I do not do often, so it is worth doing plainly.\n\nMost of the owners I work with came from another owner who thought the conversation was worth having. I would rather grow that way than any other.\n\nThe people I do my best work with look a lot like you. They own the company, most of their net worth is inside it, they are still building rather than winding down, and their planning has not caught up to the size of what they have made.\n\nIf somebody comes to mind, an introduction over email is plenty and I will take it from there. If nobody does, that is a completely fine answer and I will not ask again this year.\n\n{{ADVISOR}}",
+      "note": "Route this through review. Any client facing request for introductions can be read as a solicitation, and the firm's process decides the wording."
+    },
+    {
+      "id": "eng_event",
+      "group": "expand",
+      "audience": "Client and team",
+      "name": "The event invitation",
+      "when": "Four weeks out",
+      "body": "Subject: {{EVENT}}, {{DATE}}\n\n{{client.name}},\n\nWe are hosting {{EVENT}} on {{DATE}} at {{PLACE}}, and I would like you there.\n\nIt is {{WHAT_IT_IS}}. Small, no presentation aimed at you, and the room is mostly other owners and the professionals who work with them. The point is the room rather than the programme.\n\nBring {{SPOUSE}}. Bring your CPA if they would enjoy it, which most of them do.\n\nReply here and I will hold two seats.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "eng_newsletter",
+      "group": "between",
+      "audience": "Client and team",
+      "name": "The monthly note",
+      "when": "Same week every month",
+      "body": "Subject: {{SUBJECT}}\n\nOne idea this month.\n\n{{IDEA}}\n\nWhy it matters to you specifically: {{WHY}}\n\nThe one thing worth doing about it: {{ACTION}}\n\nThat is all. If you want to talk about it, call me.\n\n{{ADVISOR}}",
+      "note": "One idea per send. A newsletter with four things in it gets read for none of them. Pull the idea from whichever social post performed best that month and rewrite it for people who already know you."
+    },
+    {
+      "id": "soc_comment_generic",
+      "group": "social",
+      "audience": "Prospect",
+      "name": "Replying to a comment",
+      "when": "Within two hours of the comment",
+      "body": "Thank you, {{NAME}}. The version of this that surprises people most is {{ONE_SPECIFIC}}.\n\nHappy to go deeper if it is useful.",
+      "note": "Two sentences maximum. Add one piece of substance so the reply is worth reading, and stop. Never answer a specific personal situation in a comment thread."
+    },
+    {
+      "id": "soc_comment_personal",
+      "group": "social",
+      "audience": "Prospect",
+      "name": "When someone describes their own situation in public",
+      "when": "Immediately",
+      "body": "Appreciate you saying that here, {{NAME}}. That specific a question deserves a real answer rather than a comment box, and yours has details in it that would change the answer.\n\nSend me a note and I will give you my honest read. No pitch.",
+      "note": "This is the single most important script in the library. A public thread is a record and it is not the place for tailored advice. Move it, always."
+    },
+    {
+      "id": "soc_dm_inbound",
+      "group": "social",
+      "audience": "Prospect",
+      "name": "The first reply to an inbound message",
+      "when": "Same day",
+      "body": "Thanks for the note. Short answer: {{GENERAL_PRINCIPLE}}.\n\nThe longer answer depends on things I would rather ask you than assume. If you want, twenty minutes on the phone and I will tell you what I would look at first. If it turns out you do not need me, I will tell you that too.\n\n{{ADVISOR}}"
+    },
+    {
+      "id": "soc_connect",
+      "group": "social",
+      "audience": "Prospective COI",
+      "name": "The connection request that gets accepted",
+      "when": "On sending",
+      "body": "{{NAME}}, we work with a lot of the same kind of owner, and you sit closer to the operating side than I do. Would like to follow your work.\n\nNo ask attached.",
+      "note": "Under 40 words. An ask in a connection request is why most of them are ignored."
+    }
+  ],
+  "defaultChannels": [
+    {
+      "id": "li",
+      "name": "LinkedIn, personal profile",
+      "tone": "info",
+      "role": "The engine. Owners and centres of influence are both here, and the personal profile outperforms the company page by a wide margin because people follow people.",
+      "cadence": "Three posts a week. Two written for owners, one written for the professionals who serve them.",
+      "format": [
+        "Hook in the first line, under 12 words if possible. It is all that shows before See more.",
+        "A blank line after the hook, always.",
+        "Body in one and two sentence paragraphs. White space is the formatting.",
+        "140 to 220 words for a full post. Under 80 for a short one.",
+        "No links in the post body. Put the link in the first comment if it is needed at all.",
+        "No hashtags, or at most two that a person would actually follow. Never a wall of them."
+      ],
+      "engagement": "Reply to every comment inside the first two hours, in one or two sentences, without giving planning advice. The replies are what the algorithm reads and what a prospect reads."
+    },
+    {
+      "id": "lico",
+      "name": "LinkedIn, company page",
+      "tone": "idle",
+      "role": "The credibility check. A prospect looks here after they read a post, not before. It needs to be current and consistent rather than busy.",
+      "cadence": "Once or twice a week, mostly amplification of the personal posts plus firm news.",
+      "format": [
+        "Same voice, one degree more formal.",
+        "This is where firm news, events and the overview live.",
+        "Every post reshared from the personal profile with one line of new framing, never a bare reshare."
+      ]
+    },
+    {
+      "id": "ig",
+      "name": "Instagram",
+      "tone": "warn",
+      "role": "The human side and the local side. New Orleans, the team, the events, and the frameworks made visual. Owners check it to see whether they would like working with you.",
+      "cadence": "Two or three a week. One carousel that teaches, one human or local post, stories as they happen.",
+      "format": [
+        "Carousels teach best. Six to eight slides, one idea per slide, under 20 words a slide.",
+        "The first slide is the hook and it has to work as a thumbnail.",
+        "Caption carries the substance. First two lines show before More.",
+        "Three to six hashtags at the end of the caption, mixed local and category.",
+        "Faces outperform graphics. Use the team, the city and the room."
+      ]
+    },
+    {
+      "id": "email",
+      "name": "Email and newsletter",
+      "tone": "good",
+      "role": "The channel the practice owns. Nothing here depends on a platform's decision about who sees what.",
+      "cadence": "Monthly to the full list. Quarterly to clients around the sprint. Immediate on a life event.",
+      "format": [
+        "Subject line under 45 characters, no colon, no clickbait.",
+        "One idea per send. A newsletter with four things in it gets read for none of them.",
+        "Plain text beats designed for anything written to one person.",
+        "Sign it as a person, not the firm."
+      ]
+    }
+  ],
+  "pillarScaffold": [
+    {
+      "id": "wedge",
+      "name": "The wedge",
+      "share": "Roughly a quarter",
+      "job": "The one thing your market gets wrong that you can prove in under a minute. Most of your best work comes from here.",
+      "reader": "Somebody who has the problem and has never had it named."
+    },
+    {
+      "id": "framework",
+      "name": "The framework",
+      "share": "Roughly a fifth",
+      "job": "Your method, made teachable. The thing you can draw on one page.",
+      "reader": "Somebody who can feel the problem and cannot articulate it."
+    },
+    {
+      "id": "risk",
+      "name": "What goes wrong quietly",
+      "share": "Roughly a sixth",
+      "job": "The failures that do not announce themselves until they are expensive.",
+      "reader": "Somebody mid-growth whose structure is lagging."
+    },
+    {
+      "id": "proof",
+      "name": "How the work actually runs",
+      "share": "Roughly a sixth",
+      "job": "Process transparency. What a month or a quarter with you really looks like.",
+      "reader": "Somebody deciding whether to have the conversation."
+    },
+    {
+      "id": "peers",
+      "name": "To the people who refer you",
+      "share": "Roughly a sixth",
+      "job": "Written for the professionals who touch your client before you do. The strongest referral content there is.",
+      "reader": "A peer in an adjacent lane serving the same person."
+    },
+    {
+      "id": "why",
+      "name": "What it is all for",
+      "share": "The rest",
+      "job": "Values and the long view. What makes you a choice rather than a vendor.",
+      "reader": "Somebody who has the numbers and never wrote down what they are in service of."
+    }
+  ]
+}

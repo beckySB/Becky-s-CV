@@ -1,0 +1,853 @@
+{
+ "version": 1,
+ "principle": "Moments watches the public news for the people who matter most to the firm, and says how to respond. It holds a short watch list: a name, a company, a city, whether they are a client, a center of influence or a prospect, and a tier. Nothing about their money. Redtail stays the record: every response is logged there, and dated occasions like birthdays come from Redtail's key date workflow.",
+ "audiences": [
+  {
+   "id": "tier1",
+   "name": "Tier 1, VIP Anchor Families",
+   "kind": "client"
+  },
+  {
+   "id": "tier2",
+   "name": "Tier 2, Building Owners",
+   "kind": "client"
+  },
+  {
+   "id": "tier3",
+   "name": "Tier 3, Core Clients",
+   "kind": "client"
+  },
+  {
+   "id": "coi",
+   "name": "Center of influence",
+   "kind": "coi"
+  },
+  {
+   "id": "prospect",
+   "name": "Prospect",
+   "kind": "prospect"
+  }
+ ],
+ "kinds": {
+  "celebrate": "Celebrate",
+  "business": "Business news",
+  "family": "Kids, grandkids and family",
+  "support": "Support",
+  "caution": "Read only"
+ },
+ "rules": [
+  "Respond as a person who noticed, not as a firm that monitors. Public good news: say where you saw it. Private or sad news: never say how you learned it.",
+  "Read the article before responding, and make sure it is them. A shared name is the most common mistake this makes.",
+  "Nothing in a note, comment or call is advice. Planning questions go to the next scheduled meeting.",
+  "Never comment publicly on sensitive news: a sale before they announce it, a loss, a lawsuit, a layoff.",
+  "Gifts follow the milestone guardrails: the firm's limit per person per year, logged in Redtail with amount, date and recipient.",
+  "Every response is logged in Redtail. Moments keeps only what it found and whether it was handled.",
+  "For prospects and centers of influence, congratulations are the whole message. The relationship is the point; the pitch would undo it.",
+  "Kids and grandkids: everything goes through the parent or grandparent, never directly to a minor, and nothing about money."
+ ],
+ "limits": [
+  "It sees what is published: business news, honors, appointments, openings, deals, some obituaries. Weddings, births, illness and most family news come from people, and are logged by hand on the Log one tab.",
+  "Birthdays and anniversaries are dated, so they come from Redtail's key date workflow, not from here.",
+  "It cannot read LinkedIn or personal Facebook profiles. Neither allows it. When you see big news there, paste the post into Log one and it is read the same way. Turn on LinkedIn's own notifications for the same people.",
+  "It reads Instagram for the business and creator accounts you add to the watch list, through the firm's connected Instagram, and anything that tags the firm. Personal and private Instagram accounts cannot be read.",
+  "Children's and grandchildren's names are never searched. Their moments come from the parents' own posts and from what you hear."
+ ],
+ "localFeeds": [
+  {
+   "id": "biz-nola",
+   "name": "Biz New Orleans",
+   "url": "https://www.bizneworleans.com/feed/",
+   "kind": "rss"
+  },
+  {
+   "id": "citybusiness",
+   "name": "New Orleans CityBusiness",
+   "url": "https://neworleanscitybusiness.com/feed/",
+   "kind": "rss"
+  },
+  {
+   "id": "la-illuminator",
+   "name": "Louisiana Illuminator",
+   "url": "https://lailluminator.com/feed/",
+   "kind": "rss"
+  }
+ ],
+ "moments": [
+  {
+   "id": "award",
+   "name": "An award, a list or an honor",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [
+    "award",
+    "awarded",
+    "honoree",
+    "honored",
+    "honour",
+    "named to",
+    "40 under 40",
+    "forty under forty",
+    "top 50",
+    "top 100",
+    "hall of fame",
+    "of the year",
+    "recipient",
+    "recognized as",
+    "recognition",
+    "women of the year",
+    "influential"
+   ],
+   "timing": "Note within 48 hours of the news. The framed article within 21 days.",
+   "respond": {
+    "tier1": "Handwritten note within 48 hours, then a purchased print copy of the article, framed, with a short card.",
+    "tier2": "Handwritten note within 48 hours. Comment on their own post if they made one.",
+    "tier3": "A short card, or a comment on their post.",
+    "coi": "Handwritten note, and a public congratulation on their own post, wherever they shared it. On LinkedIn, share it with one line of your own if the honor is professional.",
+    "prospect": "A comment on their public post, or a two line note. No gift, and nothing about what you do."
+   },
+   "gift": "A purchased print copy of the article, framed. Buy the copy; do not reprint the article without the publisher's permission.",
+   "say": [
+    "I saw the news in {{source}} and wanted to say congratulations. It is well deserved.",
+    "The people who know your work are not surprised."
+   ],
+   "avoid": [
+    "Turning the note into a meeting request.",
+    "Mentioning money, the business's value or anything you know as their advisor.",
+    "Exclamation marks and superlatives. Plain and warm reads as sincere."
+   ],
+   "door": "Recognition often follows a strong year. At the next scheduled meeting, ask whether the year changed anything they want to plan for.",
+   "log": "Milestone log: award, date, what was sent, amount, who approved."
+  },
+  {
+   "id": "press",
+   "name": "Featured or quoted in the news",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [
+    "interview",
+    "profile",
+    "spotlight",
+    "featured",
+    "q&a",
+    "says",
+    "told",
+    "column",
+    "op-ed",
+    "podcast"
+   ],
+   "timing": "Within a week, while the piece is still current.",
+   "respond": {
+    "tier1": "A short note naming one specific thing they said, and why it stayed with you.",
+    "tier2": "A short note or a comment on their share of the piece.",
+    "tier3": "A comment on their share, if they shared it.",
+    "coi": "Share the piece with one line of real framing, tagging them only if they shared it publicly first.",
+    "prospect": "A comment on their public share that adds something, not just congratulations."
+   },
+   "gift": null,
+   "say": [
+    "I read your interview in {{source}}. What you said about {{detail}} is exactly right."
+   ],
+   "avoid": [
+    "Quoting them back in a way that reads as flattery.",
+    "Commenting on anything in the piece that touches their finances."
+   ],
+   "door": "Usually none. Keep it a relationship touch.",
+   "log": "Touch log: what was sent."
+  },
+  {
+   "id": "role",
+   "name": "A new role, promotion or board seat",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [
+    "promoted",
+    "promotion",
+    "appointed",
+    "appointment",
+    "named ceo",
+    "named president",
+    "named partner",
+    "named chief",
+    "new role",
+    "joins board",
+    "board of directors",
+    "elected chair",
+    "elected president",
+    "takes the helm",
+    "succeeds",
+    "named managing",
+    "joins as"
+   ],
+   "timing": "Note within one week of the announcement.",
+   "respond": {
+    "tier1": "Handwritten note within a week. A call if the role changes how they are paid.",
+    "tier2": "Handwritten note within a week.",
+    "tier3": "A card, or a comment on their announcement.",
+    "coi": "Note plus a public congratulation. A new role usually means new introductions both ways; offer one that would help them.",
+    "prospect": "A comment on the announcement. If you have met, a two line note."
+   },
+   "gift": "None needed. For Tier 1, a book that fits the new seat, under the gift ceiling.",
+   "say": [
+    "Congratulations on the new role at {{company}}. They chose well."
+   ],
+   "avoid": [
+    "Advice in the note. A new role raises benefit and compensation questions, and those belong in a meeting, not a card."
+   ],
+   "door": "A new role often changes compensation, equity or benefit elections. Ask at the next meeting whether anything about pay or benefits changed, and what they decided.",
+   "log": "Life Event tag if the role changes their plan; note the new title in Redtail."
+  },
+  {
+   "id": "business-win",
+   "name": "A major contract, expansion or investment",
+   "kind": "business",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": "opening",
+   "signals": [
+    "contract",
+    "awarded a",
+    "wins bid",
+    "selected to",
+    "expands",
+    "expansion",
+    "new location",
+    "opens",
+    "opening",
+    "grand opening",
+    "ribbon cutting",
+    "groundbreaking",
+    "breaks ground",
+    "acquires",
+    "acquisition of",
+    "raises",
+    "funding",
+    "investment",
+    "new facility",
+    "headquarters",
+    "hiring",
+    "jobs",
+    "meta",
+    "spacex",
+    "data center"
+   ],
+   "timing": "Note within one week. Attend the opening in person where you can.",
+   "respond": {
+    "tier1": "Call within two business days, then a handwritten note. Attend any opening. For an opening, the engraved scissors and framed print from the opening occasion.",
+    "tier2": "Handwritten note within a week, and a call if the win changes their size.",
+    "tier3": "A card or a comment on the company's post.",
+    "coi": "A note, and a public congratulation to the company. Ask who they are looking to meet now and make one introduction.",
+    "prospect": "A comment on the company's public post. If the news is a large contract, a short note is a natural first touch; still nothing about what you do."
+   },
+   "gift": "For an opening: engraved ribbon cutting scissors and a framed opening day print (the opening occasion). Otherwise a note is enough.",
+   "say": [
+    "Congratulations on {{detail}}. That is a real milestone for {{company}}, and it was earned.",
+    "If there is anything I can do to help as you build out for it, I would be glad to."
+   ],
+   "avoid": [
+    "Assuming the deal terms from the article.",
+    "Any comment on what the business is worth.",
+    "Rushing to sell: a win is a reason to congratulate, not to pitch."
+   ],
+   "door": "Growth changes the plan: cash flow and working capital, key people and how they are kept, bonding and insurance requirements on large contracts, entity structure, and the owner's own balance sheet. Ask at the next meeting what the win changes for them, and bring their CPA and attorney in where it touches tax or contracts.",
+   "log": "Life Event tag; note the win in the company record."
+  },
+  {
+   "id": "sale",
+   "name": "A sale of the business, merger or exit",
+   "kind": "business",
+   "sensitivity": "sensitive",
+   "publicResponse": false,
+   "occasion": "closing",
+   "signals": [
+    "sold",
+    "sells",
+    "sale of",
+    "acquired by",
+    "to acquire",
+    "agreed to buy",
+    "merger",
+    "merges with",
+    "merge",
+    "exit",
+    "private equity",
+    "recapitalization",
+    "recapitalisation",
+    "transaction",
+    "deal closes"
+   ],
+   "timing": "Call the same day you learn of it. Note within seven days.",
+   "respond": {
+    "tier1": "Becky calls the same day. Handwritten note within seven days. The engraved desk piece, founding date to closing date, after closing.",
+    "tier2": "Becky calls the same day; note within seven days.",
+    "tier3": "A call and a note.",
+    "coi": "A private note. If the COI advised on the deal, congratulate the work, not the fee.",
+    "prospect": "A private note only. A liquidity event brings every advisor in the city to the door; be the one who did not pitch."
+   },
+   "gift": "The closing occasion's engraved desk piece, founding date to closing date. Within the gift ceiling.",
+   "say": [
+    "I just heard the news about {{company}}. Congratulations. You built something people wanted to own.",
+    "Whenever you are ready to talk about what comes next, I am here. There is no rush."
+   ],
+   "avoid": [
+    "Any public comment until they announce it themselves.",
+    "Naming a price or any number.",
+    "Treating it as a sales opportunity in the first conversation."
+   ],
+   "door": "Proceeds, taxes, and what the owner does next are the biggest planning questions there are. Ask when they would like to sit down, and bring the CPA and attorney in early. If it is a prospect, offer a conversation, once, and leave it with them.",
+   "log": "Exit Window or Life Event tag; milestone log after closing."
+  },
+  {
+   "id": "biz-anniversary",
+   "name": "A business anniversary",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": "biz-anniversary",
+   "signals": [
+    "anniversary",
+    "celebrates 10",
+    "celebrates 25",
+    "years in business",
+    "founded in",
+    "decades",
+    "milestone year"
+   ],
+   "timing": "Note within seven days; keepsake within 21 (the business anniversary occasion).",
+   "respond": {
+    "tier1": "The business anniversary occasion: note and keepsake for the 10th or 25th.",
+    "tier2": "Handwritten note.",
+    "tier3": "A card.",
+    "coi": "A note and a public congratulation.",
+    "prospect": "A comment on the company's post."
+   },
+   "gift": "Bound founder's book or engraved keepsake (the business anniversary occasion).",
+   "say": [
+    "Congratulations on {{years}} years of {{company}}."
+   ],
+   "avoid": [
+    "Turning it into a sales touch."
+   ],
+   "door": "None. A relational touch.",
+   "log": "Milestone log."
+  },
+  {
+   "id": "retirement",
+   "name": "A retirement or stepping back",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": "retirement",
+   "signals": [
+    "retire",
+    "retires",
+    "retirement",
+    "retiring",
+    "steps down",
+    "stepping down",
+    "steps back",
+    "transition",
+    "succession",
+    "hands over",
+    "passes the torch"
+   ],
+   "timing": "Call the same week; note within seven days (the retirement occasion).",
+   "respond": {
+    "tier1": "The retirement occasion: call the same week, note within seven days, a gesture chosen from what they said they want to do next.",
+    "tier2": "Call and note.",
+    "tier3": "A card.",
+    "coi": "A note, and a thank you for what they built in the community. Ask who is taking over their clients and offer to meet them.",
+    "prospect": "A note. A retirement is a natural first conversation, but let them ask."
+   },
+   "gift": "The retirement occasion's gesture.",
+   "say": [
+    "Congratulations on the next chapter. I hope it is everything you have been working toward."
+   ],
+   "avoid": [
+    "Recommending what to do with a retirement plan in the note. Rollover questions belong in a meeting, with the full comparison."
+   ],
+   "door": "Retirement income, benefits, and any retirement plan decisions. Ask at the next meeting; never recommend in a note or a comment.",
+   "log": "Life Event tag; milestone log."
+  },
+  {
+   "id": "philanthropy",
+   "name": "Philanthropy or a community role",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [
+    "gala",
+    "honoree",
+    "chair",
+    "chairs",
+    "donates",
+    "donation",
+    "gift to",
+    "foundation",
+    "scholarship",
+    "volunteer",
+    "fundraiser",
+    "benefit",
+    "board of trustees",
+    "nonprofit"
+   ],
+   "timing": "Note within a week. If there is an event, consider attending.",
+   "respond": {
+    "tier1": "Handwritten note, and consider attending or supporting the event, under the firm's charitable giving policy.",
+    "tier2": "Handwritten note.",
+    "tier3": "A comment on their post.",
+    "coi": "A public congratulation and, where it fits, a ticket to their event.",
+    "prospect": "A comment on their post. Showing up at their cause matters more than any note."
+   },
+   "gift": "Support for their cause, if the firm's policy allows it, in place of a gift.",
+   "say": [
+    "What you are doing for {{detail}} matters. Thank you for it."
+   ],
+   "avoid": [
+    "Political contributions of any kind. Those carry their own rules; ask compliance first.",
+    "Making the gift about the firm."
+   ],
+   "door": "Charitable intent is a planning topic: ask at the next meeting whether giving is something they want to plan for.",
+   "log": "Touch log; note the cause in Redtail (what matters)."
+  },
+  {
+   "id": "newborn",
+   "name": "A new baby or grandbaby",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "birth",
+   "signals": [
+    "baby",
+    "newborn",
+    "welcomes",
+    "welcomed",
+    "born",
+    "birth announcement",
+    "new grandbaby",
+    "first grandchild",
+    "first grandson",
+    "first granddaughter",
+    "new arrival",
+    "its a boy",
+    "its a girl"
+   ],
+   "timing": "Call or note within seven days. The engraved rattle can follow within 21, because engraving adds time.",
+   "respond": {
+    "tier1": "A call or note within seven days, then the engraved rattle (brass or silver plated, first name and birth date) or the engraved piggy bank. For a grandchild, send it to the grandparent to give.",
+    "tier2": "A handwritten note to the parents or grandparents.",
+    "tier3": "A card.",
+    "coi": "A card.",
+    "prospect": "A warm comment on their own public post, if they made one. Nothing more."
+   },
+   "gift": "Engraved baby rattle, brass or silver plated, with the first name and birth date; or the engraved silver-plated piggy bank. Sterling usually runs past the ceiling.",
+   "say": [
+    "Congratulations on the arrival of {{detail}}. We are so happy for your whole family."
+   ],
+   "avoid": [
+    "Anything addressed to the baby, or any mention of saving for them.",
+    "Commenting on a post about a child unless the parent posted it publicly themselves, and adding nothing they did not say.",
+    "Saying you saw it on social media when the post was not public."
+   ],
+   "door": "A new child or grandchild often changes beneficiaries, guardianship, education plans and the estate plan. Ask gently at the next meeting, not now.",
+   "log": "Life Event tag; the birth date as a key date only with the parent's consent; milestone log with the gift and amount."
+  },
+  {
+   "id": "college",
+   "name": "College acceptance, commitment or signing day",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "college",
+   "signals": [
+    "signs with",
+    "signing day",
+    "signed with",
+    "commits to",
+    "committed to",
+    "commitment to",
+    "letter of intent",
+    "accepted to",
+    "admitted to",
+    "will attend",
+    "college decision",
+    "scholarship to",
+    "headed to",
+    "class of 2030",
+    "class of 2031"
+   ],
+   "timing": "Within 14 days of the news, and before move-in once the school is chosen.",
+   "respond": {
+    "tier1": "A note and a hat or sweatshirt from the college, from the official campus store, sized quietly through the parent. For a grandchild, send it to the grandparent to give.",
+    "tier2": "A handwritten note to the parents or grandparents.",
+    "tier3": "A card, or a comment on their public post.",
+    "coi": "A comment on their public post, or a card.",
+    "prospect": "A comment on their own public post. A proud parent remembers who noticed."
+   },
+   "gift": "A hat or sweatshirt from the college, bought from the official campus store; a hat avoids guessing the size. Nothing with the firm's name on it.",
+   "say": [
+    "Congratulations to {{detail}}. Please pass on how proud we are."
+   ],
+   "avoid": [
+    "Celebrating an acceptance as a decision. Wait until they announce the school.",
+    "Any mention of tuition, aid, 529 plans or what college costs. That is a meeting, if they want one.",
+    "Naming the student publicly beyond what the parent posted."
+   ],
+   "door": "Paying for college, and how it fits the rest of the plan. Ask at the next meeting whether they would like to look at it; never in the note.",
+   "log": "Life Event tag; milestone log with the gift and amount."
+  },
+  {
+   "id": "graduation",
+   "name": "A graduation",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "graduation",
+   "signals": [
+    "graduates",
+    "graduated",
+    "graduation",
+    "commencement",
+    "class of 2026",
+    "class of 2027",
+    "earned a degree",
+    "earns degree",
+    "diploma"
+   ],
+   "timing": "Note within seven days.",
+   "respond": {
+    "tier1": "A note to the parents or grandparents and the engraved fountain pen or leather journal for the graduate.",
+    "tier2": "A handwritten note to the parents or grandparents.",
+    "tier3": "A card.",
+    "coi": "A card or a comment on their public post.",
+    "prospect": "A comment on their own public post."
+   },
+   "gift": "Engraved fountain pen or leather-bound journal (the graduation occasion).",
+   "say": [
+    "Congratulations on {{detail}}. It is a proud day, and a beginning."
+   ],
+   "avoid": [
+    "Any advice to the graduate about money in the note."
+   ],
+   "door": "If the graduate is an adult heir, the Next-Gen track may open, with the parent's consent. Ask the parent, once.",
+   "log": "Milestone log; Next-Gen tag if an adult heir is now engaged."
+  },
+  {
+   "id": "achievement",
+   "name": "A child's or grandchild's achievement",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "achievement",
+   "signals": [
+    "eagle scout",
+    "gold award",
+    "state champion",
+    "state championship",
+    "all-state",
+    "all-american",
+    "valedictorian",
+    "salutatorian",
+    "national merit",
+    "honor society",
+    "honor roll",
+    "dean's list",
+    "science fair",
+    "spelling bee",
+    "recital",
+    "debutante",
+    "debut",
+    "krewe",
+    "queen of",
+    "king of",
+    "maid of",
+    "court of",
+    "scholar athlete"
+   ],
+   "timing": "Within seven days.",
+   "respond": {
+    "tier1": "A handwritten note addressed to the young person, sent to the parent or grandparent to pass on. Young people rarely get real mail, and they keep it.",
+    "tier2": "The same note, if you know the family well; otherwise a word to the parent.",
+    "tier3": "A word to the parent, or a comment on their post.",
+    "coi": "A comment on their public post.",
+    "prospect": "A comment on their own public post."
+   },
+   "gift": "None. The note addressed to the young person is the gift.",
+   "say": [
+    "Dear [their first name], I heard about {{detail}}, and I wanted to say congratulations. That kind of work does not happen by accident. Keep going."
+   ],
+   "avoid": [
+    "Writing directly to a minor. It always goes through the parent or grandparent.",
+    "Anything about money, saving or the firm.",
+    "Naming the child or their school publicly beyond what the parent posted."
+   ],
+   "door": "None. A relational touch for the family.",
+   "log": "Touch log on the parent's record."
+  },
+  {
+   "id": "first-steps",
+   "name": "A grown child's first job, first home or first business",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "first-steps",
+   "signals": [
+    "first job",
+    "first home",
+    "first house",
+    "new grad",
+    "starts at",
+    "launches her",
+    "launches his",
+    "opens her first",
+    "opens his first"
+   ],
+   "timing": "Within 14 days.",
+   "respond": {
+    "tier1": "A note to the parent, with a good book on the first years of earning and an open invitation to a next-generation conversation, offered once.",
+    "tier2": "A note to the parent.",
+    "tier3": "A card, or a comment on their post.",
+    "coi": "A comment on their public post.",
+    "prospect": "A comment on their public post."
+   },
+   "gift": "A good book on the first years of earning, with the next-generation invitation (the first steps occasion).",
+   "say": [
+    "Congratulations to {{detail}}. Please pass on my congratulations."
+   ],
+   "avoid": [
+    "Approaching the grown child directly without the parent's consent on file.",
+    "Anything that reads as recruiting the child as a client."
+   ],
+   "door": "This is where the Next-Gen track starts. Ask the parent whether their son or daughter would like an hour, once, and leave it with them.",
+   "log": "Next-Gen tag when the heir is engaged; consent on file."
+  },
+  {
+   "id": "family",
+   "name": "A wedding, engagement or anniversary",
+   "kind": "family",
+   "sensitivity": "private",
+   "publicResponse": true,
+   "occasion": "wedding",
+   "signals": [
+    "wedding",
+    "married",
+    "engaged",
+    "engagement",
+    "tie the knot",
+    "wedding anniversary",
+    "50th anniversary",
+    "25th anniversary",
+    "newlyweds"
+   ],
+   "timing": "Note within seven days.",
+   "respond": {
+    "tier1": "A note within seven days, and the engraved frame for a photo from the day.",
+    "tier2": "A handwritten note.",
+    "tier3": "A card.",
+    "coi": "A card.",
+    "prospect": "A comment on their own public post, if they made one."
+   },
+   "gift": "Engraved frame for a photo from the day (the wedding occasion).",
+   "say": [
+    "Congratulations to {{detail}}. Wishing you many more years worth celebrating."
+   ],
+   "avoid": [
+    "Learning it from social media and saying so when the post was not public."
+   ],
+   "door": "A marriage often changes beneficiaries, titling and the estate plan. Ask gently at the next meeting.",
+   "log": "Life Event tag; key date added; milestone log."
+  },
+  {
+   "id": "loss",
+   "name": "A loss in the family",
+   "kind": "support",
+   "sensitivity": "sensitive",
+   "publicResponse": false,
+   "occasion": "loss",
+   "signals": [
+    "obituary",
+    "passed away",
+    "died",
+    "dies",
+    "death of",
+    "survived by",
+    "funeral",
+    "memorial service",
+    "in loving memory",
+    "celebration of life",
+    "visitation"
+   ],
+   "timing": "Becky calls within one business day. Handwritten note. Attend the service if appropriate.",
+   "respond": {
+    "tier1": "Becky calls within one business day, writes by hand, and attends the service if appropriate. Flowers or a donation to the named charity, under policy.",
+    "tier2": "Call within one business day and a handwritten note.",
+    "tier3": "A handwritten note.",
+    "coi": "A handwritten note.",
+    "prospect": "A handwritten note only if you knew the person. Never anything that could read as business."
+   },
+   "gift": "None. A donation to the charity the family names, if the firm's policy allows.",
+   "say": [
+    "I was so sorry to hear about {{detail}}. I am thinking of you and your family.",
+    "You do not need to reply to this. I will check in with you in a few weeks."
+   ],
+   "avoid": [
+    "Anything about accounts, beneficiaries or next steps in the first contact.",
+    "Any public comment beyond the funeral home's guestbook.",
+    "Mentioning that you found it in the news."
+   ],
+   "door": "Not now. Put a gentle check in on the calendar for 30 to 60 days out. When they are ready, help with the paperwork and with what changes for the family.",
+   "log": "Life Event tag; milestone log; 30 to 60 day check in task."
+  },
+  {
+   "id": "hardship",
+   "name": "A fire, flood, storm or accident",
+   "kind": "support",
+   "sensitivity": "private",
+   "publicResponse": false,
+   "occasion": null,
+   "signals": [
+    "fire",
+    "flood",
+    "flooding",
+    "hurricane",
+    "storm damage",
+    "tornado",
+    "destroyed",
+    "damaged",
+    "explosion",
+    "accident",
+    "injured",
+    "evacuat",
+    "power outage",
+    "closed after"
+   ],
+   "timing": "Call within one business day of learning of it.",
+   "respond": {
+    "tier1": "Becky calls within one business day to check on them and the people they employ. Offer practical help: the documents an insurance claim needs, and the questions to bring to their CPA.",
+    "tier2": "A call within one business day.",
+    "tier3": "A call or a note.",
+    "coi": "A call or a note, and an offer of anything practical.",
+    "prospect": "A note only if you know them. Practical help, never a pitch."
+   },
+   "gift": null,
+   "say": [
+    "I heard about {{detail}}. Are you and your people all right? If there is anything practical I can do, tell me."
+   ],
+   "avoid": [
+    "Any mention of products or coverage in the first call.",
+    "Speculating about the cause or about insurance."
+   ],
+   "door": "Once things settle: claims, cash flow while the business is down, and whether the coverage and contingency plan held up. Ask, do not tell.",
+   "log": "Life Event tag; touch log."
+  },
+  {
+   "id": "trouble",
+   "name": "A lawsuit, layoffs, closure or investigation",
+   "kind": "caution",
+   "sensitivity": "sensitive",
+   "publicResponse": false,
+   "occasion": null,
+   "signals": [
+    "lawsuit",
+    "sued",
+    "sues",
+    "files suit",
+    "layoffs",
+    "lays off",
+    "laid off",
+    "bankruptcy",
+    "chapter 11",
+    "chapter 7",
+    "investigation",
+    "indicted",
+    "charged with",
+    "arrested",
+    "recall",
+    "settlement",
+    "fined",
+    "penalty",
+    "closing its doors",
+    "shuts down",
+    "foreclosure",
+    "default"
+   ],
+   "timing": "No outreach because of the news. Becky decides what, if anything, happens.",
+   "respond": {
+    "tier1": "Becky reads it. No outreach because of the article. If they raise it, listen. Consider whether the At Risk tag applies.",
+    "tier2": "Becky reads it. No outreach because of the article.",
+    "tier3": "Note it. No outreach.",
+    "coi": "Note it. Do not refer anyone into the situation until it is clear.",
+    "prospect": "Note it. No outreach."
+   },
+   "gift": null,
+   "say": [
+    "If they bring it up: I am sorry you are dealing with this. What would be most helpful right now?"
+   ],
+   "avoid": [
+    "Raising it first.",
+    "Any public comment, like or share.",
+    "Discussing it with anyone outside the firm."
+   ],
+   "door": "If they raise it, ask what it changes and who is advising them. If the news involves allegations of fraud or financial crime, tell the firm's compliance officer before any contact.",
+   "log": "Becky only. At Risk tag if it applies. Escalate to compliance where the last line says so."
+  },
+  {
+   "id": "tagged",
+   "name": "Tagged the firm on Instagram",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [],
+   "timing": "The same day.",
+   "respond": {
+    "tier1": "Like it, reply publicly with a line of thanks, and share it to the firm's story if it is an event. A handwritten note if it was generous.",
+    "tier2": "Like it and reply with a line of thanks.",
+    "tier3": "Like it and reply.",
+    "coi": "Like it, reply, and share it to the story. Return the favor when you can.",
+    "prospect": "Like it and reply with thanks. Someone who tags the firm is already warm."
+   },
+   "gift": null,
+   "say": [
+    "Thank you for having us. It was a good night."
+   ],
+   "avoid": [
+    "Resharing anything that reads as a testimonial or endorsement of the firm's advice. Thanks are fine; a client praising results is a compliance question."
+   ],
+   "door": "Usually none.",
+   "log": "Touch log."
+  },
+  {
+   "id": "mention",
+   "name": "Mentioned in the news",
+   "kind": "celebrate",
+   "sensitivity": "public",
+   "publicResponse": true,
+   "occasion": null,
+   "signals": [],
+   "timing": "Read it first. Respond only if it fits one of the moments above.",
+   "respond": {
+    "tier1": "Read it. If it is good news, a short note.",
+    "tier2": "Read it.",
+    "tier3": "Read it.",
+    "coi": "Read it. Share it if it helps them.",
+    "prospect": "Read it."
+   },
+   "gift": null,
+   "say": [
+    "I saw {{company}} in {{source}}. Good to see."
+   ],
+   "avoid": [
+    "Responding to something you have not read."
+   ],
+   "door": "Usually none.",
+   "log": "Nothing, unless it turns out to be one of the moments above."
+  }
+ ]
+}

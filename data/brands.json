@@ -1,0 +1,1208 @@
+{
+  "brands": [
+    {
+      "id": "www",
+      "name": "Women Worth & Wealth",
+      "shortName": "Worth & Wealth",
+      "identity": {
+        "positioning": "A small group money and worth experience for women in New Orleans",
+        "offer": "Six Wealth Wednesdays, January to April, for 12 women, with the Money Isn't Lucky Summit at the midpoint. Real conversations, practical tools, lasting change.",
+        "market": "New Orleans, in person",
+        "audience": "Smart, capable women who have been made to feel otherwise about money. Earning, raising families, leading teams and building businesses, and quietly carrying the story that they are \"just not numbers people.\" Ready to pour into themselves for once.",
+        "wedge": "Your worth is the whole picture, not your paycheck. You already own your wealth. The work is learning to steward it.",
+        "reviewedBy": "Becky's compliance review, before anything is published",
+        "tagline": "Own your worth. Steward your wealth.",
+        "advisor": "Amy Landry & Becky Gustafson",
+        "credentials": "",
+        "attributionShort": "Amy Landry & Becky Gustafson",
+        "address": "New Orleans, LA. Location shared upon enrollment.",
+        "phone": "",
+        "email": "",
+        "website": "wealthandwisdom.biz",
+        "title": "Created and co-hosted by Amy Landry & Becky Gustafson",
+        "credentialsNote": "The program is educational. Do not lead with Becky's designations in program marketing, and never use Eternal Wealth Partners, Northwestern Mutual or any broker-dealer name in program copy unless Becky supplies approved disclosure language. Her bio may state her designations and that she founded Eternal Wealth Partners as biographical fact only.",
+        "generalEmail": "",
+        "educationalNote": "Women Worth & Wealth is an educational program. Content is general in nature and is not financial, tax, or legal advice. Enrollment does not create an advisory relationship with either host. Please consult your own financial, tax, and legal professionals for advice specific to your situation."
+      },
+      "visual": {
+        "colors": [
+          {
+            "name": "Worth Green",
+            "hex": "#123d32",
+            "use": "The primary. Headings, the solid ground on social, buttons, the dark leaf of the mark.",
+            "primary": true
+          },
+          {
+            "name": "Deep Green",
+            "hex": "#0c2e25",
+            "use": "The deepest ground. Footers, the Celebration layout, anywhere the logo reverses."
+          },
+          {
+            "name": "Wealth Gold",
+            "hex": "#c9a86a",
+            "use": "The warm accent. CTAs and text on green, the ampersand, thin rules. Never body text on a light ground."
+          },
+          {
+            "name": "Gold Ink",
+            "hex": "#7d5a1c",
+            "use": "Gold toned text on cream and white, where Wealth Gold would fail contrast."
+          },
+          {
+            "name": "Cream",
+            "hex": "#fbf7f1",
+            "use": "The page. Every light ground starts here, not on pure white."
+          },
+          {
+            "name": "Blush",
+            "hex": "#f5ebe4",
+            "use": "A soft second ground for cards and quote panels."
+          },
+          {
+            "name": "Ink (charcoal green)",
+            "hex": "#1f2a26",
+            "use": "Body copy on light grounds."
+          }
+        ],
+        "fonts": [
+          {
+            "name": "Cormorant Garamond",
+            "use": "Headlines and the wordmark. A confident, high contrast serif that reads as editorial rather than bank.",
+            "source": "Google Fonts (SIL Open Font License). Bundled in assets/fonts."
+          },
+          {
+            "name": "DM Sans",
+            "use": "Body, captions and interface. A clean geometric sans.",
+            "source": "Google Fonts (SIL Open Font License). Bundled in assets/fonts."
+          },
+          {
+            "name": "Allura",
+            "use": "A script for one celebratory word at a time. Never a sentence.",
+            "source": "Google Fonts (SIL Open Font License). Bundled in assets/fonts."
+          }
+        ],
+        "logoNote": "A three leaf mark (a gold centre leaf, a deep green leaf to the left, an olive leaf to the right) beside the wordmark: WOMEN, small and letterspaced in gold, over Worth & Wealth in Cormorant Garamond with the ampersand in gold italic. The mark keeps its colours on cream and on deep green. On a photograph or the green band the whole logo goes white.",
+        "imageDirection": "Real, warm, New Orleans. Women together: around a table, laughing, working through a page, at breakfast. Both co-hosts smiling, not corporate headshots. No stock photos of women pointing at laptops, no piles of cash, no charts going up. Stock loops are fine for texture but are never captioned as participants.",
+        "colorNote": "Straight from the website's stylesheet (wealthandwisdom.biz), where every pairing was checked for WCAG AA. Gold on green passes at 5.3:1. Gold on cream does not, which is what Gold Ink is for.",
+        "fontNote": "All three are free Google Fonts, so Canva carries every one of them. No substitutes needed.",
+        "fontSubstitutes": [],
+        "texture": "None. The cream ground and generous space are the texture.",
+        "gradient": {
+          "name": "Worth Green depth",
+          "from": "#1d5a4a",
+          "to": "#0c2e25",
+          "use": "The hero ground for covers and the Celebration layout. Lighter at the top, deep at the bottom."
+        },
+        "logoLockups": [
+          "Horizontal: mark left of the two line wordmark. The default.",
+          "Mark alone: avatars, favicons, the profile picture, anywhere the wordmark would be unreadable.",
+          "Reverse: on deep green, the mark keeps its colours and the wordmark turns cream with a gold ampersand.",
+          "White: every part white, for photographs and the green band."
+        ],
+        "exclusionZone": "Clear space equal to the height of the centre leaf on every side.",
+        "prohibited": [
+          "Do not recolour the leaves or the wordmark outside the palette.",
+          "Do not rotate, skew or stretch.",
+          "Do not set the wordmark in any face but Cormorant Garamond.",
+          "Do not put the colour logo on a busy photograph. Use the white version on a darkened image."
+        ],
+        "patterns": "None. Leaf shapes from the mark may be used once, large and faint, as a corner accent.",
+        "socialIcons": "The mark alone, centred on cream, with generous space around it."
+      },
+      "voice": {
+        "heading": "How Women Worth & Wealth sounds",
+        "source": "From the build spec, the site copy and CLAUDE.md in the womens-wealth- repository. If a new piece does not sound like the home page, the piece is wrong.",
+        "principles": [
+          {
+            "name": "Warm, analytical, visionary",
+            "detail": "Warm enough that she feels seen, analytical enough that she trusts it, visionary enough that she wants the next chapter. Witty where it helps, never flippant."
+          },
+          {
+            "name": "Speak to a smart woman",
+            "detail": "Write to one woman who has been made to feel otherwise about money. Never condescend. Never shame. No \"even you can\" energy."
+          },
+          {
+            "name": "Worth is the whole picture",
+            "detail": "Her income is one line of her worth. The family she raises, the friends she shows up for and the community she improves are part of it too. Never tie worth to a paycheck."
+          },
+          {
+            "name": "She already owns it",
+            "detail": "Lead from ownership, not lack. The work is stewardship: understand it, use it on purpose, grow it, protect it."
+          },
+          {
+            "name": "Teach the concept, never the product",
+            "detail": "How a Roth works, what an emergency fund is for, how compounding behaves. Never \"you should buy\" anything. No returns, no outcomes, no promises."
+          },
+          {
+            "name": "Real conversations, practical tools, lasting change",
+            "detail": "Keep the triad. Every piece should leave her with one thing she can try this week."
+          },
+          {
+            "name": "Trace it to a verb",
+            "detail": "Every piece connects to earn it, use it, grow it or protect it. If it does not, it does not belong."
+          }
+        ],
+        "mechanics": [
+          "No em dashes and no en dashes anywhere. Use a period, a comma, a colon or parentheses.",
+          "Contractions are welcome. This is a warm room, not a letter from a firm.",
+          "One question per post is plenty. Two in a row reads as a quiz.",
+          "At most one emoji on Instagram, never in the first line. None on LinkedIn.",
+          "Name the program in full the first time: Women Worth & Wealth. After that, Worth & Wealth.",
+          "Say \"Wealth Wednesdays\" and \"the Money Isn't Lucky Summit\" exactly that way.",
+          "Educational framing on anything that teaches: a short line that it is general education, not advice.",
+          "Amy's lane is worth, leadership and mindset. Becky's lane is the money. Attribute accordingly.",
+          "Never fabricate a testimonial, an outcome or a quote. Testimonials wait for the first cohort."
+        ],
+        "banned": [
+          {
+            "word": "earn your worth, know your worth (as a salary line), charge what you're worth",
+            "instead": "Own your worth. Your worth is the whole picture."
+          },
+          {
+            "word": "financial freedom, get rich, build wealth fast",
+            "instead": "Steward what you have, on purpose."
+          },
+          {
+            "word": "you should invest in, buy, open (any product)",
+            "instead": "Here is how it works, and what to ask your own professional."
+          },
+          {
+            "word": "guaranteed, results, by month 12 you will have",
+            "instead": "You will leave with a plan you built yourself."
+          },
+          {
+            "word": "bad with money, financially illiterate",
+            "instead": "Nobody taught most of us this. Numbers are learnable."
+          },
+          {
+            "word": "girlboss, queen, slay",
+            "instead": "Say what she actually did."
+          },
+          {
+            "word": "Eternal Wealth Partners, Northwestern Mutual, any broker-dealer",
+            "instead": "Leave it out of program copy unless Becky supplies approved disclosure language."
+          },
+          {
+            "word": "last chance, only 2 seats left (unless literally true and approved)",
+            "instead": "Twelve seats, and applications are open."
+          }
+        ],
+        "openings": {
+          "note": "Hooks with the right shape for this program. The first line is all most people see.",
+          "patterns": [
+            "The story, named: \"I'm just not a numbers person\" is a story, not a fact.",
+            "The reframe: Your paycheck is one line of your worth. It was never the whole page.",
+            "The quiet truth: Most of us learned about money by watching, not by being taught.",
+            "The permission: You are allowed to pour into yourself for once.",
+            "The question she already has: What is the money actually for?",
+            "The small number: Five numbers. That is all it takes to know where you stand.",
+            "The room: Twelve women, one table, no stupid questions and no sales pitch."
+          ]
+        },
+        "closings": [
+          "Applications for the first cohort are open at wealthandwisdom.biz.",
+          "Try it this week. It takes ten minutes and a pen.",
+          "Real conversations. Practical tools. Lasting change.",
+          "Own your worth. Steward your wealth.",
+          "Come as you are. Bring a friend to the Vision Board party."
+        ],
+        "mechanicsSource": "The no em dash rule, the educational framing and the banned phrases come from CLAUDE.md and the build spec in the womens-wealth- repository. They are not optional."
+      },
+      "pillars": [
+        {
+          "id": "story",
+          "name": "Your money story",
+          "share": "Roughly a fifth",
+          "job": "The wedge. Name the inherited beliefs and the \"not a numbers person\" story so she recognises her own.",
+          "reader": "The woman who runs a household or a team and still freezes at a spreadsheet.",
+          "proof": [
+            "Money Story Timeline",
+            "The four money spectrums",
+            "Session 1"
+          ]
+        },
+        {
+          "id": "worth",
+          "name": "Your whole worth",
+          "share": "Roughly a fifth",
+          "job": "The thesis. Worth is the whole picture, not the W-2. Amy's lane.",
+          "reader": "The woman whose paycheck gets all the credit, from her and from everyone else.",
+          "proof": [
+            "Whole Worth Inventory",
+            "Session 1"
+          ]
+        },
+        {
+          "id": "use",
+          "name": "Use it and earn it",
+          "share": "Roughly a fifth",
+          "job": "Values before numbers, spending on purpose, and asking for more without tying identity to the answer.",
+          "reader": "The woman who knows she is underpaid, or who cannot say where the money goes.",
+          "proof": [
+            "Values & Vision worksheet",
+            "One-Page Financial Snapshot",
+            "The Ask Script",
+            "Sessions 2 and 3"
+          ]
+        },
+        {
+          "id": "grow",
+          "name": "Grow it",
+          "share": "Roughly a sixth",
+          "job": "Debt, credit and how investing actually works, taught as concepts and vocabulary. Never a product.",
+          "reader": "The woman who nods along when investing comes up and goes quiet.",
+          "proof": [
+            "Debt Map",
+            "Investing Vocabulary Cheat Sheet",
+            "Session 4"
+          ]
+        },
+        {
+          "id": "protect",
+          "name": "Protect it",
+          "share": "Roughly a sixth",
+          "job": "Reserves, documents, beneficiaries and the family money conversation.",
+          "reader": "The woman everyone depends on, with nothing written down.",
+          "proof": [
+            "Protection Checklist",
+            "Family Money Conversation Guide",
+            "Session 5"
+          ]
+        },
+        {
+          "id": "room",
+          "name": "The room",
+          "share": "The rest",
+          "job": "The cohort, the hosts, the Vision Board party, the Summit and the sponsors. Why learning this with other women works.",
+          "reader": "The woman who would never sign up for a finance class but would come to breakfast.",
+          "proof": [
+            "Vision Board launch party",
+            "Money Isn't Lucky Summit",
+            "Pay-It-Forward seats"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "id": "ig",
+          "name": "Instagram",
+          "tone": "gold",
+          "role": "The front door. The audience finds Worth & Wealth on a phone, from an Instagram link, so this is the engine.",
+          "cadence": "Three a week: a carousel, a Reel, and a photo or story from real life.",
+          "format": [
+            "Hook on the first slide or the first second.",
+            "Carousels of six or seven slides, one idea each.",
+            "Caption opens with the hook again, then three short paragraphs.",
+            "Link in bio, never in the caption.",
+            "Three to five hashtags a person would actually search, at the end."
+          ],
+          "engagement": "Reply to every comment in the first two hours. Warm, short, never advice about her specific situation."
+        },
+        {
+          "id": "li",
+          "name": "LinkedIn, Amy's and Becky's personal profiles",
+          "tone": "info",
+          "role": "Professional women, employers, sponsors and partner organisations. Where sponsorship conversations start.",
+          "cadence": "Two a week between the two hosts. One teaching post, one about the room.",
+          "format": [
+            "Hook in the first line, under 12 words.",
+            "A blank line after the hook, always.",
+            "One and two sentence paragraphs.",
+            "120 to 220 words.",
+            "No links in the body. Put wealthandwisdom.biz in the first comment.",
+            "At most two hashtags."
+          ],
+          "engagement": "Reply to every comment the same day. Thank sponsors and partners by name, publicly, once they approve it."
+        },
+        {
+          "id": "lico",
+          "name": "Facebook Page",
+          "tone": "idle",
+          "role": "The community board. Events, the launch party, the Summit, and reshares for the women who live on Facebook.",
+          "cadence": "Once or twice a week, mostly events and reshares with one new line of framing.",
+          "format": [
+            "Same voice, a little more invitational.",
+            "Every event gets a Facebook event.",
+            "Photos of real gatherings, with permission."
+          ]
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "tone": "good",
+          "role": "Applicants, the interest list, sponsors and the cohort. Where a relationship actually moves.",
+          "cadence": "One note a month to the interest list. Everything else one to one.",
+          "format": [
+            "One idea per email.",
+            "Subject line in plain words, under seven.",
+            "Signed by Amy, Becky or both, never by the program.",
+            "The educational note at the foot of anything that teaches."
+          ]
+        }
+      ],
+      "premise": "Marketing Women Worth & Wealth is not a volume problem. Twelve seats fill from one woman reading one post and thinking, that is me. So every piece is written to one woman, names something specific, and invites her into the room rather than selling her a seat.",
+      "blurb": "Everything Women Worth & Wealth says in public, and what Amy and Becky say to applicants, participants, sponsors and partners between sessions, written once and kept in one place. The thesis comes from the build spec, the substance from the curriculum. Nothing here is approved. Everything here is ready for review.",
+      "posts": [
+        {
+          "id": "ig_carousel_numbersperson",
+          "channel": "ig",
+          "pillar": "story",
+          "segment": "building",
+          "format": "Carousel, 7 slides",
+          "audience": "Applicant",
+          "name": "Carousel: \"I'm just not a numbers person\"",
+          "body": "SLIDE 1\n\"I'm just not a numbers person.\"\n\nSLIDE 2\nThat's a story. Not a fact.\n\nSLIDE 3\nSomebody handed it to you. A teacher, a parent, a first job, a partner who \"handled the money.\"\n\nSLIDE 4\nYou run a household. A team. A calendar that would break most people.\n\nSLIDE 5\nThat is numbers. You've just never been told it counts.\n\nSLIDE 6\nNumbers are learnable. Confidence follows competence.\n\nSLIDE 7\nWomen Worth & Wealth. Six Wealth Wednesdays for 12 women in New Orleans.\n\nCAPTION\n\"I'm just not a numbers person\" might be the most expensive sentence women say.\n\nIt isn't true, and it was never yours. It was handed to you, usually before you were old enough to argue.\n\nSession 1 starts here: where your money story came from, and how to rewrite it.\n\nApplications for the first cohort are open. Link in bio.\n\nGeneral education, not financial advice.",
+          "note": "The wedge post. It names the story nearly every applicant has told about herself. Run it again every month with a new first slide."
+        },
+        {
+          "id": "li_wholeworth",
+          "channel": "li",
+          "pillar": "worth",
+          "segment": "building",
+          "format": "Long post",
+          "audience": "Applicant",
+          "name": "Your paycheck is one line",
+          "body": "Your paycheck is one line of your worth. It was never the whole page.\n\nWe keep hearing the same advice aimed at women: earn your worth, charge what you're worth, know your worth before the negotiation.\n\nIt sounds empowering. It quietly says your worth is your W-2.\n\nHere's what it leaves out. The family you're raising. The marriage or partnership you're building. The friends you show up for at 11 p.m. The community you make better without anyone asking.\n\nThose aren't side notes to your worth. They are your worth.\n\nIncome matters. We'll spend a whole session on asking for more. But we'll do it without tying who you are to the answer.\n\nWomen Worth & Wealth starts with a Whole Worth Inventory: every role you hold and the value each one creates. Most women have never written it down.\n\nOwn your worth. Steward your wealth.",
+          "note": "Amy's lane. Post from Amy's profile first; Becky reshares with one line about why she built the program."
+        },
+        {
+          "id": "ig_carousel_fivenumbers",
+          "channel": "ig",
+          "pillar": "use",
+          "segment": "building",
+          "format": "Carousel, 7 slides",
+          "audience": "Applicant",
+          "name": "Carousel: the five numbers",
+          "body": "SLIDE 1\nFive numbers. That's where it starts.\n\nSLIDE 2\nNET WORTH\nWhat you own, minus what you owe.\n\nSLIDE 3\nMONTHLY BURN\nWhat it actually costs to run your life for a month.\n\nSLIDE 4\nSAVINGS RATE\nHow much of what comes in, stays.\n\nSLIDE 5\nDEBT COST\nWhat your debt charges you, in interest, every month.\n\nSLIDE 6\nMONTHS OF RUNWAY\nIf the income stopped, how long you could keep going.\n\nSLIDE 7\nKnow these five cold and every money conversation gets easier.\n\nCAPTION\nYou don't need a finance degree. You need five numbers and an afternoon.\n\nIn Session 2 every woman builds a One-Page Financial Snapshot with exactly these five on it.\n\nSave this, then try just one this week. Monthly burn is a good place to start.\n\nGeneral education, not financial advice.",
+          "note": "The highest save potential in the library. It teaches something she can do tonight."
+        },
+        {
+          "id": "ig_values",
+          "channel": "ig",
+          "pillar": "use",
+          "segment": "building",
+          "format": "Single image",
+          "audience": "Applicant",
+          "name": "What is the money for?",
+          "body": "IMAGE\nCream ground. In Cormorant: What is the money for?\n\nCAPTION\nBefore the budget. Before the spreadsheet. Before anyone says \"should.\"\n\nWhat is the money for?\n\nSecurity. Freedom. Time with your kids. A business of your own. Taking care of your mother. Travel. Rest.\n\nWhen you know the answer, spending stops being guilt and starts being a choice. That's Values Before Numbers, and it's how Session 2 opens.\n\nWrite your three answers in the comments, or just on a sticky note.",
+          "note": "Invites a comment, which carries the post. Reply to every answer warmly and never with advice."
+        },
+        {
+          "id": "li_ask",
+          "channel": "li",
+          "pillar": "use",
+          "segment": "building",
+          "format": "Long post",
+          "audience": "Applicant",
+          "name": "Asking for more without tying your identity to the answer",
+          "body": "The hardest part of asking for more isn't the script. It's what the answer seems to say about you.\n\nIf they say no, it can feel like a verdict on your worth.\n\nIt isn't. It's a price negotiation. Prices get negotiated every day by people who feel nothing about it at all.\n\nWhat helps:\nResearch the market rate before the conversation, not during it.\nWrite the ask down in one sentence and say it out loud twice before you walk in.\nDecide in advance what you'll do with a yes, a no, and a \"not yet.\"\n\nAnd separate the two questions. What is this work worth in the market. And what are you worth as a person. The first one has a number. The second never did.\n\nSession 3 of Women Worth & Wealth pairs Spending on Purpose with Asking for More, and every woman leaves with her own Ask Script.",
+          "note": "Becky and Amy co-lead Session 3. This one works from either profile."
+        },
+        {
+          "id": "ig_carousel_debt",
+          "channel": "ig",
+          "pillar": "grow",
+          "segment": "building",
+          "format": "Carousel, 6 slides",
+          "audience": "Applicant",
+          "name": "Carousel: tool or trap",
+          "body": "SLIDE 1\nDebt is a tool. Until it isn't.\n\nSLIDE 2\nA tool: it buys something that lasts longer than the payments, at a cost you know.\n\nSLIDE 3\nA trap: it buys something that's gone before the payments are.\n\nSLIDE 4\nThe question isn't \"is debt bad.\" It's \"what is this debt costing me, every month, in interest.\"\n\nSLIDE 5\nWrite every debt down. Balance, rate, minimum. That's a Debt Map.\n\nSLIDE 6\nMost women feel better the minute it's on one page. Even before anything changes.\n\nCAPTION\nShame keeps debt in a drawer. A page brings it out where you can do something about it.\n\nIn Session 4 we build a Debt Map together, then talk through how a payoff order actually works.\n\nGeneral education, not financial advice.",
+          "note": "Concept only. Never recommend a product, a lender or a specific payoff method as the right one for her."
+        },
+        {
+          "id": "li_investing",
+          "channel": "li",
+          "pillar": "grow",
+          "segment": "building",
+          "format": "Short post",
+          "audience": "Applicant",
+          "name": "What the stock market is, really",
+          "body": "If you've ever nodded along when someone mentioned \"the market\" and quietly hoped nobody asked you a follow up, you're in very good company.\n\nHere's the one sentence version: owning a share means owning a small piece of a real company, and its value moves with what people believe that company will be worth.\n\nEverything else (funds, indexes, time horizons) builds from that.\n\nWe teach the vocabulary in Session 4, so the next time it comes up you can ask a better question.\n\nGeneral education, not financial advice.",
+          "note": "Becky's lane. Educational framing at the foot, every time."
+        },
+        {
+          "id": "ig_protect",
+          "channel": "ig",
+          "pillar": "protect",
+          "segment": "transition",
+          "format": "Carousel, 6 slides",
+          "audience": "Applicant",
+          "name": "Carousel: if something happened tomorrow",
+          "body": "SLIDE 1\nIf something happened to you tomorrow, who would it land on?\n\nSLIDE 2\nWho knows where everything is?\n\nSLIDE 3\nAre your beneficiaries still the people you'd choose today?\n\nSLIDE 4\nIs there a reserve, so a hard month doesn't become a hard year?\n\nSLIDE 5\nHas anyone you love heard what you'd want?\n\nSLIDE 6\nProtecting what you've built is an act of love, not a gloomy chore.\n\nCAPTION\nThe women everyone depends on are often the ones with nothing written down.\n\nSession 5 is Protecting What You've Built, with a Protection Checklist and a beneficiary audit you can finish in an evening.\n\nOne task for this week: look up who is listed as beneficiary on one account. Just one.\n\nGeneral education, not financial advice.",
+          "note": "Tender subject. Warm, never alarming, no scare statistics."
+        },
+        {
+          "id": "li_familymoney",
+          "channel": "li",
+          "pillar": "protect",
+          "segment": "transition",
+          "format": "Long post",
+          "audience": "Applicant",
+          "name": "The money conversation nobody had with us",
+          "body": "Most of us learned about money by watching. Very few of us were ever sat down and told.\n\nSo the conversation keeps not happening. With a partner. With aging parents. With kids who are watching us now, the way we watched.\n\nIt doesn't have to be a big, formal talk. It can start with one question at dinner: what's one thing your family taught you about money, without ever saying it?\n\nIn Session 5 we practise these conversations out loud, in a room where nobody is going to judge the answer, with a Family Money Conversation Guide to take home.\n\nReal conversations. Practical tools. Lasting change.",
+          "note": "Becky leads, with Amy. Works well on Facebook too."
+        },
+        {
+          "id": "ig_room",
+          "channel": "ig",
+          "pillar": "room",
+          "segment": "building",
+          "format": "Single image",
+          "audience": "Applicant",
+          "name": "Twelve women, one table",
+          "body": "IMAGE\nA real photograph of a breakfast table set for twelve. No faces needed.\n\nCAPTION\nTwelve women. One table. Breakfast at every session.\n\nNo stupid questions and no sales pitch.\n\nThat's the whole design of Women Worth & Wealth. Six Wealth Wednesday mornings, January to April, in New Orleans, with the same 12 women every time.\n\nAmy brings the worth. Becky brings the wealth.\n\nApplications are open. Link in bio.",
+          "note": "Use a real photo of the room once it exists. Until then, a styled table, never a stock photo of women at laptops."
+        },
+        {
+          "id": "ig_launchparty",
+          "channel": "ig",
+          "pillar": "room",
+          "segment": "building",
+          "format": "Story series",
+          "audience": "Applicant",
+          "name": "Story series: the Vision Board party",
+          "body": "STORY 1\nYou're invited. Thursday, January 7, 4:30 p.m.\n\nSTORY 2\nThe Women Worth & Wealth Vision Board launch party. Open to the whole community.\n\nSTORY 3\nBring a friend. Make a vision board for the life you're building.\n\nSTORY 4\nMeet Amy, Becky, and the women joining the first cohort.\n\nSTORY 5\nLink sticker: RSVP at wealthandwisdom.biz",
+          "note": "Run the series twice: three weeks out and the week of. Add the location once it is confirmed for public sharing."
+        },
+        {
+          "id": "li_summit",
+          "channel": "li",
+          "pillar": "room",
+          "segment": "leader",
+          "format": "Long post",
+          "audience": "Applicant",
+          "name": "Money isn't lucky",
+          "body": "Shonda Rhimes said it better than we could: don't call her lucky.\n\nLucky implies nothing was done. That something was handed over.\n\nThe women who seem lucky with money are usually intentional with it. They made a hundred small choices, mostly where nobody could see.\n\nThat's the idea behind the Money Isn't Lucky Summit, on Wednesday, March 17, at the midpoint of the first Women Worth & Wealth cohort. A morning on how beliefs become choices and choices become a life.\n\nIt seats 24: the 12 women of the cohort and 12 women from outside it.\n\nDetails at wealthandwisdom.biz.",
+          "note": "Quote is attributed in the source (Year of Yes). Keep the attribution whenever the quote is used."
+        },
+        {
+          "id": "li_sponsor",
+          "channel": "li",
+          "pillar": "room",
+          "segment": "partners",
+          "format": "Long post",
+          "audience": "Sponsor or partner",
+          "name": "Pay it forward",
+          "body": "Some of the women who would gain the most from this room can't pay for a seat in it.\n\nThat's what a Pay-It-Forward seat is for. A sponsor funds a full seat in the Women Worth & Wealth cohort, and the seat is awarded by application to a woman who could not otherwise attend. It includes her ticket to the Money Isn't Lucky Summit.\n\nIf your company, your firm or your family has been looking for a way to put real money behind women's financial confidence in New Orleans, this is a very direct one.\n\nThere are smaller ways to help too, down to hosting a single breakfast.\n\nMessage Amy or me, or see the options at wealthandwisdom.biz/sponsor.",
+          "note": "Becky's or Amy's profile. Thank sponsors publicly only once they have said yes to being named."
+        },
+        {
+          "id": "lico_launch",
+          "channel": "lico",
+          "pillar": "room",
+          "segment": "building",
+          "format": "Page post",
+          "audience": "Applicant",
+          "name": "Facebook: the launch party event",
+          "body": "You're invited to the Women Worth & Wealth Vision Board launch party, Thursday, January 7 at 4:30 p.m. in New Orleans.\n\nBring a friend, make a vision board for the life you're building, and meet Amy Landry, Becky Gustafson and the women joining the first cohort.\n\nOpen to the whole community. RSVP on the event.",
+          "note": "Pair with a Facebook event. Reshare from both hosts' personal pages with one personal line each."
+        },
+        {
+          "id": "em_monthly",
+          "channel": "email",
+          "pillar": "story",
+          "segment": "building",
+          "format": "One to one email",
+          "audience": "Applicant",
+          "name": "The monthly note to the interest list",
+          "body": "Subject: {{SUBJECT}}\n\nHi {{first}},\n\n{{IDEA}}\n\nHere's one small thing to try this week: {{ACTION}}\n\nThat's it. No homework police. Just one step.\n\nIf someone you love would like these notes, forward this to her.\n\nWarmly,\nAmy & Becky\n\nWomen Worth & Wealth is an educational program. This note is general education, not financial, tax, or legal advice.",
+          "note": "One idea per month. Pull it from the week's Instagram carousel so the two reinforce each other."
+        },
+        {
+          "id": "em_applicant_thanks",
+          "channel": "email",
+          "pillar": "room",
+          "segment": "building",
+          "format": "One to one email",
+          "audience": "Applicant",
+          "name": "After an application arrives",
+          "body": "Subject: We got your application\n\nHi {{first}},\n\nThank you for applying to Women Worth & Wealth. We read every application ourselves, and we'll be in touch within a week.\n\nIn the meantime, one question to sit with: what's one thing you were taught about money that you'd like to unlearn?\n\nYou don't need to send us the answer. Bring it to the table.\n\nWarmly,\nAmy & Becky",
+          "note": "Personal, from the hosts. The site already sends an automatic confirmation, so this is the human follow up."
+        }
+      ],
+      "videos": [
+        {
+          "id": "v_numbersperson",
+          "name": "Not a numbers person",
+          "pillar": "story",
+          "format": "talking",
+          "seconds": 45,
+          "audience": "Applicant",
+          "hook": "\"I'm just not a numbers person.\" Let's talk about that.",
+          "script": "\"I'm just not a numbers person.\"\n\nI've heard brilliant women say that for twenty years. Women who run companies. Women who run households that would break most people.\n\nIt's a story, not a fact. Somebody handed it to you, usually before you were old enough to argue.\n\nNumbers are learnable. Confidence follows competence.\n\nThat's where Women Worth & Wealth starts.",
+          "shot": "Becky, face to camera, in a warm real space (a kitchen table, not an office). Natural light. One take, no cuts needed.",
+          "caption": "\"I'm just not a numbers person\" is a story, not a fact. Session 1 starts there. Applications open, link in bio.",
+          "note": "The best one to lead with. Becky says it in her own words; the script is a guide."
+        },
+        {
+          "id": "v_wholeworth",
+          "name": "The whole worth picture",
+          "pillar": "worth",
+          "format": "talking",
+          "seconds": 60,
+          "audience": "Applicant",
+          "hook": "Your paycheck gets all the credit. It shouldn't.",
+          "script": "Your paycheck gets all the credit. From you, from everyone.\n\nBut your worth is the whole picture. The family you're raising. The friends you show up for. The community you make better.\n\nThat's why we'll never tell you to earn your worth. You already have it.\n\nIn our first session every woman writes a Whole Worth Inventory: every role she holds, and the value each one creates.\n\nMost of us have never seen it written down.",
+          "shot": "Amy, face to camera. Cut to hands writing a list on a cream card for the last line.",
+          "caption": "Your worth is the whole picture. Own it. Applications for the first cohort are open.",
+          "note": "Amy's lane. Pairs with the Whole Worth LinkedIn post a week later."
+        },
+        {
+          "id": "v_fivenumbers",
+          "name": "Five numbers",
+          "pillar": "use",
+          "format": "page",
+          "seconds": 75,
+          "audience": "Applicant",
+          "hook": "Five numbers. That's all it takes to know where you stand.",
+          "script": "[Hold up a blank cream card.]\n\nFive numbers.\n\n[Write each one as you say it.]\n\nNet worth. What you own minus what you owe.\nMonthly burn. What your life costs in a month.\nSavings rate. How much of what comes in, stays.\nDebt cost. What your debt charges you each month.\nMonths of runway. How long you could go if the income stopped.\n\n[Tap the card.]\n\nKnow these five and every money conversation gets easier. Start with one this week.\n\nThis is general education, not advice.",
+          "shot": "Desk from slightly above, the card filling most of the frame, Becky's hands in it. Face on camera only at the start and the end.",
+          "caption": "Five numbers and an afternoon. Save this and start with monthly burn.",
+          "note": "Teaches something in 75 seconds. Script goes to Becky's compliance review before the shoot."
+        },
+        {
+          "id": "v_twohosts",
+          "name": "Amy brings the worth, Becky brings the wealth",
+          "pillar": "room",
+          "format": "two",
+          "seconds": 50,
+          "audience": "Applicant",
+          "hook": "Why two hosts?",
+          "script": "AMY: Why two of us?\n\nBECKY: Because money without worth is a spreadsheet.\n\nAMY: And worth without money is a pep talk.\n\nBECKY: Neither one works without the other.\n\nAMY: So we built this the way we wish we'd been taught. In a room. With other women.\n\nBECKY: No stupid questions.\n\nAMY: And no sales pitch.",
+          "shot": "Both hosts, side by side at the table, a coffee each. Shoot wide and one close single each; cut on the lines.",
+          "caption": "Amy brings the worth. Becky brings the wealth. Six Wealth Wednesdays, January to April.",
+          "note": "The strongest collaboration piece. Post from both accounts as an Instagram collab."
+        },
+        {
+          "id": "v_launchinvite",
+          "name": "Come to the Vision Board party",
+          "pillar": "room",
+          "format": "walk",
+          "seconds": 30,
+          "audience": "Applicant",
+          "hook": "You're invited.",
+          "script": "You're invited.\n\nThursday, January 7, 4:30. The Women Worth & Wealth Vision Board launch party.\n\nBring a friend. Make a vision board for the life you're building. Meet the women joining the first cohort.\n\nOpen to everyone. RSVP at the link.",
+          "shot": "Walk and talk through the venue or a New Orleans street, phone at arm's length, golden hour.",
+          "caption": "Vision Board launch party, January 7. Bring a friend. RSVP in bio.",
+          "note": "Shoot in December, post twice: three weeks out and the week of."
+        }
+      ],
+      "engagement": [
+        {
+          "id": "eng_welcome",
+          "group": "onboard",
+          "audience": "Participant",
+          "name": "Welcome to the cohort",
+          "when": "Within two days of acceptance",
+          "body": "Subject: Welcome to Women Worth & Wealth\n\nHi {{first}},\n\nWe're so glad it's you.\n\nHere's what happens next so nothing is a surprise:\n\nThe Vision Board launch party is Thursday, January 7 at 4:30. Bring a friend.\nSession 1 is Wednesday, January 27 at 8:30, with breakfast.\nBefore then, we'll pair you with your accountability partner and send the workbook.\n\nOne thing to think about before Session 1: where did your first beliefs about money come from?\n\nSee you soon,\nAmy & Becky",
+          "note": "Signed by both hosts. Send the location separately, only to enrolled women."
+        },
+        {
+          "id": "eng_session_reminder",
+          "group": "quarter",
+          "audience": "Participant",
+          "name": "The week before a session",
+          "when": "Seven days before each Wealth Wednesday",
+          "body": "Subject: Wednesday, and what to bring\n\nHi {{first}},\n\nWealth Wednesday is next week: {{DATE}} at 8:30, breakfast included.\n\nBring your project from last session: {{ITEM}}. Unfinished is fine. Bring what you have.\n\nThis session's question: {{IDEA}}\n\nSee you at the table,\nAmy & Becky",
+          "note": ""
+        },
+        {
+          "id": "eng_session_recap",
+          "group": "quarter",
+          "audience": "Participant",
+          "name": "The note after a session",
+          "when": "The afternoon of each session",
+          "body": "Subject: Today, and your next step\n\nHi {{first}},\n\nThank you for this morning.\n\nYour project before next session: {{ACTION}}\nYour homework, small enough to finish: {{NEXT}}\n\nOffice hours with Becky and check-ins with Amy are open this month. Book them whenever suits.\n\nWomen Worth & Wealth is an educational program. Nothing in a session is financial, tax, or legal advice for your situation.\n\nAmy & Becky",
+          "note": "Write {{ACTION}} and {{NEXT}} from the session plan, not from memory."
+        },
+        {
+          "id": "eng_quiet",
+          "group": "between",
+          "audience": "Participant",
+          "name": "Checking in on someone who has gone quiet",
+          "when": "If a participant misses a session or goes silent in the group",
+          "body": "Hi {{first}},\n\nWe missed you on Wednesday, and we just wanted to say so.\n\nNo catching up required. Here's the one page from the session: {{ITEM}}.\n\nIf anything is getting in the way, we'd love to hear it. Life happens to all of us.\n\nAmy",
+          "note": "From Amy. Never a guilt note."
+        },
+        {
+          "id": "eng_pairing",
+          "group": "between",
+          "audience": "Participant",
+          "name": "Introducing accountability partners",
+          "when": "Before Session 1",
+          "body": "Subject: Meet your accountability partner\n\n{{first}}, meet {{NAME}}. {{NAME}}, meet {{first}}.\n\nYou'll check in with each other briefly between sessions. Fifteen minutes is plenty. Ask each other one question: did you do the one thing?\n\nThat's it. Be kind, be honest, cheer loudly.\n\nAmy & Becky",
+          "note": ""
+        },
+        {
+          "id": "eng_summit_invite",
+          "group": "expand",
+          "audience": "Prospect",
+          "name": "Inviting a friend to the Summit",
+          "when": "Six weeks before March 17",
+          "body": "Subject: Money Isn't Lucky\n\nHi {{first}},\n\nOn Wednesday, March 17, we're hosting the Money Isn't Lucky Summit: a morning on why the women who seem lucky with money are usually intentional with it.\n\nIt seats 24. Twelve seats are for our cohort and twelve are for women like you.\n\nDetails and tickets are at wealthandwisdom.biz. We'd love to have you in the room.\n\nBecky",
+          "note": "Only to people who opted in or whom you know personally."
+        },
+        {
+          "id": "eng_sponsor_thanks",
+          "group": "expand",
+          "audience": "Sponsor or partner",
+          "name": "Thanking a sponsor",
+          "when": "Within a day of a sponsorship commitment",
+          "body": "Subject: Thank you\n\n{{first}},\n\nThank you. Because of you, {{ONE_SPECIFIC}}.\n\nWe'll keep you posted on how the cohort goes, and we'd love to see you at the Summit on March 17.\n\nBefore we thank you publicly, could you confirm how you'd like to be named?\n\nWith real gratitude,\nAmy & Becky",
+          "note": "Never name a sponsor publicly before they confirm the wording."
+        },
+        {
+          "id": "eng_alumnae",
+          "group": "expand",
+          "audience": "Participant",
+          "name": "The note after the last session",
+          "when": "The week after April 21",
+          "body": "Subject: Your next chapter\n\nHi {{first}},\n\nFour months ago you walked in with a money story. You walked out with a plan you built yourself.\n\nYou're part of the alumnae network now. We'll be in touch with gatherings, and the door is always open.\n\nOne request: if this room mattered to you, tell one woman about it.\n\nWith love,\nAmy & Becky",
+          "note": "Ask for testimonials separately, in writing, with permission to use. Never draft one for her."
+        },
+        {
+          "id": "soc_comment_generic",
+          "group": "social",
+          "audience": "Prospect",
+          "name": "Replying to a comment",
+          "when": "Within two hours of the comment",
+          "body": "Thank you, {{NAME}}. So many women tell us the same thing. {{ONE_SPECIFIC}}",
+          "note": "Two sentences at most. Never answer her specific financial situation in public."
+        },
+        {
+          "id": "soc_dm_inbound",
+          "group": "social",
+          "audience": "Prospect",
+          "name": "Replying to a DM about the program",
+          "when": "Same day",
+          "body": "Hi {{NAME}}! Thank you for reaching out.\n\nShort answer: {{GENERAL_PRINCIPLE}}.\n\nEverything about the program (dates, what's included, how to apply) is at wealthandwisdom.biz. And if you'd like to talk it through, Amy or Becky would be glad to.",
+          "note": "Warm and quick. Point to the site rather than pasting pricing into DMs."
+        }
+      ],
+      "sequences": [
+        {
+          "id": "sponsor_cold",
+          "name": "A business or firm that might sponsor",
+          "who": "A company, firm or family foundation that cares about women in New Orleans",
+          "when": "You have a name and no warm path yet",
+          "steps": [
+            {
+              "day": 0,
+              "channel": "li_connect",
+              "name": "The connection note",
+              "audience": "Sponsor or partner",
+              "body": "{{first}}, I love what {{client.entity}} does for women in New Orleans. Would be glad to be connected.",
+              "ifNoReply": "If not accepted in 14 days, stop and look for a warm introduction instead."
+            },
+            {
+              "day": 4,
+              "channel": "li_dm",
+              "name": "After they accept",
+              "audience": "Sponsor or partner",
+              "body": "Thanks for connecting, {{first}}.\n\nAmy Landry and I are starting Women Worth & Wealth in January: six Wealth Wednesdays for 12 women, on owning their worth and stewarding their wealth. Educational, in person, in New Orleans.\n\nNo ask today. If it ever lines up with what {{client.entity}} cares about, I'd love to tell you more over coffee.",
+              "ifNoReply": "No third message on this branch for a month. Engage with their posts instead."
+            },
+            {
+              "day": 30,
+              "channel": "email",
+              "name": "The specific invitation",
+              "audience": "Sponsor or partner",
+              "body": "Subject: A seat for a woman who could not otherwise come\n\n{{first}},\n\nOne very direct way to help: a Pay-It-Forward seat funds a full place in the cohort for a woman who could not otherwise attend, awarded by application. There are smaller options too, down to hosting a single breakfast.\n\nEverything is at wealthandwisdom.biz/sponsor. Would twenty minutes be worth it?\n\nBecky",
+              "ifNoReply": "Stop here. Invite them to the Vision Board party instead."
+            }
+          ],
+          "note": "Three touches over a month, two of which ask for nothing."
+        },
+        {
+          "id": "sponsor_warm",
+          "name": "A sponsor you already know",
+          "who": "Someone in your network who has supported women's causes before",
+          "when": "Any time, ideally before the launch party",
+          "steps": [
+            {
+              "day": 0,
+              "channel": "email",
+              "name": "The personal ask",
+              "audience": "Sponsor or partner",
+              "body": "Subject: Something Amy and I are building\n\n{{first}},\n\nYou're one of the first people I thought of. Amy Landry and I are starting Women Worth & Wealth in January, and some of the women who would gain the most from it can't pay for a seat.\n\nWould you consider a Pay-It-Forward seat, or a smaller piece like a breakfast? I'd love to tell you about it over coffee.\n\nBecky",
+              "ifNoReply": "Follow up once, by phone, after a week."
+            },
+            {
+              "day": 7,
+              "channel": "note",
+              "name": "Call them",
+              "audience": "Internal",
+              "body": "No email. Pick up the phone. Ask how they are first."
+            }
+          ],
+          "note": "Warm asks go personal and short."
+        },
+        {
+          "id": "partner_org",
+          "name": "A women's organisation that could partner",
+          "who": "NAWBO, ABWA, Power of Women, a university women's leadership program, a professional women's network",
+          "when": "Before applications close",
+          "steps": [
+            {
+              "day": 0,
+              "channel": "email",
+              "name": "The partnership note",
+              "audience": "Sponsor or partner",
+              "body": "Subject: Women Worth & Wealth and {{client.entity}}\n\n{{first}},\n\nAmy Landry and I are launching Women Worth & Wealth in January: a small group, educational experience for 12 women on money and worth.\n\nWe'd love to offer {{client.entity}}'s members an invitation to the Vision Board launch party on January 7, and to talk about whether a partnership makes sense.\n\nCould we find twenty minutes?\n\nAmy & Becky",
+              "ifNoReply": "Follow up once after ten days."
+            },
+            {
+              "day": 10,
+              "channel": "email",
+              "name": "One follow up",
+              "audience": "Sponsor or partner",
+              "body": "{{first}}, floating this back up in case it got buried. Happy to work around your calendar.",
+              "ifNoReply": "Stop. Revisit before the next cohort."
+            }
+          ],
+          "note": "Amy and Becky both have long histories in these organisations. Use the warm path wherever one exists."
+        },
+        {
+          "id": "applicant_inbound",
+          "name": "A woman engaged with something you published",
+          "who": "Commented, replied, or sent a DM about the program",
+          "when": "Within 24 hours",
+          "steps": [
+            {
+              "day": 0,
+              "channel": "li_dm",
+              "name": "The reply that does not pitch",
+              "audience": "Applicant",
+              "body": "Hi {{first}}, thank you for the note.\n\n{{general_principle}}\n\nIf you'd ever like to hear more about the program, everything is at wealthandwisdom.biz, and Amy or I would be glad to talk.",
+              "ifNoReply": "No follow up. She engaged once, which is not permission. Keep publishing."
+            },
+            {
+              "day": 7,
+              "channel": "li_engage",
+              "name": "Watch, do not chase",
+              "audience": "Internal",
+              "body": "No message. Engage warmly with her posts for a few weeks. A second engagement is a different signal."
+            }
+          ],
+          "note": "The restraint is the point. Chasing is what teaches women not to engage."
+        },
+        {
+          "id": "intake_followup",
+          "name": "After the interest form",
+          "who": "A woman who filled in the intake on the site but has not applied",
+          "when": "Two days after the intake",
+          "steps": [
+            {
+              "day": 2,
+              "channel": "email",
+              "name": "A personal note",
+              "audience": "Applicant",
+              "body": "Subject: Thank you for raising your hand\n\nHi {{first}},\n\nThank you for telling us a little about yourself. We read every one.\n\nIf you have questions before applying, just reply. And if the timing isn't right this year, that's fine. We'll keep you posted on the next cohort.\n\nAmy & Becky",
+              "ifNoReply": "One more note in two weeks, then the monthly list only."
+            },
+            {
+              "day": 16,
+              "channel": "email",
+              "name": "The gentle reminder",
+              "audience": "Applicant",
+              "body": "Hi {{first}}, a quick note that applications for the first cohort are still open at wealthandwisdom.biz/apply. No pressure at all.",
+              "ifNoReply": "Stop. Monthly note only."
+            }
+          ],
+          "note": ""
+        },
+        {
+          "id": "event_followup",
+          "name": "After the Vision Board party",
+          "who": "Anyone who came to the launch party",
+          "when": "The next morning",
+          "steps": [
+            {
+              "day": 1,
+              "channel": "email",
+              "name": "Thank you for coming",
+              "audience": "Applicant",
+              "body": "Subject: Your vision board\n\nHi {{first}},\n\nThank you for coming last night. We hope your vision board is somewhere you'll see it every day.\n\nIf you're thinking about the cohort, applications are open at wealthandwisdom.biz/apply. And if a friend would love it, send her our way.\n\nAmy & Becky",
+              "ifNoReply": "No follow up beyond the monthly note."
+            }
+          ],
+          "note": "Send within a day while the evening is fresh."
+        },
+        {
+          "id": "notready",
+          "name": "Not this cohort",
+          "who": "A woman who would love it but the timing is wrong",
+          "when": "When she says not now",
+          "steps": [
+            {
+              "day": 0,
+              "channel": "email",
+              "name": "Honour the no",
+              "audience": "Applicant",
+              "body": "Hi {{first}},\n\nCompletely understood, and thank you for telling us. We'll keep you on the list for the next cohort, and the monthly note will keep coming if you'd like it.\n\nAmy & Becky",
+              "ifNoReply": "Next contact: when the next cohort opens."
+            }
+          ],
+          "note": "The next cohort fills from this list."
+        }
+      ],
+      "profiles": [
+        {
+          "id": "ig_bio",
+          "channel": "Instagram",
+          "field": "Bio",
+          "guidance": "150 characters. Who it is for, what it is, and the next step.",
+          "options": [
+            "Own your worth. Steward your wealth.\nSix Wealth Wednesdays for 12 women in New Orleans.\nBy Amy Landry & Becky Gustafson\nApply below",
+            "Money and worth, for women. In person, in New Orleans.\nReal conversations. Practical tools. Lasting change.\nApply below"
+          ]
+        },
+        {
+          "id": "li_headline",
+          "channel": "LinkedIn, personal profile",
+          "field": "Headline (an addition to Amy's and Becky's own)",
+          "guidance": "Add the program after each host's existing headline, separated by a vertical bar.",
+          "options": [
+            "Co-founder, Women Worth & Wealth: own your worth, steward your wealth",
+            "Co-host, Women Worth & Wealth | Six Wealth Wednesdays for women in New Orleans"
+          ]
+        },
+        {
+          "id": "li_featured",
+          "channel": "LinkedIn, personal profile",
+          "field": "Featured section",
+          "guidance": "One link, one image, one line.",
+          "options": [
+            "Women Worth & Wealth. Six Wealth Wednesdays for 12 women, January to April 2027. wealthandwisdom.biz"
+          ]
+        },
+        {
+          "id": "lico_about",
+          "channel": "Facebook Page",
+          "field": "About",
+          "guidance": "Plain and invitational. Include the educational note.",
+          "options": [
+            "Women Worth & Wealth is a small group, in person experience for women in New Orleans who want to stop being afraid of their money and start acting as its stewards. Six Wealth Wednesdays, January to April, for 12 women, with the Money Isn't Lucky Summit at the midpoint. Created and co-hosted by Amy Landry and Becky Gustafson.\n\nWomen Worth & Wealth is an educational program and does not provide financial, tax, or legal advice."
+          ]
+        }
+      ],
+      "calendar": {
+        "heading": "The launch quarter, week by week",
+        "note": "Twelve themed weeks that build toward the Vision Board party on January 7 and the first Wealth Wednesday on January 27. The studio counts week 1 from the start of the current quarter, so slide the weeks if the launch lands elsewhere. Each week names the carousel, the Reel and the brief for the live post.",
+        "rhythm": [
+          "Tuesday is the carousel. Wednesday is the Reel. Thursday is written that week from something real.",
+          "Monday prepares and submits to Becky's review. Friday replies and reads the numbers. Neither posts.",
+          "LinkedIn takes two a week between the two hosts.",
+          "One email a month to the interest list, on the first Tuesday.",
+          "The week of Christmas is lighter on purpose. Use it to record January."
+        ],
+        "liveSlotSources": [
+          "A question a woman asked you this week, without anything identifying, answered in general.",
+          "A money belief you were handed and when you noticed it.",
+          "Something you saw at a women's event, with a photo of people (with permission).",
+          "A preparation moment: the workbook arriving, the breakfast menu, the room.",
+          "A thing you changed your mind about.",
+          "A sponsor or partner thank you, once they have approved the wording."
+        ],
+        "weeks": [
+          {
+            "n": 1,
+            "theme": "Not a numbers person",
+            "pillar": "story",
+            "ig": [
+              "ig_carousel_numbersperson"
+            ],
+            "li": [
+              "li_wholeworth"
+            ],
+            "live": "The money belief you were handed first.",
+            "video": "v_numbersperson",
+            "document": "ig_carousel_numbersperson",
+            "email": "Send the first monthly note: the money story question."
+          },
+          {
+            "n": 2,
+            "theme": "Your whole worth",
+            "pillar": "worth",
+            "ig": [
+              "ig_room"
+            ],
+            "li": [
+              "li_wholeworth"
+            ],
+            "live": "A role you hold that never shows up on a paycheck.",
+            "video": "v_wholeworth",
+            "document": "ig_room"
+          },
+          {
+            "n": 3,
+            "theme": "Two hosts, one room",
+            "pillar": "room",
+            "ig": [
+              "ig_room"
+            ],
+            "li": [
+              "li_sponsor"
+            ],
+            "live": "How Amy and Becky met, in Power of Women.",
+            "video": "v_twohosts",
+            "document": "ig_room"
+          },
+          {
+            "n": 4,
+            "theme": "Five numbers",
+            "pillar": "use",
+            "ig": [
+              "ig_carousel_fivenumbers"
+            ],
+            "li": [
+              "li_investing"
+            ],
+            "live": "The number you were most afraid to look up.",
+            "video": "v_fivenumbers",
+            "document": "ig_carousel_fivenumbers"
+          },
+          {
+            "n": 5,
+            "theme": "What is the money for?",
+            "pillar": "use",
+            "ig": [
+              "ig_values"
+            ],
+            "li": [
+              "li_ask"
+            ],
+            "live": "One thing you spend on that matches your values exactly.",
+            "video": "v_numbersperson",
+            "document": "ig_values",
+            "email": "Monthly note: values before numbers."
+          },
+          {
+            "n": 6,
+            "theme": "Pay it forward",
+            "pillar": "room",
+            "ig": [
+              "ig_room"
+            ],
+            "li": [
+              "li_sponsor"
+            ],
+            "live": "Why sponsored seats matter to you personally.",
+            "video": "v_twohosts",
+            "document": "ig_room"
+          },
+          {
+            "n": 7,
+            "theme": "You are invited",
+            "pillar": "room",
+            "ig": [
+              "ig_launchparty"
+            ],
+            "li": [
+              "lico_launch"
+            ],
+            "live": "Making your own vision board, in progress.",
+            "video": "v_launchinvite",
+            "document": "ig_launchparty"
+          },
+          {
+            "n": 8,
+            "theme": "A lighter week",
+            "pillar": "story",
+            "ig": [
+              "ig_launchparty"
+            ],
+            "li": [],
+            "live": "A holiday table photo and one line about family money traditions.",
+            "video": "",
+            "document": ""
+          },
+          {
+            "n": 9,
+            "theme": "Tool or trap",
+            "pillar": "grow",
+            "ig": [
+              "ig_carousel_debt"
+            ],
+            "li": [
+              "li_familymoney"
+            ],
+            "live": "The week of the party: photos from setup.",
+            "video": "v_launchinvite",
+            "document": "ig_carousel_debt",
+            "email": "Monthly note: the launch party, and applications."
+          },
+          {
+            "n": 10,
+            "theme": "If something happened tomorrow",
+            "pillar": "protect",
+            "ig": [
+              "ig_protect"
+            ],
+            "li": [
+              "li_familymoney"
+            ],
+            "live": "Thank you to everyone who came to the party.",
+            "video": "v_fivenumbers",
+            "document": "ig_protect"
+          },
+          {
+            "n": 11,
+            "theme": "Money isn't lucky",
+            "pillar": "room",
+            "ig": [
+              "ig_room"
+            ],
+            "li": [
+              "li_summit"
+            ],
+            "live": "Preparing the workbook for Session 1.",
+            "video": "v_wholeworth",
+            "document": "ig_room"
+          },
+          {
+            "n": 12,
+            "theme": "The first Wealth Wednesday",
+            "pillar": "story",
+            "ig": [
+              "ig_carousel_numbersperson"
+            ],
+            "li": [
+              "li_wholeworth"
+            ],
+            "live": "The table, set for twelve.",
+            "video": "v_twohosts",
+            "document": "ig_carousel_numbersperson"
+          }
+        ],
+        "videoNote": "The Reel trails its carousel by a week where it can, which gives an idea two runs at a feed that showed it to a fraction of the audience the first time."
+      },
+      "canva": {
+        "brandKitId": "",
+        "folderUrl": "",
+        "note": "Not built yet. Build these four once, in Canva, with exactly these data field names, and the autofill can fill them from the library. All three fonts are in Canva already.",
+        "templates": [
+          {
+            "id": "",
+            "name": "Worth & Wealth Carousel Slide",
+            "size": "1080 x 1350",
+            "fields": [
+              {
+                "name": "slide_text",
+                "type": "text"
+              }
+            ],
+            "use": "One slide of a teaching carousel. Duplicate per slide and refill.",
+            "ground": "#fbf7f1",
+            "groundNote": "Cream, full page, with a thin Wealth Gold rule under the text and the mark small in a corner.",
+            "accent": "Worth Green #123d32 type in Cormorant Garamond."
+          },
+          {
+            "id": "",
+            "name": "Worth & Wealth Quote Card",
+            "size": "1080 x 1350",
+            "fields": [
+              {
+                "name": "quote",
+                "type": "text"
+              },
+              {
+                "name": "attribution",
+                "type": "text"
+              }
+            ],
+            "use": "A single line worth lifting out of a post. Only real, approved quotes.",
+            "ground": "#123d32",
+            "groundNote": "Worth Green, full page.",
+            "accent": "Wealth Gold #c9a86a quote marks and attribution."
+          },
+          {
+            "id": "",
+            "name": "Worth & Wealth Reel Cover",
+            "size": "1080 x 1920",
+            "fields": [
+              {
+                "name": "hook_line",
+                "type": "text"
+              }
+            ],
+            "use": "The first three seconds as a still, for the thumbnail. Text sits high enough to survive the grid crop.",
+            "ground": "#0c2e25",
+            "groundNote": "Deep Green, or a darkened photo.",
+            "accent": "Cream type, gold ampersand."
+          },
+          {
+            "id": "",
+            "name": "Worth & Wealth Image Post",
+            "size": "1080 x 1350",
+            "fields": [
+              {
+                "name": "image",
+                "type": "image"
+              },
+              {
+                "name": "headline",
+                "type": "text"
+              },
+              {
+                "name": "body",
+                "type": "text"
+              }
+            ],
+            "use": "A real photograph with a headline band.",
+            "ground": "#123d32",
+            "groundNote": "Photo on top, a Worth Green band below.",
+            "accent": "A thin Wealth Gold seam between photo and band."
+          }
+        ],
+        "fontFix": [
+          "Set every headline to Cormorant Garamond SemiBold and every body line to DM Sans. Canva has both."
+        ],
+        "brandKitSetup": {
+          "steps": [
+            "Create a Brand Kit named Women Worth & Wealth.",
+            "Upload assets/brand/www-logo-horizontal.svg, the reverse and white versions, and www-mark.svg.",
+            "Add the colours below.",
+            "Set Heading to Cormorant Garamond, Subheading to DM Sans Medium, Body to DM Sans."
+          ],
+          "colors": [
+            {
+              "hex": "#123d32",
+              "name": "Worth Green",
+              "role": "Primary"
+            },
+            {
+              "hex": "#0c2e25",
+              "name": "Deep Green",
+              "role": "Grounds"
+            },
+            {
+              "hex": "#c9a86a",
+              "name": "Wealth Gold",
+              "role": "Accent"
+            },
+            {
+              "hex": "#7d5a1c",
+              "name": "Gold Ink",
+              "role": "Gold text on light"
+            },
+            {
+              "hex": "#fbf7f1",
+              "name": "Cream",
+              "role": "Light ground"
+            },
+            {
+              "hex": "#f5ebe4",
+              "name": "Blush",
+              "role": "Panels"
+            },
+            {
+              "hex": "#1f2a26",
+              "name": "Ink",
+              "role": "Body text"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

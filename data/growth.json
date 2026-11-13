@@ -1,0 +1,543 @@
+{
+  "note": "The relationship and growth layer. Who is around each client, what is happening in their lives, how intent is read, and how the book divides for the work that follows. Drawn from the Study Group curriculum, the Fractional Family Office positioning, and the COI Relationship Plan.",
+  "compounding": {
+    "heading": "Why these relationships compound",
+    "body": "A business owner relationship served well produces more protection events, growing assets, and generational continuation over time. The same advisor effort produces a fundamentally different practice than a wage-earner book: multiple protection events, a liquidity event, and compounding assets into the next generation. Retention runs in both directions. Depth of engagement keeps the client with the advisor and keeps the advisor invested in the practice.",
+    "retentionNote": "The coordinating role is itself a durable source of retention. A coordinated team is hard for the client to leave and hard for the advisor to walk away from."
+  },
+  "peopleRoles": [
+    {
+      "id": "spouse",
+      "name": "Spouse or partner",
+      "why": "Co-decision maker on everything in Pillars 01, 06 and 07, and the survivor the plan has to hold up for.",
+      "expansion": "high"
+    },
+    {
+      "id": "child_in",
+      "name": "Child in the business",
+      "why": "The successor question lives here. Their readiness is a Pillar 06 input and their own plan is a household in waiting.",
+      "expansion": "high"
+    },
+    {
+      "id": "child_out",
+      "name": "Child not in the business",
+      "why": "The equalization conversation in Pillar 07 is about them. They inherit whether or not anyone has prepared them.",
+      "expansion": "high"
+    },
+    {
+      "id": "grandchild",
+      "name": "Grandchild",
+      "why": "Generation-skipping and the education question. The multigenerational destination the plan points at.",
+      "expansion": "medium"
+    },
+    {
+      "id": "keyemployee",
+      "name": "Key employee",
+      "why": "Named in Pillar 03 as a risk and often in Pillar 06 as a successor. If they are getting equity or deferred comp, they need their own plan.",
+      "expansion": "high"
+    },
+    {
+      "id": "partner",
+      "name": "Business partner or co-owner",
+      "why": "The other side of the buy-sell. Their household is exposed to the same agreement.",
+      "expansion": "high"
+    },
+    {
+      "id": "cpa",
+      "name": "CPA",
+      "why": "Coordinating professional and a COI lane in their own right.",
+      "expansion": "coi"
+    },
+    {
+      "id": "attorney",
+      "name": "Attorney",
+      "why": "Coordinating professional and a COI lane in their own right.",
+      "expansion": "coi"
+    },
+    {
+      "id": "banker",
+      "name": "Banker",
+      "why": "Coordinating professional and a COI lane in their own right.",
+      "expansion": "coi"
+    },
+    {
+      "id": "cfo",
+      "name": "CFO or COO",
+      "why": "Sees dependency and transferability firsthand. A COI lane and often a household of their own.",
+      "expansion": "coi"
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "why": "",
+      "expansion": "low"
+    }
+  ],
+  "expansionLevels": [
+    {
+      "id": "high",
+      "label": "Likely household",
+      "tone": "good"
+    },
+    {
+      "id": "medium",
+      "label": "Worth watching",
+      "tone": "warn"
+    },
+    {
+      "id": "coi",
+      "label": "COI candidate",
+      "tone": "gold"
+    },
+    {
+      "id": "low",
+      "label": "Not now",
+      "tone": "idle"
+    }
+  ],
+  "intentSignals": {
+    "note": "Intent is read from what the record already knows plus what has been heard. These are the signals that move it. The read is a prompt for a conversation, never a score to act on by itself.",
+    "raises": [
+      {
+        "id": "breakout",
+        "name": "Breakout year",
+        "detail": "A big year put real money and real choices on the table.",
+        "weight": 3
+      },
+      {
+        "id": "liquidity",
+        "name": "Liquidity event in view",
+        "detail": "A sale, a partial recapitalisation, a large distribution, or a facility being arranged.",
+        "weight": 3
+      },
+      {
+        "id": "succession",
+        "name": "Succession question surfacing",
+        "detail": "The owner has started thinking about who comes next, whether or not they have said it out loud.",
+        "weight": 3
+      },
+      {
+        "id": "unsolicited",
+        "name": "Unsolicited approach from a buyer",
+        "detail": "Somebody has made an approach and the owner has no framework for answering.",
+        "weight": 3
+      },
+      {
+        "id": "stalled",
+        "name": "A stalled plan",
+        "detail": "Documents drafted years ago and never revisited, or a plan that stopped when the last advisor left.",
+        "weight": 2
+      },
+      {
+        "id": "family",
+        "name": "A family question",
+        "detail": "A child entering or leaving the business, a marriage, a health event, an inheritance.",
+        "weight": 2
+      },
+      {
+        "id": "coi_intro",
+        "name": "Introduced by a trusted COI",
+        "detail": "A peer introduction from a professional who already serves them.",
+        "weight": 2
+      },
+      {
+        "id": "partner",
+        "name": "New or departing partner",
+        "detail": "The ownership structure is moving, which puts the buy-sell in play.",
+        "weight": 2
+      },
+      {
+        "id": "growth",
+        "name": "Aggressive growth stretch",
+        "detail": "Adding value fast and hiring to sustain it. Structure is lagging the size of the company.",
+        "weight": 2
+      },
+      {
+        "id": "concentration",
+        "name": "Concentration they have noticed",
+        "detail": "The owner has said out loud that too much of their wealth is inside one asset.",
+        "weight": 2
+      }
+    ],
+    "lowers": [
+      {
+        "id": "nofit",
+        "name": "Outside the avatar",
+        "detail": "Wrong size, wrong stage, or not an owner."
+      },
+      {
+        "id": "happy",
+        "name": "Recently and genuinely well served",
+        "detail": "A comprehensive plan built inside the last year by someone doing the integrated work."
+      },
+      {
+        "id": "capacity",
+        "name": "No capacity",
+        "detail": "Busy season, live deal, health, or a transition already consuming their attention."
+      },
+      {
+        "id": "shopping",
+        "name": "Shopping on price",
+        "detail": "Comparing fees rather than approach. The fit this practice does its best work with is not transactional."
+      },
+      {
+        "id": "unreachable",
+        "name": "No route in",
+        "detail": "No COI touches them and no warm path exists yet."
+      }
+    ]
+  },
+  "segments": {
+    "note": "Who the program speaks to, so each piece is aimed at one woman rather than all of them. A segment carries a play, because segmentation that does not change what you write next is filing, not marketing.",
+    "definitions": [
+      {
+        "id": "building",
+        "name": "Building her career and her household",
+        "recognise": "Earning well, carrying a lot, and has never been taught the money part. Often says she is not a numbers person.",
+        "play": "Lead with the money story and the five numbers. Make the first step small enough to do tonight."
+      },
+      {
+        "id": "owner",
+        "name": "Running her own business",
+        "recognise": "A founder or solo practitioner whose business money and household money blur together.",
+        "play": "Lead with Values Before Numbers and the Ownership session. Concepts only, never business or tax advice."
+      },
+      {
+        "id": "transition",
+        "name": "In a life transition",
+        "recognise": "A new baby, a divorce, a loss, an inheritance, a move, or caring for a parent. Suddenly holding decisions she did not plan for.",
+        "play": "Lead with Protect It and the family money conversation. Gentle, never urgent, never alarm."
+      },
+      {
+        "id": "leader",
+        "name": "Leading others, ready to pour into herself",
+        "recognise": "Leads a team, a board or a community and has put herself last for years.",
+        "play": "Lead with Whole Worth and the room. The invitation is permission, not information."
+      },
+      {
+        "id": "partners",
+        "name": "Sponsors and partner organisations",
+        "recognise": "Companies, firms, foundations and women's organisations that could fund seats or share the program.",
+        "play": "Lead with Pay-It-Forward seats and the launch party invitation. Never name them publicly before they approve the wording."
+      }
+    ]
+  },
+  "lifeEvents": {
+    "note": "What happens in a client's life, and what the practice does about it. A fractional family office earns the name by touching the parts of life that are not the balance sheet.",
+    "sentiments": [
+      {
+        "id": "positive",
+        "label": "Good news",
+        "tone": "good"
+      },
+      {
+        "id": "difficult",
+        "label": "Hard news",
+        "tone": "alert"
+      },
+      {
+        "id": "neutral",
+        "label": "Worth knowing",
+        "tone": "info"
+      }
+    ],
+    "types": [
+      {
+        "id": "award",
+        "name": "Award, recognition or press",
+        "sentiment": "positive",
+        "touch": "shoutout",
+        "urgencyDays": 3,
+        "planning": ""
+      },
+      {
+        "id": "milestone",
+        "name": "Business milestone or anniversary",
+        "sentiment": "positive",
+        "touch": "shoutout",
+        "urgencyDays": 7,
+        "planning": ""
+      },
+      {
+        "id": "expansion",
+        "name": "Expansion, new location or major contract",
+        "sentiment": "positive",
+        "touch": "congratulate",
+        "urgencyDays": 3,
+        "planning": "Growth guardrail and capacity. Revisit Pillar 02."
+      },
+      {
+        "id": "hire",
+        "name": "Key hire or promotion",
+        "sentiment": "positive",
+        "touch": "congratulate",
+        "urgencyDays": 7,
+        "planning": "Key person and retention. Pillar 03."
+      },
+      {
+        "id": "familyGood",
+        "name": "Family: wedding, birth, graduation",
+        "sentiment": "positive",
+        "touch": "personal",
+        "urgencyDays": 3,
+        "planning": "Beneficiary and estate document review. Pillar 07."
+      },
+      {
+        "id": "liquidity",
+        "name": "Liquidity event or transaction closed",
+        "sentiment": "positive",
+        "touch": "congratulate",
+        "urgencyDays": 1,
+        "planning": "Tax trigger, post-exit projection, reinvestment. Pillars 04, 06."
+      },
+      {
+        "id": "death",
+        "name": "Death in the family",
+        "sentiment": "difficult",
+        "touch": "condolence",
+        "urgencyDays": 1,
+        "planning": "Hold all planning. Return to it when they raise it."
+      },
+      {
+        "id": "illness",
+        "name": "Illness or health event",
+        "sentiment": "difficult",
+        "touch": "checkin",
+        "urgencyDays": 1,
+        "planning": "Continuity and powers of attorney, when the moment is right. Pillars 03, 06."
+      },
+      {
+        "id": "divorce",
+        "name": "Separation or divorce",
+        "sentiment": "difficult",
+        "touch": "checkin",
+        "urgencyDays": 2,
+        "planning": "Ownership, beneficiary designations, buy-sell. Route to counsel."
+      },
+      {
+        "id": "loss",
+        "name": "Business setback, loss or litigation",
+        "sentiment": "difficult",
+        "touch": "checkin",
+        "urgencyDays": 2,
+        "planning": "Liquidity guardrail and reserve position. Pillar 02."
+      },
+      {
+        "id": "keyloss",
+        "name": "Key person departure",
+        "sentiment": "difficult",
+        "touch": "checkin",
+        "urgencyDays": 3,
+        "planning": "Pillar 03 key person, Pillar 06 business readiness."
+      },
+      {
+        "id": "approach",
+        "name": "Approached by a buyer",
+        "sentiment": "neutral",
+        "touch": "checkin",
+        "urgencyDays": 2,
+        "planning": "Readiness assessment before anything else. Pillar 06."
+      },
+      {
+        "id": "advisorChange",
+        "name": "Change in their professional team",
+        "sentiment": "neutral",
+        "touch": "checkin",
+        "urgencyDays": 7,
+        "planning": "Team alignment and the routing map."
+      },
+      {
+        "id": "move",
+        "name": "Relocation or new residence",
+        "sentiment": "neutral",
+        "touch": "personal",
+        "urgencyDays": 7,
+        "planning": "State law, estate documents, titling. Pillar 07."
+      }
+    ],
+    "touches": [
+      {
+        "id": "shoutout",
+        "name": "Public shoutout",
+        "detail": "A post celebrating them. Ask before naming a client publicly, every time."
+      },
+      {
+        "id": "congratulate",
+        "name": "Congratulations",
+        "detail": "A direct note. Specific about what they achieved, not generic."
+      },
+      {
+        "id": "personal",
+        "name": "Personal note or card",
+        "detail": "Handwritten where it matters. Nothing about business."
+      },
+      {
+        "id": "condolence",
+        "name": "Condolence",
+        "detail": "A personal reach. No planning content, no ask, no timeline. Follow up weeks later, not days."
+      },
+      {
+        "id": "checkin",
+        "name": "Check in",
+        "detail": "A call, not an email. Ask how they are before asking anything else."
+      }
+    ],
+    "consent": "A client's news is theirs. Anything public, a shoutout or a post, is asked for first and never assumed, and nothing about a client's situation goes into marketing without their say-so."
+  },
+  "sources": {
+    "note": "How a signal reaches the register. There is no automatic social feed here: the platforms do not offer one that a practice can rely on, and pretending otherwise would put the touch at the mercy of an integration that breaks quietly. What works is capture that takes ten seconds.",
+    "options": [
+      {
+        "id": "heard",
+        "name": "Heard it directly",
+        "detail": "In a meeting, on a call, from the client themselves."
+      },
+      {
+        "id": "social",
+        "name": "Saw it on their socials",
+        "detail": "Paste the post or describe it. The practice reads the feed; the system records what matters."
+      },
+      {
+        "id": "coi",
+        "name": "From a COI",
+        "detail": "A professional on their team mentioned it."
+      },
+      {
+        "id": "press",
+        "name": "Press or public notice",
+        "detail": "An award list, a permit, a local business journal."
+      },
+      {
+        "id": "team",
+        "name": "From someone on your team",
+        "detail": "Whoever heard it first puts it here."
+      }
+    ]
+  },
+  "familyGovernance": {
+    "heading": "Family governance",
+    "body": "Governance is where the plan becomes durable rather than a set of documents in a drawer. Family readiness determines whether the plan survives the founder, and it is built deliberately or not at all.",
+    "elements": [
+      {
+        "id": "communication",
+        "name": "Communication plan",
+        "detail": "How and when the family talks about the wealth, and who is in the room."
+      },
+      {
+        "id": "education",
+        "name": "Next-generation education",
+        "detail": "What the next generation needs to understand before they inherit it, and who teaches them."
+      },
+      {
+        "id": "meetings",
+        "name": "Family meetings",
+        "detail": "A standing cadence, with an agenda, held whether or not there is news."
+      },
+      {
+        "id": "roles",
+        "name": "Roles and readiness",
+        "detail": "Who will lead, who will own, who will neither, and whether each of them knows."
+      },
+      {
+        "id": "continuity",
+        "name": "Continuity of the plan itself",
+        "detail": "Who holds the integrated view after the founder, and how the team stays aligned across the handover."
+      }
+    ]
+  },
+  "teamAlignmentAgenda": {
+    "heading": "The team alignment meeting",
+    "body": "The advisor is the coordinating center, not the hierarchical lead. Each specialist owns their domain; the advisor owns the integration.",
+    "agenda": [
+      {
+        "id": "values",
+        "name": "Values check",
+        "detail": "The Owner Strategy Statement read aloud. Everything else is tested against it."
+      },
+      {
+        "id": "domain",
+        "name": "Domain coordination",
+        "detail": "Each professional reports what they are working on and how it serves that statement."
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar alignment",
+        "detail": "Deadlines, trigger dates and dependencies laid against one another."
+      },
+      {
+        "id": "open",
+        "name": "Open issues",
+        "detail": "Anything where two professionals are working at cross purposes, surfaced and resolved in the room."
+      },
+      {
+        "id": "cadence",
+        "name": "Cadence",
+        "detail": "When the team meets next and what has to be true by then."
+      }
+    ],
+    "note": "Tie every new recommendation back to the owner's stated direction so the team validates alignment rather than working in parallel."
+  },
+  "activitySystem": {
+    "heading": "The activity system",
+    "body": "Predictable client flow comes from consistent activity, tracked and sustained, not from sporadic effort. Activity is the one variable the advisor fully controls.",
+    "targets": [
+      {
+        "k": "intros",
+        "l": "Introductions",
+        "monthly": "5 to 7"
+      },
+      {
+        "k": "firstMeetings",
+        "l": "First meetings",
+        "monthly": "3 to 4"
+      },
+      {
+        "k": "coiTouches",
+        "l": "COI touches",
+        "monthly": "one per core relationship per quarter"
+      }
+    ],
+    "distribute": "Distribute the work. Associates and case managers can run more of the process as it becomes systematized, so the senior advisor stops being the bottleneck."
+  },
+  "ai": {
+    "note": "The assistant reads only what this page hands it. It has no memory between calls, cannot browse, and sees nothing beyond the record you are looking at. Every read below is a prompt for a conversation, not a decision.",
+    "unavailable": "The assistant is not available in this view. Every screen below still works: the frameworks are there and the reads can be made by hand.",
+    "tasks": [
+      {
+        "id": "intent",
+        "name": "Read the intent",
+        "action": "Read this household",
+        "blurb": "Weighs what the record knows against the signals that move intent, and says what would move it next.",
+        "returns": "A score out of 100, the signals it found, what is missing, and the one next move."
+      },
+      {
+        "id": "segment",
+        "name": "Segment the book",
+        "action": "Segment the book",
+        "blurb": "Places every household in a segment and names the play that follows from it.",
+        "returns": "Each household with its segment, why, and the play."
+      },
+      {
+        "id": "expansion",
+        "name": "Who else is here",
+        "action": "Map the expansion",
+        "blurb": "Reads the people around this household and says which of them is a future client, a COI, or neither.",
+        "returns": "Each person with a call and the reason, plus the natural opening."
+      },
+      {
+        "id": "triage",
+        "name": "Triage a signal",
+        "action": "Read this signal",
+        "blurb": "Takes something you heard or saw and says what it is, how fast to move, and which touch it calls for.",
+        "returns": "The event type, the sentiment, the urgency, the touch, and any planning implication."
+      },
+      {
+        "id": "retention",
+        "name": "Retention read",
+        "action": "Read the relationship",
+        "blurb": "Looks at cadence, engagement and open items across the household and says where the relationship is thinning.",
+        "returns": "A read on the relationship, what is thinning, and what would thicken it."
+      }
+    ]
+  }
+}

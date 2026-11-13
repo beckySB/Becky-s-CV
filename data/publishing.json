@@ -1,0 +1,19 @@
+{
+  "timezone": "America/Chicago",
+  "timezoneLabel": "Central",
+  "note": "The weekly posting slots, taken from the quarter's rhythm in the brand file: Tuesday is the document, Wednesday is the video, Thursday is written that week from something that happened, and Instagram takes two a week. Monday prepares and Friday engages; neither posts. The times are a starting point. Change them here once a few weeks of numbers say otherwise.",
+  "slots": [
+    { "day": "Tue", "time": "08:20", "platforms": ["linkedin"], "label": "The Tuesday document" },
+    { "day": "Tue", "time": "11:40", "platforms": ["instagram", "facebook"], "label": "The Tuesday carousel, reshaped" },
+    { "day": "Wed", "time": "08:20", "platforms": ["linkedin"], "label": "The Wednesday video" },
+    { "day": "Thu", "time": "08:20", "platforms": ["linkedin"], "label": "The live post" },
+    { "day": "Thu", "time": "17:40", "platforms": ["instagram", "facebook"], "label": "The human or local post" }
+  ],
+  "rules": [
+    "Nothing posts unless it was approved for a time. Approving is the sign-off.",
+    "One post per slot. A second post for the same slot goes to the next open one.",
+    "Reply to every LinkedIn comment inside the first two hours. Schedule for a time you can be there.",
+    "Event photos go out within a week of the event, while the people in them still remember it.",
+    "Every attempt, posted or failed, goes into the publish log with the exact text and an image fingerprint. Download it for the firm's records."
+  ]
+}
