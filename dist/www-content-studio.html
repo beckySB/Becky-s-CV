@@ -3908,6 +3908,39 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
     return lines;
   }
 
+  /* ---------------- Google Drive ----------------
+     Offered once Drive is connected in Publishing, Connections. The file goes from this
+     browser to the Studio's server and on to the Studio's folder in that Drive. */
+  function driveStatus() {
+    if (VE.driveAsked) return;
+    VE.driveAsked = true;
+    fetch('api/social/status', { credentials: 'same-origin' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (st) { VE.driveOn = !!(st && st.google && !st.google.needsReconnect); if (VE.driveOn && VE.outUrl) panel(); })
+      .catch(function () { VE.driveOn = false; });
+  }
+  function driveRow() {
+    driveStatus();
+    var d = VE.drive;
+    if (d && d.link) return '<p class="small" style="margin:8px 0 0">Saved to Google Drive: <a href="' + esc(d.link) + '" target="_blank" rel="noopener">' + esc(d.name) + '</a>' + (d.folder ? ' in <a href="' + esc(d.folder.link) + '" target="_blank" rel="noopener">' + esc(d.folder.name) + '</a>' : '') + '.</p>';
+    if (!VE.driveOn) return '<p class="tiny muted" style="margin:8px 0 0">To save straight to Google Drive, connect it in <a href="#/publish/connections">Publishing, Connections</a>.</p>';
+    return '<div style="margin-top:8px"><button class="btn btn-sm" data-ve="drive"' + (d && d.busy ? ' disabled' : '') + '>' + (d && d.busy ? 'Saving to Google Drive…' : 'Save to Google Drive') + '</button>' +
+      (d && d.error ? '<p class="tiny" style="margin:6px 0 0;color:var(--alert)">' + esc(d.error) + '</p>' : '') + '</div>';
+  }
+  function saveToDrive() {
+    if (!VE.outBlob || (VE.drive && VE.drive.busy)) return;
+    VE.drive = { busy: true }; panel();
+    fetch('api/social/drive/upload', {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': VE.outType, 'X-Studio-Request': '1', 'X-File-Name': encodeURIComponent(VE.outName) },
+      body: VE.outBlob
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) {
+        if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+        VE.drive = { link: j.file.link, name: j.file.name, folder: j.folder };
+      });
+    }).catch(function (e) { VE.drive = { error: e.message }; }).then(panel);
+  }
+
   function roundRect(ctx, x, y, w, h, r) {
     ctx.beginPath();
     ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
@@ -4249,6 +4282,7 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
       var blobType = info.container === 'mp4' ? 'video/mp4' : 'video/webm';
       var blob = new Blob(chunks, { type: blobType });
       VE.outUrl = URL.createObjectURL(blob);
+      VE.outBlob = blob; VE.drive = null;
       VE.outType = blobType;
       VE.outCodec = [info.codec, info.audio].filter(Boolean).join(' with ') || '';
       VE.outRecorded = rec.mimeType || type;
@@ -4409,11 +4443,11 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
           '<button class="btn" data-ve="cover"' + (has ? '' : ' disabled') + '>Save this frame as a cover image</button></div>') +
       (VE.outUrl ? '<div class="callout ' + (VE.outReady ? 'brand' : 'warn') + '" style="margin-top:12px">' +
         '<a class="btn btn-primary btn-sm" href="' + esc(VE.outUrl) + '" download="' + esc(VE.outName) + '">Download ' + esc(VE.outName) + '</a> <span class="tiny muted">' + outMb +
-        (VE.outCodec ? ', ' + esc(VE.outCodec) : '') + '</span>' +
+        (VE.outCodec ? ', ' + esc(VE.outCodec) : '') + '</span>' + driveRow() +
         (VE.outReady ? '<p class="tiny" style="margin:8px 0 0">H.264 video and AAC audio in MP4, ready for LinkedIn, Instagram and YouTube.</p>'
           : '<p class="tiny" style="margin:8px 0 0">This browser recorded ' + esc(VE.outCodec || 'an unconfirmed format') + '. YouTube accepts it. LinkedIn and Instagram expect H.264 video with AAC audio and may reject this on upload. ' +
             'Export from current Google Chrome, Edge or Safari on a Mac or PC, which record that combination.</p>') + '</div>' : '') +
-      '<p class="tiny muted" style="margin:10px 0 0">Nothing leaves this computer. The video is read, edited and written in this browser.</p></div>';
+      '<p class="tiny muted" style="margin:10px 0 0">Nothing leaves this computer unless you press Save to Google Drive. The video is read, edited and written in this browser.</p></div>';
   }
 
   function setNum(key, v) {
@@ -4484,6 +4518,7 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
     else if (k === 'mark-start') { var v = video(); setNum('start', VE.playing ? v.currentTime : VE.start + VE.previewT); panel(); scrubRange(); }
     else if (k === 'mark-end') { var v2 = video(); setNum('end', VE.playing ? v2.currentTime : VE.start + VE.previewT); panel(); scrubRange(); }
     else if (k === 'export') exportVideo();
+    else if (k === 'drive') saveToDrive();
     else if (k === 'cover') saveCover();
     else if (k === 'untimed') { VE.captionMode = 'auto'; panel(); paint(); }
   }
@@ -6159,9 +6194,29 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
           (st.apps.meta ? '<p class="small muted">The app keys are set. ' + esc(st.missing.length ? 'Finish step 1 first.' : '') + '</p>' : '')) +
       '</div>';
 
+
+    var g = st.google;
+    var driveCard = '<div class="card"><h3 style="margin-top:0">4. Google Drive, for finished videos</h3>' +
+      (g ? '<p class="small">' + chip(g.needsReconnect ? 'Reconnect' : 'Connected', g.needsReconnect ? 'alert' : 'good') + ' as <strong>' + esc(g.email) + '</strong>. ' +
+          (g.folder ? 'Files go into <a href="' + esc(g.folder.link) + '" target="_blank" rel="noopener">' + esc(g.folder.name) + '</a>.' : 'The Studio makes its folder the first time you save a file.') + '</p>' +
+          (g.recent && g.recent.length ? '<ul class="bullets">' + g.recent.slice(0, 5).map(function (f) {
+            return '<li class="small"><a href="' + esc(f.link) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a> <span class="muted">' + esc(when(f.at)) + '</span></li>';
+          }).join('') + '</ul>' : '')
+        : '') +
+      (st.canConnect.google
+        ? '<a class="btn btn-primary btn-sm" href="auth/google/start">' + (g ? 'Reconnect Google Drive' : 'Connect Google Drive') + '</a>' + (g ? ' <button class="btn btn-ghost btn-sm" data-pb="disconnect" data-k="google">Disconnect</button>' : '') +
+          '<p class="tiny muted" style="margin:8px 0 0">The Studio asks for one permission: to see and change only the files it puts in Drive itself. It cannot read anything else there. Use Save to Google Drive on the Video editor once this is connected.</p>'
+        : '<ol class="small pb-ol">' +
+          '<li>At ' + code('console.cloud.google.com') + ', choose or create a project, then APIs and Services, Library, and enable the <strong>Google Drive API</strong>.</li>' +
+          '<li>OAuth consent screen: app name Women Worth & Wealth Studio. Audience <strong>Internal</strong> if you will sign in with a Google Workspace account; otherwise External, and press Publish app so the connection does not expire every seven days. Under Data access add the scope ' + code('.../auth/drive.file') + ' and nothing else. That scope needs no review by Google.</li>' +
+          '<li>Credentials, Create credentials, OAuth client ID, type <strong>Web application</strong>. Under Authorized redirect URIs add ' + code(st.redirects.google || 'https://www-content-studio-production.up.railway.app/auth/google/callback') + '.</li>' +
+          '<li>Copy the Client ID and Client secret into Railway as ' + code('GOOGLE_CLIENT_ID') + ' and ' + code('GOOGLE_CLIENT_SECRET') + '. Railway redeploys, and a Connect button appears here.</li></ol>' +
+          (st.apps.google ? '<p class="small muted">The app keys are set. ' + esc(st.missing.length ? 'Finish step 1 first.' : '') + '</p>' : '')) +
+      '</div>';
+
     return (st.lastConnectError ? '<div class="callout alert" style="margin-bottom:12px"><strong>The last connection attempt failed.</strong> ' + esc(st.lastConnectError) + '</div>' : '') +
-      setup + liCard + metaCard +
-      '<div class="card"><h3 style="margin-top:0">4. The record</h3><p class="small muted" style="margin:0">Every attempt is logged with the time, the platform, the link or the error, who approved it, the exact text, and a fingerprint of each image. Download it from the Posted tab. If the firm captures social accounts with an archiving service, connect the accounts there too; this log is a backstop, not a replacement.</p></div>';
+      setup + liCard + metaCard + driveCard +
+      '<div class="card"><h3 style="margin-top:0">5. The record</h3><p class="small muted" style="margin:0">Every attempt is logged with the time, the platform, the link or the error, who approved it, the exact text, and a fingerprint of each image. Download it from the Posted tab. If the firm captures social accounts with an archiving service, connect the accounts there too; this log is a backstop, not a replacement.</p></div>';
   }
 
   /* ---------------- events ---------------- */
@@ -6200,7 +6255,7 @@ window.STUDIO_ASSETS = {"logoColor":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia
     var el = ev.target.closest && ev.target.closest('[data-pb]'); if (!el || el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA') return;
     var k = el.dataset.pb, id = el.dataset.id, p = id ? post(id) : null;
     if (k === 'disconnect') {
-      if (!global.confirm('Disconnect ' + (el.dataset.k === 'linkedin' ? 'LinkedIn' : 'Facebook and Instagram') + '? Approved posts for it will fail until you reconnect.')) return;
+      if (!global.confirm(el.dataset.k === 'google' ? 'Disconnect Google Drive? Files already saved stay in Drive.' : 'Disconnect ' + (el.dataset.k === 'linkedin' ? 'LinkedIn' : 'Facebook and Instagram') + '? Approved posts for it will fail until you reconnect.')) return;
       api('disconnect', { platform: el.dataset.k }).then(function (st) { PB.status = st; rerender(); }).catch(function (e) { PB.error = e.message; rerender(); });
       return;
     }

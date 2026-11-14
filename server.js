@@ -169,6 +169,20 @@ async function handleSocial(req, res, pathname, query) {
   if (sub === 'page' && req.method === 'POST') {
     try { social.choosePage(String((await json(4096)).pageId || '')); return sendJson(res, 200, social.status()); } catch (e) { return fail(e); }
   }
+  /* A finished video or image, sent as the raw file, saved to the connected Google Drive. */
+  if (sub === 'drive/upload' && req.method === 'POST') {
+    let bytes;
+    try { bytes = await readBytes(req, 512 * 1024 * 1024); }
+    catch (e) { return sendJson(res, 413, { error: 'The file is over 512 MB. Export it at 720p, or save it by hand.' }); }
+    let name = '';
+    try { name = decodeURIComponent(String(req.headers['x-file-name'] || '')); } catch (e) { name = ''; }
+    try {
+      return sendJson(res, 200, await social.saveToDrive({ name, mimeType: String(req.headers['content-type'] || '').split(';')[0].trim().toLowerCase(), bytes }));
+    } catch (e) {
+      if (!(e && e.status)) console.error('drive upload failed:', e && e.message);
+      return fail(e);
+    }
+  }
   if (sub === 'disconnect' && req.method === 'POST') {
     try { social.disconnect(String((await json(4096)).platform || '')); return sendJson(res, 200, social.status()); } catch (e) { return fail(e); }
   }
@@ -176,7 +190,7 @@ async function handleSocial(req, res, pathname, query) {
 }
 
 async function handleAuth(req, res, pathname, query) {
-  const m = /^\/auth\/(linkedin|meta)\/(start|callback)$/.exec(pathname);
+  const m = /^\/auth\/(linkedin|meta|google)\/(start|callback)$/.exec(pathname);
   if (!m || req.method !== 'GET') return send(res, 404, 'Not found');
   if (m[2] === 'start') {
     const url = social.startAuth(m[1]);
@@ -307,6 +321,20 @@ function readBody(req, limit) {
       chunks.push(c);
     });
     req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    req.on('error', reject);
+  });
+}
+
+function readBytes(req, limit) {
+  return new Promise((resolve, reject) => {
+    let size = 0;
+    const chunks = [];
+    req.on('data', (c) => {
+      size += c.length;
+      if (size > limit) { reject(new Error('too large')); req.destroy(); return; }
+      chunks.push(c);
+    });
+    req.on('end', () => resolve(Buffer.concat(chunks)));
     req.on('error', reject);
   });
 }

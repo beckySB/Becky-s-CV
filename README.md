@@ -195,8 +195,22 @@ Railway variables (secrets go here, never in chat):
 | `PUBLIC_URL` | The site's https address. Railway's `RAILWAY_PUBLIC_DOMAIN` is used if this is unset. |
 | `LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET` | From a LinkedIn developer app with Sign In with LinkedIn using OpenID Connect and Share on LinkedIn. |
 | `META_APP_ID`, `META_APP_SECRET` | From a Meta Business app with Facebook Login for Business and the Instagram API. |
+| `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | Optional. From a Google Cloud OAuth client (Web application), for saving videos to Google Drive. |
 | `LINKEDIN_VERSION` | Optional. The `LinkedIn-Version` header, default `202609`. LinkedIn retires versions after about a year; raise it if posts fail with a version error. |
 | `META_GRAPH_VERSION` | Optional. Default `v25.0`. |
+
+### Google Drive
+
+Finished videos can be saved straight to Google Drive: Publishing, Connections, Connect Google
+Drive, then Save to Google Drive on the Video editor after an export. The Studio asks for one
+Drive permission (`drive.file`): it can see and change only the files it puts there itself, in a
+folder it makes called Women Worth & Wealth Studio (`DRIVE_FOLDER_NAME` renames it). Saving is not
+publishing; nothing is posted by it.
+
+Set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` in Railway, from a Google Cloud OAuth client of
+type Web application whose redirect URI is the site's address plus `/auth/google/callback`. The
+Connections tab shows the exact address and walks through the consent screen. The sign-in is kept
+sealed like the other connections and renews itself, so there is no expiry to watch.
 
 Attach a Railway volume (mount path `/data`) so the queue and the log survive deploys; Railway
 passes its path in `RAILWAY_VOLUME_MOUNT_PATH`. The Connections tab walks through all of it and
@@ -337,7 +351,7 @@ assets/js/mail.js     Gmail drafting and sending, straight from the browser
 assets/js/views.js    every screen
 assets/js/app.js      router, events and boot
 assets/js/publish.js  the Publishing screen: queue, schedule, connections
-lib/social/           the queue, scheduler, token sealing, and the LinkedIn and Meta clients
+lib/social/           the queue, scheduler, token sealing, and the LinkedIn, Meta and Google Drive clients
 data/publishing.json  the weekly posting slots
 assets/js/moments.js  the Moments screen: alerts, watch list, playbook, log one
 lib/moments.js        the watch list, the morning news read, sorting and note drafting

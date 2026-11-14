@@ -354,9 +354,29 @@
           (st.apps.meta ? '<p class="small muted">The app keys are set. ' + esc(st.missing.length ? 'Finish step 1 first.' : '') + '</p>' : '')) +
       '</div>';
 
+
+    var g = st.google;
+    var driveCard = '<div class="card"><h3 style="margin-top:0">4. Google Drive, for finished videos</h3>' +
+      (g ? '<p class="small">' + chip(g.needsReconnect ? 'Reconnect' : 'Connected', g.needsReconnect ? 'alert' : 'good') + ' as <strong>' + esc(g.email) + '</strong>. ' +
+          (g.folder ? 'Files go into <a href="' + esc(g.folder.link) + '" target="_blank" rel="noopener">' + esc(g.folder.name) + '</a>.' : 'The Studio makes its folder the first time you save a file.') + '</p>' +
+          (g.recent && g.recent.length ? '<ul class="bullets">' + g.recent.slice(0, 5).map(function (f) {
+            return '<li class="small"><a href="' + esc(f.link) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a> <span class="muted">' + esc(when(f.at)) + '</span></li>';
+          }).join('') + '</ul>' : '')
+        : '') +
+      (st.canConnect.google
+        ? '<a class="btn btn-primary btn-sm" href="auth/google/start">' + (g ? 'Reconnect Google Drive' : 'Connect Google Drive') + '</a>' + (g ? ' <button class="btn btn-ghost btn-sm" data-pb="disconnect" data-k="google">Disconnect</button>' : '') +
+          '<p class="tiny muted" style="margin:8px 0 0">The Studio asks for one permission: to see and change only the files it puts in Drive itself. It cannot read anything else there. Use Save to Google Drive on the Video editor once this is connected.</p>'
+        : '<ol class="small pb-ol">' +
+          '<li>At ' + code('console.cloud.google.com') + ', choose or create a project, then APIs and Services, Library, and enable the <strong>Google Drive API</strong>.</li>' +
+          '<li>OAuth consent screen: app name Women Worth & Wealth Studio. Audience <strong>Internal</strong> if you will sign in with a Google Workspace account; otherwise External, and press Publish app so the connection does not expire every seven days. Under Data access add the scope ' + code('.../auth/drive.file') + ' and nothing else. That scope needs no review by Google.</li>' +
+          '<li>Credentials, Create credentials, OAuth client ID, type <strong>Web application</strong>. Under Authorized redirect URIs add ' + code(st.redirects.google || 'https://www-content-studio-production.up.railway.app/auth/google/callback') + '.</li>' +
+          '<li>Copy the Client ID and Client secret into Railway as ' + code('GOOGLE_CLIENT_ID') + ' and ' + code('GOOGLE_CLIENT_SECRET') + '. Railway redeploys, and a Connect button appears here.</li></ol>' +
+          (st.apps.google ? '<p class="small muted">The app keys are set. ' + esc(st.missing.length ? 'Finish step 1 first.' : '') + '</p>' : '')) +
+      '</div>';
+
     return (st.lastConnectError ? '<div class="callout alert" style="margin-bottom:12px"><strong>The last connection attempt failed.</strong> ' + esc(st.lastConnectError) + '</div>' : '') +
-      setup + liCard + metaCard +
-      '<div class="card"><h3 style="margin-top:0">4. The record</h3><p class="small muted" style="margin:0">Every attempt is logged with the time, the platform, the link or the error, who approved it, the exact text, and a fingerprint of each image. Download it from the Posted tab. If the firm captures social accounts with an archiving service, connect the accounts there too; this log is a backstop, not a replacement.</p></div>';
+      setup + liCard + metaCard + driveCard +
+      '<div class="card"><h3 style="margin-top:0">5. The record</h3><p class="small muted" style="margin:0">Every attempt is logged with the time, the platform, the link or the error, who approved it, the exact text, and a fingerprint of each image. Download it from the Posted tab. If the firm captures social accounts with an archiving service, connect the accounts there too; this log is a backstop, not a replacement.</p></div>';
   }
 
   /* ---------------- events ---------------- */
@@ -395,7 +415,7 @@
     var el = ev.target.closest && ev.target.closest('[data-pb]'); if (!el || el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'TEXTAREA') return;
     var k = el.dataset.pb, id = el.dataset.id, p = id ? post(id) : null;
     if (k === 'disconnect') {
-      if (!global.confirm('Disconnect ' + (el.dataset.k === 'linkedin' ? 'LinkedIn' : 'Facebook and Instagram') + '? Approved posts for it will fail until you reconnect.')) return;
+      if (!global.confirm(el.dataset.k === 'google' ? 'Disconnect Google Drive? Files already saved stay in Drive.' : 'Disconnect ' + (el.dataset.k === 'linkedin' ? 'LinkedIn' : 'Facebook and Instagram') + '? Approved posts for it will fail until you reconnect.')) return;
       api('disconnect', { platform: el.dataset.k }).then(function (st) { PB.status = st; rerender(); }).catch(function (e) { PB.error = e.message; rerender(); });
       return;
     }

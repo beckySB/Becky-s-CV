@@ -180,6 +180,39 @@
     return lines;
   }
 
+  /* ---------------- Google Drive ----------------
+     Offered once Drive is connected in Publishing, Connections. The file goes from this
+     browser to the Studio's server and on to the Studio's folder in that Drive. */
+  function driveStatus() {
+    if (VE.driveAsked) return;
+    VE.driveAsked = true;
+    fetch('api/social/status', { credentials: 'same-origin' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (st) { VE.driveOn = !!(st && st.google && !st.google.needsReconnect); if (VE.driveOn && VE.outUrl) panel(); })
+      .catch(function () { VE.driveOn = false; });
+  }
+  function driveRow() {
+    driveStatus();
+    var d = VE.drive;
+    if (d && d.link) return '<p class="small" style="margin:8px 0 0">Saved to Google Drive: <a href="' + esc(d.link) + '" target="_blank" rel="noopener">' + esc(d.name) + '</a>' + (d.folder ? ' in <a href="' + esc(d.folder.link) + '" target="_blank" rel="noopener">' + esc(d.folder.name) + '</a>' : '') + '.</p>';
+    if (!VE.driveOn) return '<p class="tiny muted" style="margin:8px 0 0">To save straight to Google Drive, connect it in <a href="#/publish/connections">Publishing, Connections</a>.</p>';
+    return '<div style="margin-top:8px"><button class="btn btn-sm" data-ve="drive"' + (d && d.busy ? ' disabled' : '') + '>' + (d && d.busy ? 'Saving to Google Drive…' : 'Save to Google Drive') + '</button>' +
+      (d && d.error ? '<p class="tiny" style="margin:6px 0 0;color:var(--alert)">' + esc(d.error) + '</p>' : '') + '</div>';
+  }
+  function saveToDrive() {
+    if (!VE.outBlob || (VE.drive && VE.drive.busy)) return;
+    VE.drive = { busy: true }; panel();
+    fetch('api/social/drive/upload', {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': VE.outType, 'X-Studio-Request': '1', 'X-File-Name': encodeURIComponent(VE.outName) },
+      body: VE.outBlob
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) {
+        if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+        VE.drive = { link: j.file.link, name: j.file.name, folder: j.folder };
+      });
+    }).catch(function (e) { VE.drive = { error: e.message }; }).then(panel);
+  }
+
   function roundRect(ctx, x, y, w, h, r) {
     ctx.beginPath();
     ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
@@ -521,6 +554,7 @@
       var blobType = info.container === 'mp4' ? 'video/mp4' : 'video/webm';
       var blob = new Blob(chunks, { type: blobType });
       VE.outUrl = URL.createObjectURL(blob);
+      VE.outBlob = blob; VE.drive = null;
       VE.outType = blobType;
       VE.outCodec = [info.codec, info.audio].filter(Boolean).join(' with ') || '';
       VE.outRecorded = rec.mimeType || type;
@@ -681,11 +715,11 @@
           '<button class="btn" data-ve="cover"' + (has ? '' : ' disabled') + '>Save this frame as a cover image</button></div>') +
       (VE.outUrl ? '<div class="callout ' + (VE.outReady ? 'brand' : 'warn') + '" style="margin-top:12px">' +
         '<a class="btn btn-primary btn-sm" href="' + esc(VE.outUrl) + '" download="' + esc(VE.outName) + '">Download ' + esc(VE.outName) + '</a> <span class="tiny muted">' + outMb +
-        (VE.outCodec ? ', ' + esc(VE.outCodec) : '') + '</span>' +
+        (VE.outCodec ? ', ' + esc(VE.outCodec) : '') + '</span>' + driveRow() +
         (VE.outReady ? '<p class="tiny" style="margin:8px 0 0">H.264 video and AAC audio in MP4, ready for LinkedIn, Instagram and YouTube.</p>'
           : '<p class="tiny" style="margin:8px 0 0">This browser recorded ' + esc(VE.outCodec || 'an unconfirmed format') + '. YouTube accepts it. LinkedIn and Instagram expect H.264 video with AAC audio and may reject this on upload. ' +
             'Export from current Google Chrome, Edge or Safari on a Mac or PC, which record that combination.</p>') + '</div>' : '') +
-      '<p class="tiny muted" style="margin:10px 0 0">Nothing leaves this computer. The video is read, edited and written in this browser.</p></div>';
+      '<p class="tiny muted" style="margin:10px 0 0">Nothing leaves this computer unless you press Save to Google Drive. The video is read, edited and written in this browser.</p></div>';
   }
 
   function setNum(key, v) {
@@ -756,6 +790,7 @@
     else if (k === 'mark-start') { var v = video(); setNum('start', VE.playing ? v.currentTime : VE.start + VE.previewT); panel(); scrubRange(); }
     else if (k === 'mark-end') { var v2 = video(); setNum('end', VE.playing ? v2.currentTime : VE.start + VE.previewT); panel(); scrubRange(); }
     else if (k === 'export') exportVideo();
+    else if (k === 'drive') saveToDrive();
     else if (k === 'cover') saveCover();
     else if (k === 'untimed') { VE.captionMode = 'auto'; panel(); paint(); }
   }
