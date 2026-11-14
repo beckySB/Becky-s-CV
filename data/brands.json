@@ -80,7 +80,7 @@
             "source": "Google Fonts (SIL Open Font License). Bundled in assets/fonts."
           }
         ],
-        "logoNote": "A three leaf mark (a gold centre leaf, a deep green leaf to the left, an olive leaf to the right) beside the wordmark: WOMEN, small and letterspaced in gold, over Worth & Wealth in Cormorant Garamond with the ampersand in gold italic. The mark keeps its colours on cream and on deep green. On a photograph or the green band the whole logo goes white.",
+        "logoNote": "A three leaf mark (a gold centre leaf, a deep green leaf to the left, an olive leaf to the right) beside the wordmark: WOMEN, small and letterspaced in gold, over WORTH & WEALTH in bold uppercase Cormorant Garamond with the ampersand in gold italic. On deep green the mark sits on a cream disc and the wordmark turns white, exactly as the site's share image shows it. On a photograph or the green band the whole logo goes white.",
         "imageDirection": "Real, warm, New Orleans. Women together: around a table, laughing, working through a page, at breakfast. Both co-hosts smiling, not corporate headshots. No stock photos of women pointing at laptops, no piles of cash, no charts going up. Stock loops are fine for texture but are never captioned as participants.",
         "colorNote": "Straight from the website's stylesheet (wealthandwisdom.biz), where every pairing was checked for WCAG AA. Gold on green passes at 5.3:1. Gold on cream does not, which is what Gold Ink is for.",
         "fontNote": "All three are free Google Fonts, so Canva carries every one of them. No substitutes needed.",
@@ -95,7 +95,7 @@
         "logoLockups": [
           "Horizontal: mark left of the two line wordmark. The default.",
           "Mark alone: avatars, favicons, the profile picture, anywhere the wordmark would be unreadable.",
-          "Reverse: on deep green, the mark keeps its colours and the wordmark turns cream with a gold ampersand.",
+          "Reverse: on deep green, the mark sits on a cream disc and the wordmark turns white with a gold ampersand.",
           "White: every part white, for photographs and the green band."
         ],
         "exclusionZone": "Clear space equal to the height of the centre leaf on every side.",

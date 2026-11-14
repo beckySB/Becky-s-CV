@@ -79,7 +79,7 @@
     PM.logos.reverse.src = A.logoReverse || 'assets/brand/www-logo-horizontal-reverse.svg';
     [PM.logos.color, PM.logos.white, PM.logos.reverse].forEach(function (im) { im.onload = paint; });
   }
-  var LOGO_RATIO = 556 / 140;
+  var LOGO_RATIO = 767 / 140;
   function drawLogo(ctx, which, x, y, h, align) {
     var im = PM.logos && PM.logos[which];
     var w = h * LOGO_RATIO;
