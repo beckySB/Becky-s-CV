@@ -39,6 +39,7 @@ window.STUDIO_ASSETS = ${JSON.stringify({
 <script>${read('assets/js/mail.js')}</script>
 <script>${read('assets/js/newsroom.js')}</script>
 <script>${read('assets/js/videoedit.js')}</script>
+<script>${read('assets/js/clips.js')}</script>
 <script>${read('assets/js/experience.js')}</script>
 <script>${read('assets/js/postmaker.js')}</script>
 <script>${read('assets/js/publish.js')}</script>

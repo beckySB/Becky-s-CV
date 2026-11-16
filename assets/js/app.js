@@ -24,6 +24,7 @@
     bell: svg('<path d="M5.4 13.6V9.2a4.6 4.6 0 0 1 9.2 0v4.4l1.4 1.8H4z"/><path d="M8.4 17.2a1.7 1.7 0 0 0 3.2 0"/>'),
     publish: svg('<rect x="3" y="4.2" width="14" height="12.6" rx="1.6"/><path d="M3 8h14M7 2.6v3M13 2.6v3M8 12.2l1.6 1.6 3-3.2"/>'),
     video: svg('<rect x="2.6" y="5" width="10.6" height="10" rx="1.6"/><path d="M13.2 8.6l4.2-2.4v7.6l-4.2-2.4z"/>'),
+    clips: svg('<rect x="2.6" y="3.4" width="6" height="13.2" rx="1.4"/><rect x="11.4" y="3.4" width="6" height="13.2" rx="1.4"/><path d="M4.6 7.2l2.2 1.5-2.2 1.5zM13.4 7.2l2.2 1.5-2.2 1.5z"/>'),
     settings: svg('<circle cx="10" cy="10" r="2.6"/><path d="M10 2.6l1 2.1 2.3-.5 1.2 2-1.5 1.8 1.5 1.8-1.2 2-2.3-.5-1 2.1-1-2.1-2.3.5-1.2-2L6.7 10 5.2 8.2l1.2-2 2.3.5z"/>')
   };
 
@@ -46,6 +47,7 @@
       { hash: '#/content', icon: ICON.content, label: 'Content Studio' },
       { hash: '#/post', icon: ICON.photo, label: 'Post from photos' },
       { hash: '#/publish', icon: ICON.publish, label: 'Publishing' },
+      { hash: '#/clips', icon: ICON.clips, label: 'Clip maker' },
       { hash: '#/video', icon: ICON.video, label: 'Video editor' }
     ]},
     { group: 'Behind it', items: [
@@ -106,7 +108,12 @@
        the editor only the navigation is redrawn. */
     /* Screens that hold live media keep their page while you stay on them: the video
        editor (a playing video, possibly mid-export) and the post maker (your photos). */
-    var ROOTS = { video: 've-root', post: 'pm-root' };
+    var ROOTS = { video: 've-root', post: 'pm-root', clips: 'cl-root' };
+    if (lastView === 'clips' && p[0] !== 'clips' && global.Clips && global.Clips.busy()) {
+      toast('A recording is uploading. Stay on this screen until it finishes.');
+      history.replaceState(null, '', '#/clips');
+      return;
+    }
     if (lastView === 'video' && p[0] !== 'video' && global.VideoEdit && global.VideoEdit.busy()) {
       /* Leaving mid-export would throw the recording away. Stay, and say why. */
       toast('An export is running. Leave once it finishes, or the recording is lost.');
@@ -124,6 +131,7 @@
         case 'news': html = global.Newsroom.view(p[1], p[2]); break;
         case 'experience': html = global.Experience.view(p[1]); break;
         case 'video': html = global.VideoEdit.view(); break;
+        case 'clips': html = global.Clips.view(); break;
         case 'post': html = global.PostMaker.view(); break;
         case 'publish': html = global.Publish.view(p[1]); break;
         case 'moments': html = global.Moments.view(p[1]); break;

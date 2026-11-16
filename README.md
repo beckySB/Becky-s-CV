@@ -172,6 +172,34 @@ public needs their written consent on file.
 The script is Allura (SIL Open Font License), the website's own, bundled in `assets/fonts` so it is always there
 when the image is drawn.
 
+## Clip maker
+
+One long recording in, a set of finished vertical clips out. Drop a conversation, an interview or
+a talk onto the Clip maker screen and the work runs on the server, so the tab can be closed:
+
+1. **Listen.** The audio is transcribed on the Studio's own server (Whisper, through
+   transformers.js), word by word. It is never sent to a transcription service, because these
+   recordings hold real stories about real families. The model downloads once and is kept on
+   the volume.
+2. **Choose.** Claude reads the transcript and picks the moments that stand on their own. It works
+   under the brand's style guide (the voice brief, the content themes, the rules) and one fixed
+   standard: high end, warm and polished. It chooses where each clip starts and stops, writes the
+   hook and the caption, lists what a person must check, and names the words the transcription
+   misheard so the captions read correctly. It never rewrites what was said.
+3. **Render.** Each clip is cut on a word, converted from iPhone HDR where needed, fitted to
+   1080 x 1920, and dressed in the brand: the logo badge, the hook band with its theme, the name
+   card, captions timed to the words, and the end card. The look comes from the style guide's
+   colours and lockup (`visual.lockup` in `data/brands.json`).
+
+Then each clip can be watched, its hook or caption edited (a new hook renders that clip again),
+downloaded, or saved to Google Drive with a text file of every caption and review note. Nothing is
+posted from this screen.
+
+It needs `SITE_PASSWORD`, a volume, `ANTHROPIC_API_KEY` for the choosing step, and ffmpeg, which
+Railway installs from `nixpacks.toml`. Without the key a recording is transcribed and then waits.
+`CLIPS_WHISPER_MODEL` names a different transcription model. Recordings up to two hours and 6 GB;
+one is worked on at a time, and a job interrupted by a deploy picks up where it stopped.
+
 ## Publishing
 
 Posts go to LinkedIn (your personal profile), the Women Worth & Wealth Facebook Page and its Instagram
@@ -351,6 +379,8 @@ assets/js/mail.js     Gmail drafting and sending, straight from the browser
 assets/js/views.js    every screen
 assets/js/app.js      router, events and boot
 assets/js/publish.js  the Publishing screen: queue, schedule, connections
+assets/js/clips.js    the Clip maker screen
+lib/clips/            the clip maker: transcription, Claude's choice of moments, overlays, rendering
 lib/social/           the queue, scheduler, token sealing, and the LinkedIn, Meta and Google Drive clients
 data/publishing.json  the weekly posting slots
 assets/js/moments.js  the Moments screen: alerts, watch list, playbook, log one

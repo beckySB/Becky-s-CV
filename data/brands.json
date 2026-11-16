@@ -22,7 +22,11 @@
         "title": "Created and co-hosted by Amy Landry & Becky Gustafson",
         "credentialsNote": "The program is educational. Do not lead with Becky's designations in program marketing, and never use Eternal Wealth Partners, Northwestern Mutual or any broker-dealer name in program copy unless Becky supplies approved disclosure language. Her bio may state her designations and that she founded Eternal Wealth Partners as biographical fact only.",
         "generalEmail": "",
-        "educationalNote": "Women Worth & Wealth is an educational program. Content is general in nature and is not financial, tax, or legal advice. Enrollment does not create an advisory relationship with either host. Please consult your own financial, tax, and legal professionals for advice specific to your situation."
+        "educationalNote": "Women Worth & Wealth is an educational program. Content is general in nature and is not financial, tax, or legal advice. Enrollment does not create an advisory relationship with either host. Please consult your own financial, tax, and legal professionals for advice specific to your situation.",
+        "videoRole": "Co-hosts · Women Worth & Wealth",
+        "videoEndLine": "Apply at wealthandwisdom.biz",
+        "videoSubline": "Wealth Wednesdays · Jan to Apr 2027 · New Orleans",
+        "videoSmallPrint": "Women Worth & Wealth is an educational program. General education, not financial, tax, or legal advice."
       },
       "visual": {
         "colors": [
@@ -106,7 +110,15 @@
           "Do not put the colour logo on a busy photograph. Use the white version on a darkened image."
         ],
         "patterns": "None. Leaf shapes from the mark may be used once, large and faint, as a corner accent.",
-        "socialIcons": "The mark alone, centred on cream, with generous space around it."
+        "socialIcons": "The mark alone, centred on cream, with generous space around it.",
+        "lockup": {
+          "eyebrow": "Women",
+          "wordmark": [
+            "Worth",
+            "&",
+            "Wealth"
+          ]
+        }
       },
       "voice": {
         "heading": "How Women Worth & Wealth sounds",

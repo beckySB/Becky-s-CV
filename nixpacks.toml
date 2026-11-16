@@ -1,0 +1,3 @@
+# The clip maker cuts and renders video on the server, so it needs ffmpeg there.
+[phases.setup]
+aptPkgs = ["...", "ffmpeg"]

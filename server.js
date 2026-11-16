@@ -22,6 +22,7 @@ const drafting = require('./lib/draft');
 const captioning = require('./lib/caption');
 const { createSocial } = require('./lib/social');
 const { createMoments } = require('./lib/moments');
+const { createClips } = require('./lib/clips');
 
 const ROOT = __dirname;
 const PORT = process.env.PORT || 3000;
@@ -204,6 +205,75 @@ async function handleAuth(req, res, pathname, query) {
     social.setConnectError(e && e.message ? e.message : 'The connection failed.');
   }
   return redirect(res, '/#/publish/connections');
+}
+
+/* ---------- the clip maker ---------- */
+
+const clips = createClips({ root: ROOT, saveToDrive: (input) => social.saveToDrive(input) });
+
+async function handleClips(req, res, pathname, query) {
+  const sub = pathname.slice('/api/clips/'.length);
+  if (sub === 'status' && req.method === 'GET') return sendJson(res, 200, await clips.status());
+  /* Recordings are of real people and cost real money to process. Never on an open site. */
+  if (!clips.cfg.gated) return sendJson(res, 503, { error: 'The clip maker is off because this site has no password. Set SITE_PASSWORD in Railway first.' });
+  if (req.method === 'POST' && req.headers['x-studio-request'] !== '1') return sendJson(res, 403, { error: 'Missing the request header the Studio sends.' });
+  const fail = (e) => {
+    if (!(e && e.status)) console.error('clips error:', e && e.message);
+    return sendJson(res, e && e.status >= 400 && e.status < 600 ? e.status : 400, { error: e && e.message ? e.message : String(e) });
+  };
+  const json = async () => JSON.parse(await readBody(req, 256 * 1024) || '{}');
+  try {
+    if (sub === 'jobs' && req.method === 'GET') return sendJson(res, 200, { jobs: clips.list() });
+    if (sub === 'jobs' && req.method === 'POST') { const j = clips.create(await json()); return sendJson(res, 200, { job: clips.get(j.id) }); }
+    let m = /^jobs\/([a-f0-9]{16})$/.exec(sub);
+    if (m && req.method === 'GET') return sendJson(res, 200, { job: clips.get(m[1]) });
+    m = /^jobs\/([a-f0-9]{16})\/chunk$/.exec(sub);
+    if (m && req.method === 'POST') {
+      let bytes;
+      try { bytes = await readBytes(req, 40 * 1024 * 1024); } catch (e) { return sendJson(res, 413, { error: 'That piece of the upload was too large.' }); }
+      return sendJson(res, 200, clips.chunk(m[1], Number(query.get('offset')) || 0, bytes));
+    }
+    m = /^jobs\/([a-f0-9]{16})\/(start|delete|drop-source|drive)$/.exec(sub);
+    if (m && req.method === 'POST') {
+      if (m[2] === 'start') { clips.start(m[1]); return sendJson(res, 200, { job: clips.get(m[1]) }); }
+      if (m[2] === 'delete') { clips.remove(m[1]); return sendJson(res, 200, { ok: true }); }
+      if (m[2] === 'drop-source') { clips.dropSource(m[1]); return sendJson(res, 200, { job: clips.get(m[1]) }); }
+      const r = await clips.drive(m[1], Number((await json()).n) || 0);
+      return sendJson(res, 200, Object.assign(r, { job: clips.get(m[1]) }));
+    }
+    m = /^jobs\/([a-f0-9]{16})\/clips\/(\d{1,2})$/.exec(sub);
+    if (m && req.method === 'POST') { clips.update(m[1], Number(m[2]), await json()); return sendJson(res, 200, { job: clips.get(m[1]) }); }
+    m = /^jobs\/([a-f0-9]{16})\/notes\.txt$/.exec(sub);
+    if (m && req.method === 'GET') {
+      const body = clips.sheet(m[1]);
+      secure(res);
+      res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8', 'Content-Disposition': 'attachment; filename="clips-captions-and-review-notes.txt"', 'Cache-Control': 'no-store' });
+      return res.end(body);
+    }
+    m = /^jobs\/([a-f0-9]{16})\/clips\/(\d{1,2})\.mp4$/.exec(sub);
+    if (m && (req.method === 'GET' || req.method === 'HEAD')) return sendVideo(req, res, clips.clipPath(m[1], Number(m[2])), query.get('download') === '1');
+  } catch (e) { return fail(e); }
+  return sendJson(res, 404, { error: 'Not found' });
+}
+
+/* A finished clip, with byte ranges so the browser can scrub it and Safari will play it. */
+function sendVideo(req, res, f, download) {
+  const size = fs.statSync(f.path).size;
+  const head = { 'Content-Type': 'video/mp4', 'Accept-Ranges': 'bytes', 'Cache-Control': 'private, no-store' };
+  if (download) head['Content-Disposition'] = 'attachment; filename="' + f.name.replace(/[^A-Za-z0-9._-]/g, '-') + '"';
+  const r = /^bytes=(\d*)-(\d*)$/.exec(String(req.headers.range || ''));
+  let start = 0, end = size - 1, status = 200;
+  if (r && (r[1] || r[2])) {
+    if (r[1]) { start = Number(r[1]); if (r[2]) end = Math.min(Number(r[2]), size - 1); }
+    else { start = Math.max(0, size - Number(r[2])); }
+    if (!(start <= end) || start >= size) { secure(res); res.writeHead(416, { 'Content-Range': 'bytes */' + size }); return res.end(); }
+    status = 206; head['Content-Range'] = 'bytes ' + start + '-' + end + '/' + size;
+  }
+  head['Content-Length'] = end - start + 1;
+  secure(res);
+  res.writeHead(status, head);
+  if (req.method === 'HEAD') return res.end();
+  fs.createReadStream(f.path, { start, end }).on('error', () => res.destroy()).pipe(res);
 }
 
 /* ---------- moments ---------- */
@@ -451,6 +521,7 @@ async function handleCaption(req, res) {
 async function handleApi(req, res, pathname, query) {
   if (pathname.startsWith('/api/social/')) return handleSocial(req, res, pathname, query);
   if (pathname.startsWith('/api/moments/')) return handleMoments(req, res, pathname);
+  if (pathname.startsWith('/api/clips/')) return handleClips(req, res, pathname, query);
   if (pathname === '/api/capabilities' && req.method === 'GET') {
     const a = draftAvailability();
     return sendJson(res, 200, { news: NEWS.feeds.length > 0, feeds: NEWS.feeds.length, draft: a.draft, draftReason: a.reason });
@@ -470,7 +541,7 @@ async function handleApi(req, res, pathname, query) {
 
 const server = http.createServer((req, res) => {
   const postPath = req.url ? req.url.split('?')[0] : '';
-  const isDraftPost = req.method === 'POST' && (postPath === '/api/draft' || postPath === '/api/caption' || postPath.startsWith('/api/social/') || postPath.startsWith('/api/moments/'));
+  const isDraftPost = req.method === 'POST' && (postPath === '/api/draft' || postPath === '/api/caption' || postPath.startsWith('/api/social/') || postPath.startsWith('/api/moments/') || postPath.startsWith('/api/clips/'));
   if (req.method !== 'GET' && req.method !== 'HEAD' && !isDraftPost) {
     return send(res, 405, 'Method not allowed');
   }

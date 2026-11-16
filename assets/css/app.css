@@ -429,3 +429,35 @@ tr.cx-next td { background: var(--surface-2); }
 /* The gold script on the celebration graphic. Allura, the website's own script, SIL Open Font
    License; bundled so it is there when the canvas draws, whatever the network is doing. */
 @font-face { font-family: "Allura"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/allura.woff2") format("woff2"); }
+
+/* ---------- the clip maker ---------- */
+.cl-drop { border: 1.5px dashed var(--line); border-radius: var(--radius); padding: 26px 20px; text-align: center; background: var(--surface-2); transition: border-color .15s, background .15s; }
+.cl-drop.is-over { border-color: var(--gold); background: var(--gold-soft); }
+.cl-pick { color: var(--brand); text-decoration: underline; cursor: pointer; }
+.cl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 16px; align-items: end; }
+.cl-grid .field { margin: 0; }
+.field-h { display: block; font-size: 12px; color: var(--ink-3); margin: -2px 0 5px; }
+.cl-job { margin-top: 18px; }
+.cl-jobhead { display: flex; gap: 14px; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.cl-jobname { font-family: var(--serif); font-weight: 600; font-size: 26px; line-height: 1.1; margin: 0; overflow-wrap: anywhere; }
+.cl-steps { display: flex; gap: 8px; flex-wrap: wrap; }
+.cl-step { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-3); }
+.cl-step.is-done { border-color: var(--brand); color: var(--brand); background: var(--brand-soft); }
+.cl-step.is-now { border-color: var(--gold); color: var(--ink); background: var(--gold-soft); animation: cl-pulse 1.8s ease-in-out infinite; }
+@keyframes cl-pulse { 50% { opacity: .55; } }
+@media (prefers-reduced-motion: reduce) { .cl-step.is-now { animation: none; } }
+.cl-clips { display: grid; gap: 18px; }
+.cl-clip { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 20px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.cl-video { width: 216px; aspect-ratio: 9 / 16; border-radius: 12px; background: #0c2e25; display: block; object-fit: cover; }
+.cl-wait { display: grid; place-items: center; color: #f3ede2; text-align: center; padding: 12px; }
+.cl-title { font-family: var(--serif); font-weight: 600; font-size: 23px; line-height: 1.15; margin: 10px 0 2px; }
+.cl-body .field { margin: 10px 0 0; }
+.cl-flags { margin: 0 0 4px; padding: 10px 14px; }
+.cl-said { margin-top: 12px; }
+.cl-said summary { cursor: pointer; color: var(--ink-3); }
+a.chip { text-decoration: none; }
+@media (max-width: 640px) {
+  .cl-clip { grid-template-columns: 1fr; }
+  .cl-video { width: 100%; max-width: 280px; margin: 0 auto; }
+  .cl-jobhead { flex-direction: column; }
+}
