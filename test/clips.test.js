@@ -175,6 +175,17 @@ test('without a Claude key the transcript is kept and the job waits; a restart w
   await settle(second);
   assert.strictEqual(second.get(id).stage, 'done');
   assert.strictEqual(heard, 1, 'the recording is not transcribed twice');
+
+  let fails = 1;
+  const third = createClips(Object.assign({}, base, { env: { DATA_DIR: tmp(), SITE_PASSWORD: 'pw' }, transcriber: async () => ({ words, model: 't' }),
+    planner: async (input) => { if (fails-- > 0) throw new Error('the line dropped'); return validate({ clips: [{ title: 'Only', theme: '', hook: 'One', ranges: [{ from: 0, to: 6 }], caption: 'c', flags: [], speaking: '' }], corrections: [], speakers: '' }, input.sentences, 5); } }));
+  const id3 = upload(third);
+  await settle(third);
+  assert.strictEqual(third.get(id3).stage, 'failed');
+  assert.match(third.get(id3).error, /the line dropped/);
+  third.retry(id3);
+  await settle(third);
+  assert.strictEqual(third.get(id3).stage, 'done', 'trying again picks up at the stage that failed');
 });
 
 test('the server: the clip maker needs the password and the request header', async (t) => {
@@ -197,4 +208,20 @@ test('the server: the clip maker needs the password and the request header', asy
   assert.deepStrictEqual(await piece.json(), { received: 10, bytes: 10 });
   assert.strictEqual((await fetch(s.base + '/api/clips/jobs/' + made.job.id + '/clips/1.mp4', { headers: auth })).status, 404);
   assert.strictEqual((await fetch(s.base + '/api/clips/jobs/../../etc', { headers: auth })).status, 404);
+});
+
+test('the clip plan is asked for over a stream, and read back against the transcript', async () => {
+  const { plan } = require('../lib/clips/plan');
+  const S = sentencesFrom(speech(40)).map((x) => ({ id: x.id, start: x.start, end: x.end, text: x.text }));
+  let sent = null;
+  const answer = { clips: [{ title: 'One', theme: 'The room', hook: 'A line', ranges: [{ from: 0, to: 6 }], caption: 'c', flags: [], speaking: '' }], corrections: [], speakers: 'Two hosts' };
+  const client = { beta: { messages: {
+    parse: () => { throw new Error('a long plan must not be sent without streaming'); },
+    stream: (params) => { sent = params; return { finalMessage: async () => ({ stop_reason: 'end_turn', model: 'm', content: [{ type: 'text', text: JSON.stringify(answer) }], usage: { input_tokens: 5, output_tokens: 7 } }) }; }
+  } } };
+  const out = await plan({ sentences: S, count: 20, brandName: 'W', voiceBrief: 'brief' }, { client, format: { type: 'json_schema', schema: {} } });
+  assert.strictEqual(out.clips.length, 1);
+  assert.strictEqual(out.speakers, 'Two hosts');
+  assert.ok(sent.max_tokens > 21333, 'large enough that the SDK requires streaming, which is why it is streamed');
+  assert.match(sent.system[0].text, /High end, warm and polished/);
 });

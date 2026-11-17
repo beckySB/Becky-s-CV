@@ -233,9 +233,10 @@ async function handleClips(req, res, pathname, query) {
       try { bytes = await readBytes(req, 40 * 1024 * 1024); } catch (e) { return sendJson(res, 413, { error: 'That piece of the upload was too large.' }); }
       return sendJson(res, 200, clips.chunk(m[1], Number(query.get('offset')) || 0, bytes));
     }
-    m = /^jobs\/([a-f0-9]{16})\/(start|delete|drop-source|drive)$/.exec(sub);
+    m = /^jobs\/([a-f0-9]{16})\/(start|delete|retry|drop-source|drive)$/.exec(sub);
     if (m && req.method === 'POST') {
       if (m[2] === 'start') { clips.start(m[1]); return sendJson(res, 200, { job: clips.get(m[1]) }); }
+      if (m[2] === 'retry') { clips.retry(m[1]); return sendJson(res, 200, { job: clips.get(m[1]) }); }
       if (m[2] === 'delete') { clips.remove(m[1]); return sendJson(res, 200, { ok: true }); }
       if (m[2] === 'drop-source') { clips.dropSource(m[1]); return sendJson(res, 200, { job: clips.get(m[1]) }); }
       const r = await clips.drive(m[1], Number((await json()).n) || 0);
